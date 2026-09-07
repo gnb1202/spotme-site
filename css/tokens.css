@@ -1,0 +1,87 @@
+/* ============================================================
+   SPOT ME — 디자인 토큰
+   공모전 양식(포스터)의 Design System 을 그대로 옮긴 값.
+   포스터에 없는 것은 두 가지뿐이고, 둘 다 웹에서만 필요해 파생한 것이다.
+     - Ink 계열: 다크 섹션 배경 (포스터 배경의 near-black 에서 뽑음)
+     - -600 계열: 그라디언트 끝점용 어두운 단계
+   ============================================================ */
+
+:root {
+  /* --- Main Color (포스터 원본) --- */
+  --mint:        #5EEFD3;
+  --mint-600:    #2ED9B8;
+
+  --pink:        #EF5E7A;
+  --pink-600:    #E03360;
+
+  /* --- Text Color (포스터 원본) --- */
+  --text-primary:   #343A40;
+  --text-secondary: #919EA5;
+
+  /* --- Background Color (포스터 원본) --- */
+  --bg-primary:   #F2F4F6;
+  --bg-secondary: #FAFAF8;
+
+  /* --- Ink (다크 섹션용 파생) --- */
+  --ink-900: #070B0A;
+  --ink-800: #0B0F0E;
+  --ink-700: #111817;
+  --ink-600: #18211F;
+
+  /* --- 의미 토큰: 다크 섹션 기본 --- */
+  --surface:        var(--ink-800);
+  --surface-raised: var(--ink-700);
+  --surface-card:   var(--ink-600);
+  --hairline:       rgba(94, 239, 211, .14);
+  --hairline-soft:  rgba(255, 255, 255, .07);
+  --on-surface:     #EAF2F0;
+  --on-surface-dim: #8FA3A0;
+
+  /* --- 타이포 스케일 (포스터 H1~C1) --- */
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+               "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", system-ui, sans-serif;
+
+  --h1: clamp(2.5rem, 6.2vw, 4.75rem);
+  --h2: clamp(1.9rem, 4.2vw, 3rem);
+  --t1: clamp(1.35rem, 2.4vw, 1.75rem);
+  --t2: clamp(1.1rem, 1.8vw, 1.3rem);
+  --b1: clamp(1rem, 1.35vw, 1.075rem);
+  --b2: 0.95rem;
+  --c1: 0.8125rem;
+
+  --tracking-tight:  -0.03em;
+  --tracking-snug:   -0.015em;
+  --tracking-wide:    0.16em;
+
+  /* --- 레이아웃 --- */
+  --maxw: 1200px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-y: clamp(5rem, 12vw, 9.5rem);
+  --radius-sm: 10px;
+  --radius:    18px;
+  --radius-lg: 28px;
+
+  /* --- 모션 --- */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-io:  cubic-bezier(.65, 0, .35, 1);
+  --dur-fast: .18s;
+  --dur:      .42s;
+
+  /* --- 그림자 / 글로우 --- */
+  --glow-mint: 0 0 0 1px rgba(94,239,211,.22), 0 12px 42px -10px rgba(94,239,211,.42);
+  --shadow-card: 0 24px 60px -22px rgba(0,0,0,.65);
+  --shadow-phone: 0 48px 90px -30px rgba(0,0,0,.75), 0 0 0 1px rgba(255,255,255,.06);
+}
+
+/* 라이트 섹션(케이스 스터디)에서 의미 토큰만 뒤집는다 */
+.is-light {
+  --surface:        var(--bg-primary);
+  --surface-raised: var(--bg-secondary);
+  --surface-card:   #FFFFFF;
+  --hairline:       rgba(52, 58, 64, .12);
+  --hairline-soft:  rgba(52, 58, 64, .08);
+  --on-surface:     var(--text-primary);
+  --on-surface-dim: var(--text-secondary);
+  --shadow-card: 0 20px 50px -24px rgba(52,58,64,.28);
+  --shadow-phone: 0 40px 80px -28px rgba(52,58,64,.34), 0 0 0 1px rgba(52,58,64,.08);
+}

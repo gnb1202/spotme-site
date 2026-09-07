@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPOT ME! — 게임처럼 즐기는 새로운 운동 방식</title>
+<meta name="description" content="게임 요소와 피트니스가 결합된 AI 운동 파트너 애플리케이션. 운동으로 몬스터를 처치하고 보상을 얻어 앱 속 헬스장을 복구시키는 RPG 피트니스 서비스, 스팟미.">
+<meta name="theme-color" content="#0B0F0E">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="SPOT ME! — 게임처럼 즐기는 새로운 운동 방식">
+<meta property="og:description" content="운동으로 몬스터를 처치하고 보상을 얻어 앱 속 헬스장을 복구시키는 RPG 피트니스 서비스.">
+<meta property="og:image" content="assets/brand/app-icon.png">
+
+<link rel="icon" href="assets/brand/favicon.png">
+<link rel="apple-touch-icon" href="assets/brand/app-icon.png">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ══════════════════ 내비게이션 ══════════════════ -->
+<nav class="nav" aria-label="주요">
+  <a href="#top" aria-label="SPOT ME 홈">
+    <img class="nav-logo" src="assets/brand/logo-wordmark.png" alt="SPOT ME">
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="#problem">문제</a>
+    <a class="nav-link" href="#concept">컨셉</a>
+    <a class="nav-link" href="#loop">운동 방식</a>
+    <a class="nav-link" href="#battle">배틀 체험</a>
+    <a class="nav-link" href="#features">기능</a>
+    <a class="nav-link" href="#ranking">랭킹</a>
+    <a class="nav-link" href="#remi">레미</a>
+    <a class="nav-link" href="#casestudy">디자인</a>
+  </div>
+  <span class="nav-progress" aria-hidden="true"></span>
+</nav>
+
+<!-- ══════════════════ 1. HERO ══════════════════ -->
+<header class="hero" id="top">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <img class="hero-logo" src="assets/brand/logo-hero.png"
+             alt="SPOT ME!" width="480" height="101">
+        <p class="hero-tagline">게임 요소와 피트니스가 결합된 AI 운동 파트너</p>
+        <h1 class="hero-title">게임처럼 즐기는<br>새로운 운동 방식</h1>
+        <p class="hero-desc">
+          운동 세트를 음성으로 전달하면 레미가 인식해 몬스터를 공격합니다.
+          운동으로 아이템을 얻고, 그 아이템으로 앱 속 헬스장을 정화하세요.
+          단순한 운동이 하나의 RPG가 됩니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#battle">배틀 체험하기 →</a>
+          <a class="btn btn-ghost" href="#loop">운동 방식 보기</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <span class="hero-ring" aria-hidden="true"></span>
+        <span class="hero-ring is-inner" aria-hidden="true"></span>
+        <img class="hero-remi" src="assets/remi/remi-key-visual.png"
+             alt="스팟미 마스코트 캐릭터 레미" width="420" height="420">
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><b>8명</b><span>헬스인 대상 인터뷰</span></div>
+      <div class="hero-stat"><b>5종</b><span>방해 요인 몬스터</span></div>
+      <div class="hero-stat"><b>3종</b><span>일일 · 주간 · 도전과제</span></div>
+      <div class="hero-stat"><b>1~2년차</b><span>정체기 집중 구간</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span>SCROLL</span><i></i></div>
+</header>
+
+<!-- ══════════════════ 2. PROBLEM ══════════════════ -->
+<section class="section" id="problem">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow is-pink">Background</p>
+      <h2 class="h2">1~2년차에 몰리는<br>마의 구간, <span class="pink">운동 정체기</span></h2>
+      <p class="body">
+        운동 정체기로 인해 동기 부여가 저하되고 무력감과 스트레스를 받게 되지만,
+        지속적인 운동 수행에 대한 해결책은 부족합니다.
+      </p>
+    </div>
+
+    <div class="plateau">
+      <div>
+        <div class="plateau-chart">
+          <svg viewBox="0 0 520 262" role="img"
+               aria-label="운동 기간에 따른 근육량 변화 그래프. 1차 성장기의 빠른 성장 이후 정체기가 오고, 이후 2차 성장기로 이어진다.">
+            <defs>
+              <linearGradient id="plateauFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stop-color="#5EEFD3" stop-opacity=".28"/>
+                <stop offset="100%" stop-color="#5EEFD3" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+
+            <!-- 정체기 구간 밴드 -->
+            <rect class="plateau-band" x="165" y="18" width="185" height="212" rx="6"/>
+
+            <!-- 축 -->
+            <line class="plateau-axis" x1="30" y1="230" x2="500" y2="230"/>
+
+            <!-- 면적 -->
+            <path class="plateau-area"
+                  d="M30 222 C70 200 110 130 165 98 C200 84 230 92 260 86 C300 80 320 94 350 84 C400 74 440 48 492 28 L492 230 L30 230 Z"/>
+            <!-- 선 -->
+            <path class="plateau-line"
+                  d="M30 222 C70 200 110 130 165 98 C200 84 230 92 260 86 C300 80 320 94 350 84 C400 74 440 48 492 28"/>
+
+            <text class="plateau-tick" x="96"  y="250" text-anchor="middle">1차 성장기</text>
+            <text class="plateau-tick is-hot" x="257" y="250" text-anchor="middle">정체기</text>
+            <text class="plateau-tick" x="425" y="250" text-anchor="middle">2차 성장기</text>
+          </svg>
+        </div>
+
+        <div class="plateau-phases">
+          <div class="phase"><b>1차 성장기</b><span>운동 초기의 빠른 근육 성장</span></div>
+          <div class="phase is-hot"><b>정체기</b><span>근육의 적응에 의해 발생 · 운동 의욕 저하</span></div>
+          <div class="phase"><b>2차 성장기</b><span>정체기를 넘어선 이후의 재성장</span></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <p class="t1">헬스인 8명에게 운동 목표를 물었습니다</p>
+        <div class="quotes">
+          <p class="quote">좋은 몸을 만들고 싶다</p>
+          <p class="quote">3대 중량을 늘려서 더 강해지고 싶다</p>
+          <p class="quote">덩치가 커졌으면 좋겠다</p>
+          <p class="quote">더 많은 근육량과 중량을 치고 싶다</p>
+          <p class="quote">몸이 더 커졌으면 좋겠다</p>
+        </div>
+        <div class="insight">
+          <p class="body">
+            헬창들이 3대 운동을 시작한 이유는 각기 달랐지만,
+            <strong class="mint">현재 운동 목표는 운동 강도와 근력량 성장에 집중하는 것</strong>으로 좁혀졌습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 3. CONCEPT ══════════════════ -->
+<section class="section" id="concept" style="background:var(--ink-700)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Concept</p>
+      <h2 class="h2">혼자 넘기 어려운 구간을<br>옆에서 받쳐 주는 파트너</h2>
+    </div>
+
+    <div class="concept-hero reveal">
+      <p class="concept-term"><em>Spot me</em> — 내 운동을 보조해 줘</p>
+      <p class="body dim" style="max-width:44rem">
+        무거운 운동 기구를 들 때 “나 좀 봐줘”라는 뜻의 헬스 용어에서 착안하여,
+        사용자의 운동 자체를 <strong class="mint">‘보조’해주겠다</strong>는 의미를 담았습니다.
+        현실과 가상을 넘나드는 경험을 실현합니다.
+      </p>
+    </div>
+
+    <div class="formula reveal">
+      <div class="formula-item">
+        <svg class="formula-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="3" y="17" width="6" height="14" rx="2"/>
+          <rect x="9" y="13" width="7" height="22" rx="2.5"/>
+          <rect x="32" y="13" width="7" height="22" rx="2.5"/>
+          <rect x="39" y="17" width="6" height="14" rx="2"/>
+          <path d="M16 24h16"/>
+        </svg>
+        <b>운동</b>
+        <p class="caption">목표를 향한 반복과 성장</p>
+      </div>
+      <span class="formula-op" aria-hidden="true">×</span>
+      <div class="formula-item">
+        <svg class="formula-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M15 15h18a10 10 0 0 1 9.8 8l1.6 11A6 6 0 0 1 34 37l-3-4H17l-3 4A6 6 0 0 1 3.6 34l1.6-11A10 10 0 0 1 15 15Z"/>
+          <path d="M13 22v7M9.5 25.5h7"/>
+          <circle cx="33" cy="23.5" r="1.8" fill="currentColor" stroke="none"/>
+          <circle cx="37" cy="28" r="1.8" fill="currentColor" stroke="none"/>
+        </svg>
+        <b>게이미피케이션</b>
+        <p class="caption">목표 · 미션 · 보상 · 성장 · 피드백</p>
+      </div>
+      <span class="formula-op" aria-hidden="true">=</span>
+      <div class="formula-item formula-result">
+        <svg class="formula-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M26.5 4 9 27h11l-2.5 17L37 21H25l1.5-17Z"/>
+        </svg>
+        <b>계속하고 싶은 경험</b>
+        <p class="caption">‘해야 하는 일’이 아니라</p>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-bottom:1.6rem">
+      <p class="t1">게임 요소를 활용한 기존 운동 앱 사례</p>
+    </div>
+    <div class="ref-grid">
+      <article class="ref-card reveal" data-delay="1">
+        <span class="ref-badge">레벨 · 트로피</span>
+        <b>나이키 런 클럽</b>
+        <p class="caption">러닝 거리 목표 달성 시 거리에 따라 레벨을 부여하고, 트로피를 얻는 도전 요소를 제공한다.</p>
+      </article>
+      <article class="ref-card reveal" data-delay="2">
+        <span class="ref-badge">랭킹 · 경쟁</span>
+        <b>스트라바</b>
+        <p class="caption">나와 타인의 기록을 랭킹 형식으로 제공해 성취감과 경쟁심을 유도한다.</p>
+      </article>
+      <article class="ref-card reveal" data-delay="3">
+        <span class="ref-badge">14단계 계급</span>
+        <b>트랭글</b>
+        <p class="caption">짐꾼에서부터 천왕에 이르기까지 14단계의 계급을 부여해 계급을 올리기 위한 운동을 유도한다.</p>
+      </article>
+    </div>
+    <p class="source">
+      출처: 한국스포츠산업경영학회지,
+      「피트니스 애플리케이션의 게이미피케이션 전략이 사용자 몰입과 지속사용의도에 미치는 영향」 (2019.4)
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ 4. CORE LOOP ══════════════════ -->
+<section class="section" id="loop">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2 class="h2">운동을 통해 몬스터를 처치하고<br>보상을 얻어, 헬스장을 복구시킨다</h2>
+      <p class="body">스크롤하면 각 단계의 실제 앱 화면이 바뀝니다.</p>
+    </div>
+
+    <div class="loop-layout">
+      <div class="loop-sticky">
+        <div class="phone">
+          <div class="phone-screen" id="loopPhone">
+            <!-- ① 스테이지 맵 : 앱의 노드 해금 구조를 SVG 로 재현 (클릭 가능) -->
+            <div class="stagemap-wrap" data-frame>
+              <svg class="stagemap" id="stagemap" viewBox="0 0 196 426"
+                   role="group" aria-label="스테이지 선택 맵. 노드를 눌러 다음 스테이지를 해금합니다.">
+                <text class="stagemap-title" x="98" y="46">스테이지를 선택하세요</text>
+              </svg>
+            </div>
+            <!-- ② 루틴 -->
+            <img data-frame src="assets/screens/routine.png" alt="운동 루틴 선택 화면">
+            <!-- ③ 전투 -->
+            <img data-frame src="assets/screens/battle-02.png" alt="스테이지 진입 후 몬스터와 전투하는 화면">
+            <!-- ④ 보상 -->
+            <img data-frame src="assets/screens/reward.png" alt="오늘의 운동 완료 후 보상 화면">
+          </div>
+        </div>
+      </div>
+
+      <div class="loop-steps">
+        <article class="loop-step">
+          <span class="loop-step-num">1</span>
+          <h3 class="t1">스테이지를 선택한다</h3>
+          <p class="body">
+            가장 먼저 스테이지를 선택합니다. 몬스터를 처치할 때마다 다음 스테이지가 해금됩니다.
+            <span class="mint">맵의 노드를 직접 눌러보세요.</span>
+          </p>
+        </article>
+        <article class="loop-step">
+          <span class="loop-step-num">2</span>
+          <h3 class="t1">운동 루틴을 고르거나 만든다</h3>
+          <p class="body">AI 운동 파트너의 추천을 받거나, 자유롭게 운동 루틴을 생성 · 수정할 수 있습니다.</p>
+        </article>
+        <article class="loop-step">
+          <span class="loop-step-num">3</span>
+          <h3 class="t1">스테이지에 진입해 전투한다</h3>
+          <p class="body">
+            운동 세트를 진행한 후 음성으로 전달하면 레미가 그것을 인식하고 몬스터에 공격을 가합니다.
+            운동한 만큼 데미지가 들어갑니다.
+          </p>
+        </article>
+        <article class="loop-step">
+          <span class="loop-step-num">4</span>
+          <h3 class="t1">보상을 획득한다</h3>
+          <p class="body">오늘의 운동을 완료하면 보상을 획득합니다. 얻은 아이템으로 앱 속 헬스장을 복구시킵니다.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 5. 배틀 데모 ══════════════════ -->
+<section class="section battle" id="battle">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Try it</p>
+      <h2 class="h2">직접 한 세트<br>기록해 보세요</h2>
+      <p class="body">
+        앱에서는 음성으로 세트를 기록하면 레미가 공격합니다.
+        여기서는 화면을 눌러 같은 흐름을 체험할 수 있습니다.
+      </p>
+    </div>
+
+    <div class="arena reveal" id="arena">
+      <div class="arena-hud">
+        <div class="hp-block">
+          <div class="hp-label">
+            <b id="hpName">동기 상실</b>
+            <span id="hpText">420 / 420</span>
+          </div>
+          <div class="hp-track"><div class="hp-fill" id="hpFill"></div></div>
+        </div>
+      </div>
+
+      <div class="arena-stage" id="arenaStage" role="button" tabindex="0"
+           aria-label="화면을 눌러 운동 세트를 기록하고 몬스터를 공격합니다">
+        <span class="arena-floor" aria-hidden="true"></span>
+
+        <div class="fighter fighter-remi">
+          <img id="remiSprite" src="assets/remi/remi-workout-ready.png" alt="전투 자세를 취한 레미">
+          <span class="fighter-name">레미</span>
+        </div>
+
+        <div class="fighter fighter-monster" id="monsterFighter">
+          <img id="monsterSprite" src="assets/monsters/motivation-idle.png" alt="동기 상실 몬스터">
+          <span class="fighter-name" id="monsterName">동기 상실</span>
+        </div>
+
+        <p class="arena-hint">탭해서 공격</p>
+
+        <div class="victory" id="victory">
+          <p class="victory-title">STAGE CLEAR!</p>
+          <p class="body dim">오늘의 운동을 완료하고 보상을 획득했습니다</p>
+          <div class="victory-loot" id="victoryLoot"></div>
+          <p class="caption" style="margin-top:.8rem">아무 곳이나 눌러 다시 도전</p>
+        </div>
+      </div>
+
+      <div class="arena-foot">
+        <p class="caption" id="setText">탭해서 세트를 기록하세요</p>
+        <div id="monPicker" style="display:flex;gap:.5rem;flex-wrap:wrap"
+             role="group" aria-label="몬스터 선택"></div>
+        <button class="btn btn-ghost" id="battleReset"
+                style="padding:.5rem 1rem;font-size:var(--b2)">다시</button>
+      </div>
+    </div>
+
+    <p class="caption" style="margin-top:1rem">
+      몬스터 5종은 운동을 방해하는 요인 — 동기 상실 · 기록 망각 · 루틴 붕괴 · 누적 피로 · 목표 상실 — 을 의인화한 것입니다.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ 6. FEATURES ══════════════════ -->
+<section class="section" id="features" style="background:var(--ink-700)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Features</p>
+      <h2 class="h2">사용자의 운동을<br>‘보조’해주는 AI 운동 파트너</h2>
+    </div>
+
+    <div class="bento">
+      <article class="bento-card reveal" data-span="3">
+        <span class="tag">레미 AI</span>
+        <h3 class="t1">물어보면 답해주는 운동 파트너</h3>
+        <p class="caption">채팅 혹은 음성을 통해 운동에 대해 물어보고 조언을 구할 수 있는 기능입니다.</p>
+        <div class="bento-shot">
+          <img src="assets/screens/remi-ai.png" alt="레미 AI 채팅 화면" loading="lazy">
+        </div>
+      </article>
+
+      <article class="bento-card reveal" data-delay="1" data-span="3">
+        <span class="tag is-pink">도움 모드</span>
+        <h3 class="t1">위험할 땐 주변에 알린다</h3>
+        <p class="caption">운동 중 위험이 발생할 시 레미에게 도움을 요청하여, 주변 사람들에게 사용자의 위험을 알립니다.</p>
+        <div class="bento-shot">
+          <img src="assets/screens/help-mode.png" alt="도움 모드 화면" loading="lazy">
+        </div>
+      </article>
+
+      <article class="bento-card reveal" data-span="4">
+        <span class="tag">타이쿤 시스템</span>
+        <h3 class="t1">몬스터에 의해 파괴된 헬스장을 복구시키자</h3>
+        <p class="caption">
+          운동 · 퀘스트를 통해 획득한 아이템으로 가상의 헬스장을 복구시키고,
+          등급 상승을 통해 증축할 수 있습니다. 아이템 보상은 퀘스트를 통해 수급 가능합니다.
+        </p>
+        <div class="bento-shot">
+          <img src="assets/screens/tycoon.png" alt="파괴된 헬스장 복구 화면" loading="lazy">
+        </div>
+      </article>
+
+      <article class="bento-card reveal" data-delay="1" data-span="2">
+        <span class="tag">퀘스트</span>
+        <h3 class="t1">일일 · 주간 · 도전과제</h3>
+        <p class="caption">다양한 퀘스트를 수행하여 보상을 획득합니다.</p>
+        <div class="bento-shot">
+          <img src="assets/screens/quest.png" alt="퀘스트 화면" loading="lazy">
+        </div>
+      </article>
+
+      <article class="bento-card reveal" data-span="3">
+        <span class="tag">리포트</span>
+        <h3 class="t1">AI가 제시하는 운동의 방향성</h3>
+        <p class="caption">
+          내가 얼마나, 얼만큼 운동을 했는지 체계적으로 분석한 시각적 자료를 통해
+          사용자가 능동적으로 운동의 방향성을 잡을 수 있도록 돕습니다.
+        </p>
+        <div class="bento-shot is-scroll">
+          <img src="assets/screens/report.png" alt="운동 리포트 화면" loading="lazy">
+        </div>
+      </article>
+
+      <article class="bento-card reveal" data-delay="1" data-span="3">
+        <span class="tag">음성 인식</span>
+        <h3 class="t1">말하면 기록된다</h3>
+        <p class="caption">
+          운동 세트를 진행한 후 음성으로 전달하면 레미가 그것을 인식합니다.
+          기구를 잡은 채로도 기록이 남습니다.
+        </p>
+        <div class="bento-media">
+          <img src="assets/remi/remi-voice-active.png" alt="음성을 인식하는 레미" loading="lazy">
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 7. 랭킹 ══════════════════ -->
+<section class="section" id="ranking">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Ranking</p>
+      <h2 class="h2">누적 중량으로 매겨지는<br>티어와 순위 경쟁</h2>
+      <p class="body">
+        누적 중량과 해당 데이터로 산정되는 티어로 타 사용자와 운동 순위 경쟁을 할 수 있습니다.
+        슬라이더를 움직여 티어 구간을 확인해 보세요.
+      </p>
+    </div>
+
+    <div class="tier-layout">
+      <div class="tier-panel reveal" id="tierPanel">
+        <div class="tier-display">
+          <div class="tier-medal" id="tierMedal" aria-hidden="true">🐭</div>
+          <p class="tier-name" id="tierName">UNRANKED</p>
+          <p class="body-sm dim tier-volume" id="tierVolume">누적 중량 <b>0</b> kg</p>
+        </div>
+        <div>
+          <div class="tier-ticks" id="tierTicks" aria-hidden="true"></div>
+          <input class="tier-slider" id="tierSlider" type="range"
+                 min="0" max="7" step="1" value="0" aria-label="티어 구간 선택">
+          <div class="tier-scale">
+            <span>UNRANKED</span>
+            <span>SUPER CHALLENGER</span>
+          </div>
+        </div>
+        <p class="caption">
+          최하위 UNRANKED 와 최상위 SUPER CHALLENGER 사이의 중간 티어 이름과
+          누적 중량 값은 구간을 보여주기 위한 예시입니다.
+        </p>
+      </div>
+
+      <div class="reveal" data-delay="1">
+        <div class="phone" style="margin-inline:auto">
+          <div class="phone-screen">
+            <img class="is-active" src="assets/screens/ranking.png" alt="랭킹 화면" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 8. 레미 ══════════════════ -->
+<section class="section" id="remi" style="background:var(--ink-700)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Character</p>
+      <h2 class="h2">운동을 좋아하는<br>쥐 캐릭터, <span class="mint">레미</span></h2>
+      <p class="body">
+        영미권에서 사용되는 ‘Gym rat’에서 모티브를 가져온 애플리케이션 마스코트 캐릭터이자 운동 파트너입니다.
+        쥐를 뜻하는 rat을 살짝 변형하여 캐릭터 이름을 ‘레미’로 선정했습니다.
+      </p>
+    </div>
+
+    <div class="remi-grid">
+      <div class="remi-cell reveal"><img src="assets/remi/remi-greet.webp" alt="인사하는 레미" loading="lazy"><p class="caption">인사</p></div>
+      <div class="remi-cell reveal" data-delay="1"><img src="assets/remi/remi-dumbbell.webp" alt="덤벨을 드는 레미" loading="lazy"><p class="caption">운동</p></div>
+      <div class="remi-cell reveal" data-delay="2"><img src="assets/remi/remi-punch.webp" alt="펀치하는 레미" loading="lazy"><p class="caption">공격</p></div>
+      <div class="remi-cell reveal" data-delay="3"><img src="assets/remi/remi-professor.webp" alt="설명하는 레미" loading="lazy"><p class="caption">조언</p></div>
+      <div class="remi-cell reveal" data-delay="4"><img src="assets/remi/remi-listening.webp" alt="듣고 있는 레미" loading="lazy"><p class="caption">경청</p></div>
+      <div class="remi-cell reveal" data-delay="5"><img src="assets/remi/remi-rest.webp" alt="쉬고 있는 레미" loading="lazy"><p class="caption">휴식</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ PART 2 구분 ══════════════════ -->
+<div class="part-divider">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center">Case study</p>
+    <h2 class="h2">브랜드를 만든 과정</h2>
+    <p class="body">여기서부터는 SPOT ME의 디자인 시스템과 화면 아카이브입니다.</p>
+  </div>
+</div>
+
+<!-- ══════════════════ 9. 디자인 시스템 ══════════════════ -->
+<section class="section is-light" id="casestudy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" style="color:#14A98C">Brand Identity</p>
+      <h2 class="h2">혼자 넘기 어려운 구간을<br>옆에서 받쳐 주는 브랜드</h2>
+    </div>
+
+    <div class="brand-grid reveal">
+      <figure class="brand-cell is-icon">
+        <img src="assets/brand/app-icon.png" alt="스팟미 앱 아이콘" loading="lazy">
+        <figcaption class="caption">앱 아이콘</figcaption>
+      </figure>
+      <figure class="brand-cell">
+        <img src="assets/brand/logo-hero.png" alt="말풍선형 SPOT ME 로고" loading="lazy">
+        <figcaption class="caption">로고 — 말풍선형</figcaption>
+      </figure>
+      <figure class="brand-cell">
+        <img src="assets/brand/logo-wordmark.png" alt="기본형 SPOT ME 로고" loading="lazy">
+        <figcaption class="caption">로고 — 기본형</figcaption>
+      </figure>
+      <figure class="brand-cell">
+        <img src="assets/brand/logo-mark.png" alt="캐릭터 없는 SPOT ME 워드마크" loading="lazy">
+        <figcaption class="caption">워드마크</figcaption>
+      </figure>
+    </div>
+
+    <div class="section-head reveal" style="margin:clamp(3rem,6vw,4.5rem) 0 1.5rem">
+      <p class="eyebrow" style="color:#14A98C">Design System</p>
+      <h2 class="h2">에너지 넘치고 톡톡 튀는<br>메인 컬러를 중심으로</h2>
+      <p class="body">
+        메인 컬러를 중심으로 전반적인 UI와 캐릭터를 나타내고자 했습니다.
+        스와치를 누르면 HEX 코드가 복사됩니다.
+      </p>
+    </div>
+
+    <div class="swatch-groups">
+      <div class="swatch-group reveal">
+        <b>Main Color</b>
+        <div class="swatch-row">
+          <button class="swatch" data-hex="#5EEFD3">
+            <i style="background:#5EEFD3"></i>
+            <span class="swatch-meta"><b>Primary</b><span>#5EEFD3</span></span>
+            <span class="swatch-copy">복사</span>
+          </button>
+          <button class="swatch" data-hex="#EF5E7A">
+            <i style="background:#EF5E7A"></i>
+            <span class="swatch-meta"><b>Secondary</b><span>#EF5E7A</span></span>
+            <span class="swatch-copy">복사</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="swatch-group reveal" data-delay="1">
+        <b>Text Color</b>
+        <div class="swatch-row">
+          <button class="swatch" data-hex="#343A40">
+            <i style="background:#343A40"></i>
+            <span class="swatch-meta"><b>Primary</b><span>#343A40</span></span>
+            <span class="swatch-copy">복사</span>
+          </button>
+          <button class="swatch" data-hex="#919EA5">
+            <i style="background:#919EA5"></i>
+            <span class="swatch-meta"><b>Secondary</b><span>#919EA5</span></span>
+            <span class="swatch-copy">복사</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="swatch-group reveal" data-delay="2">
+        <b>Background Color</b>
+        <div class="swatch-row">
+          <button class="swatch" data-hex="#F2F4F6">
+            <i style="background:#F2F4F6"></i>
+            <span class="swatch-meta"><b>Primary</b><span>#F2F4F6</span></span>
+            <span class="swatch-copy">복사</span>
+          </button>
+          <button class="swatch" data-hex="#FAFAF8">
+            <i style="background:#FAFAF8"></i>
+            <span class="swatch-meta"><b>Secondary</b><span>#FAFAF8</span></span>
+            <span class="swatch-copy">복사</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 타이포그래피 -->
+    <div class="section-head reveal" style="margin:clamp(3rem,6vw,4.5rem) 0 1.5rem">
+      <p class="eyebrow" style="color:#14A98C">Typography</p>
+      <h2 class="h2">Pretendard · 프리텐다드</h2>
+    </div>
+
+    <div class="type-table reveal">
+      <div class="type-row"><b>H1</b><p class="type-sample" style="font-size:2rem;font-weight:800">게임처럼 즐기는 새로운 운동 방식, 스팟미</p><span>Headline · 800</span></div>
+      <div class="type-row"><b>H2</b><p class="type-sample" style="font-size:1.6rem;font-weight:800">게임처럼 즐기는 새로운 운동 방식, 스팟미</p><span>Headline · 800</span></div>
+      <div class="type-row"><b>T1</b><p class="type-sample" style="font-size:1.25rem;font-weight:700">게임처럼 즐기는 새로운 운동 방식, 스팟미</p><span>Title · 700</span></div>
+      <div class="type-row"><b>T2</b><p class="type-sample" style="font-size:1.05rem;font-weight:700">게임처럼 즐기는 새로운 운동 방식, 스팟미</p><span>Title · 700</span></div>
+      <div class="type-row"><b>B1</b><p class="type-sample" style="font-size:1rem;font-weight:500">게임처럼 즐기는 새로운 운동 방식, 스팟미</p><span>Body · 500</span></div>
+      <div class="type-row"><b>B2</b><p class="type-sample" style="font-size:.9rem;font-weight:400">게임처럼 즐기는 새로운 운동 방식, 스팟미</p><span>Body · 400</span></div>
+      <div class="type-row"><b>C1</b><p class="type-sample" style="font-size:.78rem;font-weight:400">게임처럼 즐기는 새로운 운동 방식, 스팟미</p><span>Caption · 400</span></div>
+    </div>
+
+    <!-- 캐릭터 시트 -->
+    <div class="section-head reveal" style="margin:clamp(3rem,6vw,4.5rem) 0 1.5rem">
+      <p class="eyebrow" style="color:#14A98C">Character Design</p>
+      <h2 class="h2">레미의 표정과 동작</h2>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-key-visual.png" alt="레미 키 비주얼" loading="lazy"><p class="caption">키 비주얼</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-lobby.png" alt="로비의 레미" loading="lazy"><p class="caption">로비</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-fighting.png" alt="전투 중인 레미" loading="lazy"><p class="caption">전투</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-workout-ready.png" alt="운동 준비 중인 레미" loading="lazy"><p class="caption">운동 준비</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-workout-rest.png" alt="휴식 중인 레미" loading="lazy"><p class="caption">세트 간 휴식</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-report.png" alt="리포트를 보는 레미" loading="lazy"><p class="caption">리포트</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-voice-active.png" alt="음성 인식 중인 레미" loading="lazy"><p class="caption">음성 인식</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-workout-standing.png" alt="기본 자세의 레미" loading="lazy"><p class="caption">기본 자세</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-stage.png" alt="스테이지 위의 레미" loading="lazy"><p class="caption">스테이지</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-onboarding-01.png" alt="알통을 자랑하는 레미" loading="lazy"><p class="caption">온보딩 ①</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-onboarding-02.png" alt="덤벨을 든 레미" loading="lazy"><p class="caption">온보딩 ②</p></div>
+      <div class="sheet-cell reveal"><img src="assets/remi/remi-app-intro-grayscale.png" alt="몬스터를 격파하는 레미" loading="lazy"><p class="caption">앱 소개</p></div>
+    </div>
+
+    <!-- 몬스터 -->
+    <div class="section-head reveal" style="margin:clamp(3rem,6vw,4.5rem) 0 1.5rem">
+      <p class="eyebrow" style="color:#14A98C">Monsters</p>
+      <h2 class="h2">운동을 방해하는 5가지 요인</h2>
+    </div>
+
+    <div class="sheet is-monsters">
+      <div class="sheet-cell reveal"><img src="assets/monsters/motivation-idle.png" alt="동기 상실 몬스터" loading="lazy"><p class="caption">동기 상실</p></div>
+      <div class="sheet-cell reveal"><img src="assets/monsters/record-idle.png" alt="기록 망각 몬스터" loading="lazy"><p class="caption">기록 망각</p></div>
+      <div class="sheet-cell reveal"><img src="assets/monsters/routine-idle.png" alt="루틴 붕괴 몬스터" loading="lazy"><p class="caption">루틴 붕괴</p></div>
+      <div class="sheet-cell reveal"><img src="assets/monsters/fatigue-idle.png" alt="누적 피로 몬스터" loading="lazy"><p class="caption">누적 피로</p></div>
+      <div class="sheet-cell reveal"><img src="assets/monsters/goal-loss-idle.png" alt="목표 상실 몬스터" loading="lazy"><p class="caption">목표 상실</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 10. 화면 아카이브 ══════════════════ -->
+<section class="section is-light" id="archive" style="background:var(--bg-secondary)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" style="color:#14A98C">Screens</p>
+      <h2 class="h2">화면 아카이브</h2>
+      <p class="body">화면을 누르면 크게 볼 수 있습니다.</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="화면 분류">
+      <button class="filter is-active" data-filter="all">전체</button>
+      <button class="filter" data-filter="onboarding">초기 설정</button>
+      <button class="filter" data-filter="workout">운동</button>
+      <button class="filter" data-filter="ai">레미 AI</button>
+      <button class="filter" data-filter="data">리포트 · 랭킹</button>
+    </div>
+
+    <div class="archive">
+      <button class="shot reveal" data-group="onboarding" data-full="assets/screens/splash.png" data-cap="스플래시">
+        <span class="shot-frame"><img src="assets/screens/splash.png" alt="스플래시 화면" loading="lazy"></span>
+        <span class="caption">스플래시</span>
+      </button>
+      <button class="shot reveal" data-group="onboarding" data-full="assets/screens/intro.png" data-cap="앱 소개">
+        <span class="shot-frame"><img src="assets/screens/intro.png" alt="앱 소개 화면" loading="lazy"></span>
+        <span class="caption">앱 소개</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/home.png" data-cap="홈 · 운동">
+        <span class="shot-frame"><img src="assets/screens/home.png" alt="홈 화면" loading="lazy"></span>
+        <span class="caption">홈 · 운동</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/tycoon.png" data-cap="파괴된 헬스장">
+        <span class="shot-frame"><img src="assets/screens/tycoon.png" alt="파괴된 헬스장 화면" loading="lazy"></span>
+        <span class="caption">파괴된 헬스장</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/routine.png" data-cap="운동 루틴">
+        <span class="shot-frame"><img src="assets/screens/routine.png" alt="운동 루틴 화면" loading="lazy"></span>
+        <span class="caption">운동 루틴</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/routine-ai.png" data-cap="AI 추천 운동">
+        <span class="shot-frame"><img src="assets/screens/routine-ai.png" alt="AI 추천 운동 화면" loading="lazy"></span>
+        <span class="caption">AI 추천 운동</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/battle-01.png" data-cap="운동 진행">
+        <span class="shot-frame"><img src="assets/screens/battle-01.png" alt="운동 진행 화면" loading="lazy"></span>
+        <span class="caption">운동 진행</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/battle-02.png" data-cap="몬스터 전투">
+        <span class="shot-frame"><img src="assets/screens/battle-02.png" alt="몬스터 전투 화면" loading="lazy"></span>
+        <span class="caption">몬스터 전투</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/voice.png" data-cap="음성 활성화">
+        <span class="shot-frame"><img src="assets/screens/voice.png" alt="음성 활성화 화면" loading="lazy"></span>
+        <span class="caption">음성 활성화</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/help-mode.png" data-cap="도움 모드">
+        <span class="shot-frame"><img src="assets/screens/help-mode.png" alt="도움 모드 화면" loading="lazy"></span>
+        <span class="caption">도움 모드</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/reward.png" data-cap="운동 결과">
+        <span class="shot-frame"><img src="assets/screens/reward.png" alt="운동 결과 화면" loading="lazy"></span>
+        <span class="caption">운동 결과</span>
+      </button>
+      <button class="shot reveal" data-group="workout" data-full="assets/screens/quest.png" data-cap="퀘스트">
+        <span class="shot-frame"><img src="assets/screens/quest.png" alt="퀘스트 화면" loading="lazy"></span>
+        <span class="caption">퀘스트</span>
+      </button>
+      <button class="shot reveal" data-group="ai" data-full="assets/screens/remi-ai.png" data-cap="레미 AI 채팅">
+        <span class="shot-frame"><img src="assets/screens/remi-ai.png" alt="레미 AI 채팅 화면" loading="lazy"></span>
+        <span class="caption">레미 AI 채팅</span>
+      </button>
+      <button class="shot reveal" data-group="data" data-full="assets/screens/report.png" data-cap="운동 리포트">
+        <span class="shot-frame"><img src="assets/screens/report.png" alt="운동 리포트 화면" loading="lazy"></span>
+        <span class="caption">운동 리포트</span>
+      </button>
+      <button class="shot reveal" data-group="data" data-full="assets/screens/report-muscle.png" data-cap="상세 근육 부하">
+        <span class="shot-frame"><img src="assets/screens/report-muscle.png" alt="상세 근육 부하 화면" loading="lazy"></span>
+        <span class="caption">상세 근육 부하</span>
+      </button>
+      <button class="shot reveal" data-group="data" data-full="assets/screens/ranking.png" data-cap="랭킹">
+        <span class="shot-frame"><img src="assets/screens/ranking.png" alt="랭킹 화면" loading="lazy"></span>
+        <span class="caption">랭킹</span>
+      </button>
+      <button class="shot reveal" data-group="data" data-full="assets/screens/profile.png" data-cap="프로필">
+        <span class="shot-frame"><img src="assets/screens/profile.png" alt="프로필 화면" loading="lazy"></span>
+        <span class="caption">프로필</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <img class="footer-logo" src="assets/brand/logo-wordmark.png" alt="SPOT ME">
+        <p class="caption">
+          혼자 넘기 어려운 구간을 옆에서 받쳐 주는,<br>
+          현실과 가상을 넘나드는 경험을 실현합니다.
+        </p>
+      </div>
+      <a class="btn btn-primary" href="#battle">배틀 체험하기 →</a>
+    </div>
+    <div class="footer-bottom">
+      <span>SPOT ME! — 게임 요소와 피트니스가 결합된 AI 운동 파트너 애플리케이션 서비스</span>
+      <span>Character &amp; Brand Design © SPOT ME</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 라이트박스 -->
+<figure class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="화면 확대 보기">
+  <button class="lightbox-close" type="button" aria-label="닫기">✕</button>
+  <img id="lightboxImg" alt="">
+  <figcaption id="lightboxCap"></figcaption>
+</figure>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+<script src="js/battle.js"></script>
+</body>
+</html>
