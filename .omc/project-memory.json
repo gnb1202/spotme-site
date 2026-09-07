@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1788778555926,
+  "projectRoot": "D:\\Github\\spotme-site",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 0,
+      "lastAccessed": 1788778555884,
+      "keyFiles": []
+    },
+    "css": {
+      "path": "css",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1788778555885,
+      "keyFiles": [
+        "style.css",
+        "tokens.css"
+      ]
+    },
+    "js": {
+      "path": "js",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1788778555885,
+      "keyFiles": [
+        "battle.js",
+        "main.js"
+      ]
+    },
+    "tools": {
+      "path": "tools",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1788778555885,
+      "keyFiles": [
+        "deploy.sh",
+        "prepare-assets.sh"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}

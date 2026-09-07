@@ -49,19 +49,23 @@ for n in key-visual lobby fighting report stage voice-active \
 done
 
 echo "==> 몬스터 5종 x 4상태"
-copy_monster() { # $1=번호-이름  $2=출력이름
-  for st in "" "-damage" "-lowhp" "-fainted"; do
-    src="$SRC_FE/characters/monster-$1$st.png"
-    dst="$OUT/monsters/$2${st:--idle}.png"
-    [ -z "$st" ] && dst="$OUT/monsters/$2-idle.png"
-    cp "$src" "$dst"
-  done
+# $1=characters 접두사  $2=출력이름  $3=battle/monster 접두사
+#
+# 처치 상태만 battle/monster/*-down.png 에서 가져온다.
+# characters/*-fainted.png 는 5종 모두 *-damage.png 와 바이트 단위로 같다
+# (같은 프레임을 두 번 내보낸 export 실수). 그대로 쓰면 몬스터를 쓰러뜨려도
+# 피격 상태와 그림이 똑같아서 처치가 눈에 안 보인다.
+copy_monster() {
+  cp "$SRC_FE/characters/monster-$1.png"        "$OUT/monsters/$2-idle.png"
+  cp "$SRC_FE/characters/monster-$1-damage.png" "$OUT/monsters/$2-damage.png"
+  cp "$SRC_FE/characters/monster-$1-lowhp.png"  "$OUT/monsters/$2-lowhp.png"
+  cp "$SRC_FE/battle/monster/$3-down.png"       "$OUT/monsters/$2-fainted.png"
 }
-copy_monster "01-motivation" "motivation"
-copy_monster "02-record"     "record"
-copy_monster "03-routine"    "routine"
-copy_monster "04-fatigue"    "fatigue"
-copy_monster "05-goal-loss"  "goal-loss"
+copy_monster "01-motivation" "motivation" "motivation"
+copy_monster "02-record"     "record"     "record"
+copy_monster "03-routine"    "routine"    "routine"
+copy_monster "04-fatigue"    "fatigue"    "fatigue"
+copy_monster "05-goal-loss"  "goal-loss"  "goal_loss"
 
 echo "==> 앱 화면"
 copy_screen() { cp "$SRC_REF/$1" "$OUT/screens/$2"; }
