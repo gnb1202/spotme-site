@@ -68,20 +68,35 @@ web/
 - 레미 · 몬스터 · 로고 ← `frontend/assets/`
 - 레미 애니메이션은 GIF 원본(최대 14MB)을 알파 유지한 채 애니메이션 WebP 로 변환
 
-다시 만들려면 레포 루트에서:
+다시 만들려면 **이 레포(SpotMe) 루트에서**:
 
 ```bash
 bash web/tools/prepare-assets.sh
 ```
 
 ffmpeg 이 필요하다. 없으면 GIF 변환만 건너뛴다.
+원본 에셋이 이 레포에만 있으므로, 공개 레포 사본에서는 이 스크립트가 동작하지 않는다.
 
-## GitHub Pages 배포
+## 배포
 
-레포 Settings → Pages → Source 를 `Deploy from a branch` 로 두고,
-브랜치와 폴더를 `main` / `/web` 으로 지정하면 된다.
-`/web` 을 고를 수 없는 경우(설정상 `/` 와 `/docs` 만 허용될 때)는
-`web/` 를 `docs/` 로 옮기거나, `web/` 만 배포하는 Actions 워크플로를 쓴다.
+공개 주소: <https://gnb1202.github.io/spotme-site/>
+
+사이트만 공개하려고 레포를 분리했다. **소스는 언제나 이 레포의 `web/`** 이고,
+공개 레포 [`gnb1202/spotme-site`](https://github.com/gnb1202/spotme-site) 는 배포용 사본이다.
+공개 레포를 직접 고치지 말 것 — 다음 배포 때 덮어써진다.
+
+```bash
+bash web/tools/deploy.sh "무엇을 바꿨는지"
+```
+
+`web/` 을 복사해 커밋·푸시하고, 1~2분 뒤 Pages 에 반영된다.
+배포 사본이 다른 경로에 있으면 `SPOTME_SITE_DIR` 로 지정한다.
+
+### 왜 레포를 나눴나
+
+SpotMe 레포는 비공개이고 백엔드·Supabase 설정·전체 커밋 히스토리가 들어 있다.
+비공개 레포에서 Pages 를 쓰려면 GitHub Pro 가 필요하고, 레포를 공개로 돌리면
+그게 전부 같이 공개된다. 사이트에 필요한 건 `web/` 뿐이라 그것만 따로 공개한다.
 
 ## 접근성
 
