@@ -1,7 +1,0 @@
-{
-  "tool_name": "ReadMcpResourceTool",
-  "tool_input_preview": "{\"server\":\"6f3ccbea-f113-4e7f-9eb3-2fa482a9e441\",\"uri\":\"file://figma/docs/rate-limits-access.md\"}",
-  "error": "Server \"6f3ccbea-f113-4e7f-9eb3-2fa482a9e441\" does not support resources",
-  "timestamp": "2026-09-07T11:18:16.874Z",
-  "retry_count": 1
-}
