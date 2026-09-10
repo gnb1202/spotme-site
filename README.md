@@ -1,105 +1,68 @@
-# SPOT ME 소개 웹사이트
+# SPOT ME — Rail
 
-공모전 양식(포스터)의 내용을 인터랙티브 웹사이트로 옮긴 것. 앞부분은 서비스 랜딩,
-뒷부분은 디자인 케이스 스터디다.
+승인된 rail 버전의 정적 웹사이트입니다. 별도의 설치·빌드·환경 변수·백엔드는 필요하지 않습니다.
 
-빌드 스텝도 프레임워크도 없다. `index.html` 하나로 동작한다.
+## 구성
 
-## 로컬에서 보기
+- `public/`: 실제 배포되는 HTML, CSS, JavaScript, 이미지 51개와 로컬 폰트
+- `vercel.json`: Vercel 정적 배포 설정 (`public` 디렉터리만 제공)
+- `.vercelignore`: 배포 파일 허용 목록
 
-```bash
-python -m http.server 8931 -d web
+기본 내비게이션은 rail이며, 화면 폭 1440px 이상에서 표시됩니다. 좁은 화면에서도 같은 콘텐츠를 연속 스크롤로 읽을 수 있습니다.
+
+## 로컬 확인
+
+`public/`을 루트로 정적 HTTP 서버를 실행합니다. 프로젝트 루트 전체를 웹 루트로 사용하지 않습니다.
+
+## Vercel 배포
+
+이 저장소를 연결한 뒤 프로젝트 루트는 저장소 루트, Framework Preset은 **Other**, Output Directory는 **public**으로 설정합니다. 설치와 빌드는 실행하지 않습니다. 관련 설정은 `vercel.json`에 포함되어 있습니다.
+
+계정·프로젝트 연결 및 실제 배포는 별도로 진행합니다. 비밀 키나 환경 변수를 추가할 필요가 없습니다.
+
+### 현재 준비 상태
+
+로컬 폴더는 `gnb1202-navercoms-projects/spotme-site` 프로젝트에 연결되어 있습니다. 배포는 CLI로 수행하며, GitHub 자동 배포 연동은 해제되어 있습니다. 미리보기와 프로덕션 배포는 별도로 진행합니다.
+
+Vercel CLI 로컬 빌드 결과의 정적 파일 62개가 승인된 rail 원본과 SHA-256 기준으로 모두 일치함을 확인했습니다. 인증 파일과 빌드 결과는 `.gitignore` 및 `.vercelignore`로 공개 대상에서 제외합니다.
+
+이 PC에서는 재연결 없이 저장소 루트에서 로컬 빌드를 검증할 수 있습니다.
+
+```powershell
+npx --yes vercel@59.15.1 build --yes --scope gnb1202-navercoms-projects
 ```
 
-그다음 <http://localhost:8931> 을 연다.
-(`file://` 로 직접 열어도 대부분 동작하지만, 브라우저에 따라 폰트 CDN 이 막힐 수 있다.)
+빌드는 로컬 `.vercel/output`을 생성하며 사이트를 배포하지 않습니다. [공식 빌드 안내](https://vercel.com/docs/cli/build)
 
-## 구조
+### 로컬 파일로 배포 준비
 
-```
-web/
-  index.html            전체 마크업
-  css/tokens.css        디자인 토큰 — 포스터의 Design System 값 그대로
-  css/style.css         레이아웃 + 섹션 스타일
-  js/main.js            리빌 · 커서 글로우 · 내비 · Core Loop · 스테이지 맵
-                        · 티어 스크러버 · 스와치 복사 · 아카이브 · 라이트박스
-  js/battle.js          배틀 데모 (핵심 인터랙션)
-  assets/               사이트용으로 복사·변환한 에셋
-  tools/prepare-assets.sh   에셋 준비 스크립트 (재현용)
+다른 PC에서 처음 설정할 때는 저장소 루트에서 다음 명령으로 로그인하고, 사용할 계정·팀과 프로젝트를 선택합니다. 아래 두 명령은 사이트 배포를 실행하지 않습니다. 연결 도구가 GitHub 연동을 추가할 수 있으므로 자동 배포 사용 여부를 확인합니다.
+
+```powershell
+npx --yes vercel@59.15.1 login
+npx --yes vercel@59.15.1 link
 ```
 
-### 섹션
+연결이 끝난 뒤 실제 미리보기 배포를 진행할 때만 다음 명령을 실행합니다.
 
-| # | 섹션 | 내용 |
-|---|---|---|
-| 1 | Hero | 로고 · 태그라인 · 레미 키비주얼 |
-| 2 | Background | 정체기 그래프(스크롤 연동 SVG) · 헬스인 8명 인터뷰 |
-| 3 | Concept | `Spot me` 어원 · 운동 × 게이미피케이션 · 레퍼런스 3사 |
-| 4 | How it works | sticky 폰 목업으로 4단계 핵심 루프 |
-| 5 | Try it | **배틀 데모** — 눌러서 몬스터 공격 |
-| 6 | Features | 벤토 그리드 6종 |
-| 7 | Ranking | 티어 스크러버 |
-| 8 | Character | 레미 애니메이션 갤러리 |
-| 9 | Brand Identity | 앱 아이콘 · 로고 3종 |
-| 10 | Design System | 컬러 스와치(클릭 복사) · 타입 스케일 · 캐릭터/몬스터 시트 |
-| 11 | Screens | 화면 아카이브 + 라이트박스 |
-
-다크(랜딩) → 라이트(케이스 스터디)로 중간에 전환된다. 토큰의 의미 레이어만
-`.is-light` 로 뒤집는 구조라 색상 값은 한 곳(`tokens.css`)에만 있다.
-
-## 디자인 토큰
-
-포스터의 Design System 값을 그대로 옮겼다. `Ink` 계열만 다크 섹션용으로 파생한 것.
-
-| 역할 | 값 |
-|---|---|
-| Main Primary | `#5EEFD3` |
-| Main Secondary | `#EF5E7A` |
-| Text Primary / Secondary | `#343A40` / `#919EA5` |
-| Background Primary / Secondary | `#F2F4F6` / `#FAFAF8` |
-
-폰트는 Pretendard (jsDelivr 동적 서브셋 CDN + 시스템 폰트 폴백).
-
-## 에셋
-
-`assets/` 는 전부 레포의 기존 에셋에서 복사·변환한 것이다. 원본은 건드리지 않는다.
-
-- 앱 화면 ← `_design_ref/screens/`
-- 레미 · 몬스터 · 로고 ← `frontend/assets/`
-- 레미 애니메이션은 GIF 원본(최대 14MB)을 알파 유지한 채 애니메이션 WebP 로 변환
-
-다시 만들려면 **이 레포(SpotMe) 루트에서**:
-
-```bash
-bash web/tools/prepare-assets.sh
+```powershell
+npx --yes vercel@59.15.1 deploy
 ```
 
-ffmpeg 이 필요하다. 없으면 GIF 변환만 건너뛴다.
-원본 에셋이 이 레포에만 있으므로, 공개 레포 사본에서는 이 스크립트가 동작하지 않는다.
+프로덕션 배포는 미리보기 확인 후 별도로 진행합니다. CLI 인증 정보와 `.vercel/` 연결 정보는 저장소에 커밋하지 않습니다.
 
-## 배포
+GitHub 연동으로 배포하려면 먼저 승인된 변경을 커밋·푸시해야 합니다. 로컬에서만 수정된 상태로 GitHub 저장소를 가져오면 원격의 이전 사이트가 배포됩니다.
 
-공개 주소: <https://gnb1202.github.io/spotme-site/>
+rail 전환 작업은 `codex/rail-vercel` 브랜치에서 관리합니다. 기존 `main`은 GitHub Pages의 루트 게시에 사용되고 있으므로, Pages의 게시 방식이나 종료 방침을 정하기 전에는 이 브랜치를 그대로 병합하지 않습니다.
 
-사이트만 공개하려고 레포를 분리했다. **소스는 언제나 이 레포의 `web/`** 이고,
-공개 레포 [`gnb1202/spotme-site`](https://github.com/gnb1202/spotme-site) 는 배포용 사본이다.
-공개 레포를 직접 고치지 말 것 — 다음 배포 때 덮어써진다.
+명령 설명: [로그인](https://vercel.com/docs/cli/login), [프로젝트 연결](https://vercel.com/docs/cli/link), [CLI 배포](https://vercel.com/docs/cli/deploying-from-cli).
 
-```bash
-bash web/tools/deploy.sh "무엇을 바꿨는지"
-```
+## 관리 주의
 
-`web/` 을 복사해 커밋·푸시하고, 1~2분 뒤 Pages 에 반영된다.
-배포 사본이 다른 경로에 있으면 `SPOTME_SITE_DIR` 로 지정한다.
+이전 배틀 데모와 개발용 파일은 저장소 밖에 백업한 뒤 제거했습니다. 기존 Git 이력은 보존했습니다.
 
-### 왜 레포를 나눴나
+이 저장소는 더 이상 이전 `web/` 배포 사본이 아닙니다. 과거의 `web/tools/deploy.sh`를 실행하면 rail 버전이 덮어써질 수 있으므로 사용하지 마세요.
 
-SpotMe 레포는 비공개이고 백엔드·Supabase 설정·전체 커밋 히스토리가 들어 있다.
-비공개 레포에서 Pages 를 쓰려면 GitHub Pro 가 필요하고, 레포를 공개로 돌리면
-그게 전부 같이 공개된다. 사이트에 필요한 건 `web/` 뿐이라 그것만 따로 공개한다.
+이 구성은 Vercel용입니다. 기존 GitHub Pages 루트 배포 방식과는 디렉터리 구조가 다르며, Pages를 다시 사용하려면 별도의 게시 설정이 필요합니다.
 
-## 접근성
-
-- `prefers-reduced-motion: reduce` 를 지키면 모든 애니메이션이 꺼지고 콘텐츠는 즉시 보인다
-- 배틀 데모 · 스테이지 맵 노드는 키보드(Enter / Space)로 조작된다
-- 라이트박스는 Esc 로 닫히고 포커스를 원래 자리로 되돌린다
+폰트 라이선스는 `public/assets/fonts/LICENSE.txt`에 포함되어 있습니다.
