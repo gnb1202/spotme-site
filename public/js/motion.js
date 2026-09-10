@@ -22,6 +22,21 @@ function stopMotion(){
 listen(document,'visibilitychange',()=>{if(document.hidden)stopMotion();});
 listen(window,'blur',stopMotion);listen(window,'pagehide',stopMotion);
 listen(reduced,'change',()=>{if(reduced.matches)stopMotion();});
+// Suppress native image/link ghost dragging, not our pointer-based interactions.
+listen(document,'dragstart',event=>event.preventDefault());
+
+function initOpeningLayout(){
+  const header=document.querySelector('.site-header');
+  let height=0;
+  function measure(){
+    const next=header.getBoundingClientRect().height;
+    if(next===height)return;
+    height=next;document.documentElement.style.setProperty('--site-header-height',`${height}px`);
+  }
+  measure();
+  if('ResizeObserver' in window)new ResizeObserver(measure).observe(header);
+  else{listen(window,'resize',measure);document.fonts?.ready.then(measure);}
+}
 
 // Capture after horizontal intent; leave vertical touch scrolling browser-owned.
 function draggable(element,{start=()=>{},move,end,cancel,freeMouse=false}){
@@ -255,5 +270,5 @@ function initReveals(){
 }
 
 // Component failures must not prevent unrelated enhancements or readable content.
-const initializers=[initNavigation,...[...document.querySelectorAll('[data-carousel]')].map(carousel=>()=>initCarousel(carousel)),...[...document.querySelectorAll('[data-elastic]')].map(element=>()=>initElastic(element)),initType,initHero,initReveals];
+const initializers=[initOpeningLayout,initNavigation,...[...document.querySelectorAll('[data-carousel]')].map(carousel=>()=>initCarousel(carousel)),...[...document.querySelectorAll('[data-elastic]')].map(element=>()=>initElastic(element)),initType,initHero,initReveals];
 for(const initialize of initializers){try{initialize();}catch(error){console.error('SPOT ME enhancement failed:',error);}}
