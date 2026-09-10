@@ -187,7 +187,9 @@ function initHero(){
 }
 
 function initNavigation(){
-  const mode=new URLSearchParams(location.search).get('nav')==='chapters'?'chapters':'rail';
+  const query=new URLSearchParams(location.search);
+  const mode=query.get('nav')==='chapters'?'chapters':'rail';
+  document.documentElement.dataset.railStyle=query.get('rail')==='circles'?'circles':'blocks';
   document.documentElement.dataset.nav=mode;document.documentElement.dataset.layout='motion-v1';
   const rail=document.querySelector('.chapter-rail');rail.hidden=mode!=='rail';
   const chapters=[...document.querySelectorAll('[data-chapter]')],links=[...rail.querySelectorAll('a')];

@@ -12,6 +12,37 @@
   .chapter-rail a[aria-current=location]{background:var(--pink);border-color:var(--pink);color:var(--ink);transform:scale(1.08)}
   .rail-title{position:absolute;right:calc(100% + .75rem);padding:.5rem .75rem;border-radius:.375rem;background:var(--text-primary);color:var(--bg-secondary);font-size:.75rem;white-space:nowrap;pointer-events:none;opacity:0;transform:translateX(4px);transition:opacity .18s,transform .18s}
   .chapter-rail a:hover .rail-title,.chapter-rail a:focus-visible .rail-title{opacity:1;transform:translateX(0)}
+
+  /* Default block rail; ?rail=circles retains the original comparison. */
+  html[data-nav=rail][data-rail-style=blocks]{--rail-block-width:10.5rem;--rail-clearance:14rem}
+  html[data-nav=rail][data-rail-style=blocks] .container{
+    --container-start:max(var(--gutter),calc((100% - var(--content-width))/2));
+    width:min(var(--content-width),calc(100% - var(--container-start) - var(--rail-clearance)));
+    margin-inline-start:var(--container-start);margin-inline-end:auto;
+  }
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail{
+    width:var(--rail-block-width);gap:0;border:1px solid rgba(250,250,248,.24);
+    border-radius:0;background:var(--text-primary);
+  }
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a{
+    width:100%;height:auto;min-height:3.25rem;padding:.875rem .75rem;
+    grid-template-columns:1.25rem minmax(0,1fr);column-gap:.625rem;
+    justify-items:start;border:0;border-radius:0;background:transparent;
+    transform:none;transition:background-color .2s,color .2s;
+  }
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a+a{border-top:1px solid rgba(250,250,248,.16)}
+  html[data-nav=rail][data-rail-style=blocks] .rail-number{grid-column:1;grid-row:1;font-size:.6875rem;line-height:1.5;color:var(--text-secondary)}
+  html[data-nav=rail][data-rail-style=blocks] .rail-title{
+    position:static;grid-column:2;grid-row:1;padding:0;border-radius:0;
+    background:none;color:inherit;font-size:.8125rem;font-weight:500;line-height:1.5;
+    letter-spacing:-.025em;opacity:1;transform:none;transition:none;
+  }
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a:hover{background:rgba(250,250,248,.09)}
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a[aria-current=location]{background:var(--pink);color:var(--ink)}
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a[aria-current=location] .rail-number{color:var(--ink)}
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a[aria-current=location] .rail-title{font-weight:700}
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a:focus-visible{outline:2px solid var(--mint);outline-offset:-4px;z-index:1}
+  html[data-nav=rail][data-rail-style=blocks] .chapter-rail a:active{background:var(--mint);color:var(--ink)}
 }
 .hero-background{inset:-6px;width:calc(100% + 12px);height:calc(100% + 12px);max-width:none;transform:translate(var(--background-x,0px),var(--background-y,0px))}
 .hero-character{transform:translate(var(--hero-x,0px),var(--hero-y,0px))}
