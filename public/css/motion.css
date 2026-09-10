@@ -1,5 +1,5 @@
 /* Motion v1: preserve balanced-v1's containers, palette and source artwork. */
-:root{--ease-settle:cubic-bezier(.16,1,.3,1);--ease-elastic:cubic-bezier(.2,1.18,.35,1)}
+:root{--ease-settle:cubic-bezier(.16,1,.3,1)}
 .brand-section,.feature-section,.feature-section+.feature-section,.remi-section{padding-block:var(--section-space)}
 .design-section{padding-bottom:var(--section-space)}
 .typography-section{background:var(--text-primary);color:var(--bg-secondary);padding-top:0}
@@ -67,7 +67,6 @@
 .carousel-stage[data-ready] .slide[aria-hidden=true]{pointer-events:none}
 .carousel-stage[data-ready] .slide .feature-art{align-self:center}
 .carousel-track.is-settling{transition:transform .32s var(--ease-settle)}
-#quest-features .carousel-track.is-settling{transition-timing-function:var(--ease-elastic)}
 .carousel-stage.is-dragging .carousel-track{transition:none}
 /* Keep the original phone scale, but measure the scene to its actual artwork
    bounds so both arrow-to-content margins have the same responsive gutter. */
