@@ -2,6 +2,8 @@
 
 승인된 rail 버전의 정적 웹사이트입니다. 별도의 설치·빌드·환경 변수·백엔드는 필요하지 않습니다.
 
+운영 주소: [spotme-site.vercel.app](https://spotme-site.vercel.app)
+
 ## 구성
 
 - `public/`: 실제 배포되는 HTML, CSS, JavaScript, 이미지 51개와 로컬 폰트
@@ -18,11 +20,11 @@
 
 이 저장소를 연결한 뒤 프로젝트 루트는 저장소 루트, Framework Preset은 **Other**, Output Directory는 **public**으로 설정합니다. 설치와 빌드는 실행하지 않습니다. 관련 설정은 `vercel.json`에 포함되어 있습니다.
 
-계정·프로젝트 연결 및 실제 배포는 별도로 진행합니다. 비밀 키나 환경 변수를 추가할 필요가 없습니다.
+운영 소스는 `main` 브랜치이며, GitHub Pages는 중단했습니다. 사이트 실행을 위한 비밀 키나 환경 변수를 추가할 필요가 없습니다.
 
-### 현재 준비 상태
+### 운영 및 검증
 
-로컬 폴더는 `gnb1202-navercoms-projects/spotme-site` 프로젝트에 연결되어 있습니다. 배포는 CLI로 수행하며, GitHub 자동 배포 연동은 해제되어 있습니다. 미리보기와 프로덕션 배포는 별도로 진행합니다.
+로컬 폴더는 `gnb1202-navercoms-projects/spotme-site` 프로젝트에 연결되어 있습니다. 배포는 CLI로 수행하며, GitHub 자동 배포 연동은 해제되어 있습니다. GitHub에 푸시하는 것만으로 사이트가 갱신되지는 않습니다.
 
 Vercel CLI 로컬 빌드 결과의 정적 파일 62개가 승인된 rail 원본과 SHA-256 기준으로 모두 일치함을 확인했습니다. 인증 파일과 빌드 결과는 `.gitignore` 및 `.vercelignore`로 공개 대상에서 제외합니다.
 
@@ -46,14 +48,19 @@ npx --yes vercel@59.15.1 link
 연결이 끝난 뒤 실제 미리보기 배포를 진행할 때만 다음 명령을 실행합니다.
 
 ```powershell
-npx --yes vercel@59.15.1 deploy
+npx --yes vercel@59.15.1 deploy --target preview --scope gnb1202-navercoms-projects
 ```
 
-프로덕션 배포는 미리보기 확인 후 별도로 진행합니다. CLI 인증 정보와 `.vercel/` 연결 정보는 저장소에 커밋하지 않습니다.
+프로덕션 배포는 `main`에서 검증한 뒤 아래 명령으로 진행합니다. 빌드 결과가 `.vercel/output/static`에 실제로 포함되어 있는지 확인한 뒤 배포합니다. CLI 인증 정보와 `.vercel/` 연결 정보는 저장소에 커밋하지 않습니다.
+
+```powershell
+npx --yes vercel@59.15.1 build --prod --yes --scope gnb1202-navercoms-projects
+npx --yes vercel@59.15.1 deploy --prebuilt --prod --scope gnb1202-navercoms-projects
+```
 
 GitHub 연동으로 배포하려면 먼저 승인된 변경을 커밋·푸시해야 합니다. 로컬에서만 수정된 상태로 GitHub 저장소를 가져오면 원격의 이전 사이트가 배포됩니다.
 
-rail 전환 작업은 `codex/rail-vercel` 브랜치에서 관리합니다. 기존 `main`은 GitHub Pages의 루트 게시에 사용되고 있으므로, Pages의 게시 방식이나 종료 방침을 정하기 전에는 이 브랜치를 그대로 병합하지 않습니다.
+rail 전환 변경사항은 `codex/rail-vercel`에서 `main`으로 병합했습니다. 기존 GitHub Pages 주소 대신 Vercel 운영 주소를 사용합니다.
 
 명령 설명: [로그인](https://vercel.com/docs/cli/login), [프로젝트 연결](https://vercel.com/docs/cli/link), [CLI 배포](https://vercel.com/docs/cli/deploying-from-cli).
 
@@ -63,6 +70,6 @@ rail 전환 작업은 `codex/rail-vercel` 브랜치에서 관리합니다. 기�
 
 이 저장소는 더 이상 이전 `web/` 배포 사본이 아닙니다. 과거의 `web/tools/deploy.sh`를 실행하면 rail 버전이 덮어써질 수 있으므로 사용하지 마세요.
 
-이 구성은 Vercel용입니다. 기존 GitHub Pages 루트 배포 방식과는 디렉터리 구조가 다르며, Pages를 다시 사용하려면 별도의 게시 설정이 필요합니다.
+GitHub Pages 게시 설정은 비활성화했습니다. 저장소와 Git 이력은 유지되며, 현재 구성은 Vercel 전용입니다.
 
 폰트 라이선스는 `public/assets/fonts/LICENSE.txt`에 포함되어 있습니다.
