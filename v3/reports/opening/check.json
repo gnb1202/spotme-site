@@ -1,0 +1,130 @@
+[
+  {
+    "mode": "type",
+    "width": 1440,
+    "action": "finish",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "type",
+    "width": 390,
+    "action": "finish",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "remi",
+    "width": 1440,
+    "action": "removed",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "outline",
+    "width": 1440,
+    "action": "removed",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "type",
+    "width": 390,
+    "action": "skip",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "type",
+    "width": 1440,
+    "action": "escape",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "type",
+    "width": 1440,
+    "action": "resize",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    "errors": [],
+    "passed": true
+  },
+  {
+    "mode": "type",
+    "width": 1440,
+    "action": "reduce",
+    "state": {
+      "overlay": false,
+      "inert": false,
+      "overflow": "visible",
+      "animations": 0,
+      "hidden": "visible",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    "errors": [],
+    "passed": true
+  }
+]

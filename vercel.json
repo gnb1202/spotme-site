@@ -1,9 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "",
-  "buildCommand": "",
-  "outputDirectory": "public",
+  "installCommand": "npm ci --prefix v3/react-site",
+  "buildCommand": "npm run build --prefix v3/react-site",
+  "outputDirectory": "v3/react-site/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "headers": [
     {
       "source": "/(.*)",

@@ -1,0 +1,5 @@
+
+Mimikyu Structural Verify — 16 text nodes, 16 matched, 0 mismatches, 0 unmatched
+
+
+  nodes: 16/16 passed · checks: 112/112 passed · overlaps: 0

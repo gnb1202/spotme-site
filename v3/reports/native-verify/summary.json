@@ -1,0 +1,62 @@
+[
+  {
+    "page": "home",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 21 text nodes, 21 matched, 2 mismatches, 0 unmatched"
+  },
+  {
+    "page": "home-02",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 21 text nodes, 21 matched, 2 mismatches, 0 unmatched"
+  },
+  {
+    "page": "ai",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 17 text nodes, 17 matched, 11 mismatches, 0 unmatched"
+  },
+  {
+    "page": "game",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 13 text nodes, 13 matched, 10 mismatches, 0 unmatched"
+  },
+  {
+    "page": "game-02",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 14 text nodes, 14 matched, 15 mismatches, 0 unmatched"
+  },
+  {
+    "page": "game-03",
+    "exitCode": 0,
+    "summary": "Mimikyu Structural Verify — 13 text nodes, 13 matched, 0 mismatches, 0 unmatched"
+  },
+  {
+    "page": "characters",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 16 text nodes, 16 matched, 0 mismatches, 0 unmatched"
+  },
+  {
+    "page": "characters-b",
+    "exitCode": 0,
+    "summary": "Mimikyu Structural Verify — 16 text nodes, 16 matched, 0 mismatches, 0 unmatched"
+  },
+  {
+    "page": "characters-c",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 16 text nodes, 16 matched, 0 mismatches, 0 unmatched"
+  },
+  {
+    "page": "characters-d",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 16 text nodes, 16 matched, 0 mismatches, 0 unmatched"
+  },
+  {
+    "page": "characters-e",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 16 text nodes, 16 matched, 0 mismatches, 0 unmatched"
+  },
+  {
+    "page": "video",
+    "exitCode": 1,
+    "summary": "Mimikyu Structural Verify — 7 text nodes, 7 matched, 11 mismatches, 0 unmatched"
+  }
+]

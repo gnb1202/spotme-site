@@ -1,0 +1,65 @@
+[
+  {
+    "page": "home",
+    "width": 371,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 97.5,\r\n  \"design_size\": [\r\n    371,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    371,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\home\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\home\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 96.6,\r\n    \"top-center\": 96.2,\r\n    \"top-right\": 96.0,\r\n    \"mid-left\": 99.7,\r\n    \"mid-center\": 97.5,\r\n    \"mid-right\": 98.1,\r\n    \"bot-left\": 98.5,\r\n    \"bot-center\": 99.4,\r\n    \"bot-right\": 95.9\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\home\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "home-02",
+    "width": 371,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 98.0,\r\n  \"design_size\": [\r\n    371,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    371,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\home-02\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\home-02\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 99.2,\r\n    \"top-center\": 96.9,\r\n    \"top-right\": 96.9,\r\n    \"mid-left\": 99.7,\r\n    \"mid-center\": 97.5,\r\n    \"mid-right\": 98.1,\r\n    \"bot-left\": 98.5,\r\n    \"bot-center\": 99.4,\r\n    \"bot-right\": 95.9\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\home-02\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "ai",
+    "width": 394,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 96.2,\r\n  \"design_size\": [\r\n    394,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    394,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\ai\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\ai\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 96.6,\r\n    \"top-center\": 93.7,\r\n    \"top-right\": 95.5,\r\n    \"mid-left\": 97.3,\r\n    \"mid-center\": 96.0,\r\n    \"mid-right\": 97.5,\r\n    \"bot-left\": 97.3,\r\n    \"bot-center\": 95.4,\r\n    \"bot-right\": 96.2\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\ai\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "game",
+    "width": 438,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 97.5,\r\n  \"design_size\": [\r\n    438,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    438,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\game\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\game\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 99.5,\r\n    \"top-center\": 95.7,\r\n    \"top-right\": 98.8,\r\n    \"mid-left\": 98.0,\r\n    \"mid-center\": 96.1,\r\n    \"mid-right\": 97.2,\r\n    \"bot-left\": 99.1,\r\n    \"bot-center\": 97.6,\r\n    \"bot-right\": 96.0\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\game\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "characters",
+    "width": 634,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 98.0,\r\n  \"design_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\characters\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\characters\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 97.9,\r\n    \"top-center\": 97.1,\r\n    \"top-right\": 97.7,\r\n    \"mid-left\": 98.5,\r\n    \"mid-center\": 97.7,\r\n    \"mid-right\": 97.6,\r\n    \"bot-left\": 98.7,\r\n    \"bot-center\": 99.0,\r\n    \"bot-right\": 97.4\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\characters\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "characters-b",
+    "width": 634,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 98.0,\r\n  \"design_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\characters-b\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\characters-b\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 97.9,\r\n    \"top-center\": 97.1,\r\n    \"top-right\": 97.7,\r\n    \"mid-left\": 98.4,\r\n    \"mid-center\": 97.6,\r\n    \"mid-right\": 97.7,\r\n    \"bot-left\": 98.7,\r\n    \"bot-center\": 99.0,\r\n    \"bot-right\": 97.4\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\characters-b\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "characters-d",
+    "width": 634,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 98.0,\r\n  \"design_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\characters-d\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\characters-d\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 97.9,\r\n    \"top-center\": 97.1,\r\n    \"top-right\": 97.7,\r\n    \"mid-left\": 98.5,\r\n    \"mid-center\": 97.5,\r\n    \"mid-right\": 97.7,\r\n    \"bot-left\": 98.7,\r\n    \"bot-center\": 99.0,\r\n    \"bot-right\": 97.4\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\characters-d\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "characters-e",
+    "width": 634,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 98.0,\r\n  \"design_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    634,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\characters-e\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\characters-e\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 97.9,\r\n    \"top-center\": 97.1,\r\n    \"top-right\": 97.7,\r\n    \"mid-left\": 98.5,\r\n    \"mid-center\": 97.9,\r\n    \"mid-right\": 97.6,\r\n    \"bot-left\": 98.7,\r\n    \"bot-center\": 99.0,\r\n    \"bot-right\": 97.4\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\characters-e\\\\side_by_side.png\"\r\n}\r\n"
+  },
+  {
+    "page": "video",
+    "width": 445,
+    "height": 1024,
+    "scope": "THUMBNAIL ONLY — native pixel gate not run",
+    "output": "{\r\n  \"overall_match\": 98.7,\r\n  \"design_size\": [\r\n    445,\r\n    1024\r\n  ],\r\n  \"screenshot_size\": [\r\n    445,\r\n    1024\r\n  ],\r\n  \"threshold\": 30,\r\n  \"heatmap\": \"reports\\\\thumbnail\\\\video\\\\diff_heatmap.png\",\r\n  \"overlay\": \"reports\\\\thumbnail\\\\video\\\\diff_overlay.png\",\r\n  \"regions\": {\r\n    \"top-left\": 99.5,\r\n    \"top-center\": 98.9,\r\n    \"top-right\": 98.8,\r\n    \"mid-left\": 99.6,\r\n    \"mid-center\": 97.0,\r\n    \"mid-right\": 97.5,\r\n    \"bot-left\": 100.0,\r\n    \"bot-center\": 98.0,\r\n    \"bot-right\": 99.1\r\n  },\r\n  \"side_by_side\": \"reports\\\\thumbnail\\\\video\\\\side_by_side.png\"\r\n}\r\n"
+  }
+]

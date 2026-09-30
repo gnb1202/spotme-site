@@ -1,0 +1,200 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/46771500-90d4-4868-8de9-eed889615b16";
+const imgImage24 = `${assetPathPrefix}/ebc2c.png`;
+const imgImage9 = `${assetPathPrefix}/d5441.png`;
+const imgB011 = `${assetPathPrefix}/dc3d7.png`;
+const imgBlack1 = `${assetPathPrefix}/b6ff8.png`;
+const imgBlack2 = `${assetPathPrefix}/b1a2d.png`;
+const imgImage25 = `${assetPathPrefix}/423f1.png`;
+const img017 = `${assetPathPrefix}/c8c8c.png`;
+const img051 = `${assetPathPrefix}/653b4.png`;
+const img052 = `${assetPathPrefix}/8061c.png`;
+const img053 = `${assetPathPrefix}/774bb.png`;
+const img056 = `${assetPathPrefix}/91de0.png`;
+const img055 = `${assetPathPrefix}/556da.png`;
+const img054 = `${assetPathPrefix}/4d965.png`;
+const imgWhite2 = `${assetPathPrefix}/d2139.png`;
+const img13 = `${assetPathPrefix}/ceef0.png`;
+const img14 = `${assetPathPrefix}/0613b.png`;
+const img115 = `${assetPathPrefix}/3d334.png`;
+const img114 = `${assetPathPrefix}/0254b.png`;
+const img112 = `${assetPathPrefix}/d233a.png`;
+
+export default function D() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="255:939" data-name="캐릭터_D">
+      <div className="absolute bg-[#5eefd3] h-[3095px] left-0 top-0 w-[1920px]" data-node-id="255:940" />
+      <div className="-translate-x-1/2 absolute bg-[#0a0a0a] h-[1180px] left-1/2 top-0 w-[1920px]" data-node-id="255:941" />
+      <div className="absolute h-[1161px] left-0 top-0 w-[1920px]" data-node-id="255:942" data-name="image 24">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[107.4%]" src={imgImage24} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#5eefd3] h-[1080px] left-1/2 rounded-tl-[100px] rounded-tr-[100px] top-[1080px] w-[1920px]" data-node-id="255:943" />
+      <div className="-translate-x-1/2 absolute h-[1905px] left-[calc(50%+6.5px)] top-[1198px] w-[1933px]" data-node-id="255:944" data-name="image 9">
+        <img alt="" className="absolute inset-0 max-w-none mix-blend-multiply object-cover pointer-events-none size-full" src={imgImage9} />
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:ExtraBold'] leading-[1.1] left-1/2 not-italic text-[#fafaf8] text-[50px] text-center top-[215px] tracking-[-0.5px] w-[1094px]" data-node-id="255:951">
+        캐릭터
+      </p>
+      <div className="absolute h-[115px] left-0 overflow-clip top-0 w-[1920px]" data-node-id="255:952">
+        <div className="absolute h-[29px] left-[351px] top-[44px] w-[198.857px]" data-node-id="255:953" data-name="스팟미_로고_b_01 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgB011} />
+        </div>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Bold'] leading-[normal] left-[1421px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="255:954">
+          파트너 레미
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[normal] left-[1535.5px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="255:955">
+          홍보 영상
+        </p>
+        <a className="-translate-x-1/2 [word-break:break-word] absolute block cursor-pointer font-['Pretendard:Regular'] leading-[0] left-[1266px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="255:956">
+          <p className="leading-[normal]">게임처럼 즐기는 운동</p>
+        </a>
+        <a className="-translate-x-1/2 [word-break:break-word] absolute block cursor-pointer font-['Pretendard:Regular'] leading-[0] left-[1101px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="255:957">
+          <p className="leading-[normal]">AI 운동 서포트</p>
+        </a>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[normal] left-[1002px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="255:958">
+          홈
+        </p>
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Bold'] leading-[1.3] left-[calc(50%+0.5px)] not-italic text-[#343a40] text-[36px] text-center top-[1161px] tracking-[-0.36px] w-[597px]" data-node-id="255:959">
+        헬스인들을 위협하는 몬스터들
+      </p>
+      <div className="absolute contents left-[calc(41.67%+67px)] top-[2020px]" data-node-id="255:960">
+        <div className="absolute left-[calc(41.67%+67px)] size-[52px] top-[2020px]" data-node-id="255:961" data-name="아이콘_이전_black 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlack1} />
+        </div>
+        <div className="absolute left-[calc(50%+42px)] size-[52px] top-[2020px]" data-node-id="255:962" data-name="아이콘_이전_black 2">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlack2} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[0] left-[calc(50%+0.5px)] not-italic text-[#343a40] text-[16px] text-center top-[1226px] tracking-[-0.16px] w-[785px]" data-node-id="255:963">
+        <p className="leading-[1.5] mb-0">사용자의 운동 정체기 조건을 달성하면, 운동을 할 때 해당 유형의 몬스터가 출현합니다.</p>
+        <p className="leading-[1.5]">운동 세트를 하나씩 수행하면서 몬스터를 무찔러보세요.</p>
+      </div>
+      <div className="absolute h-[828px] left-[calc(50%+27px)] top-[218px] w-[628px]" data-node-id="255:964" data-name="image 25">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage25} />
+      </div>
+      <div className="absolute bg-[#0a0a0a] h-[691px] left-[calc(16.67%+31px)] top-[353px] w-[597px]" data-node-id="255:965" />
+      <div className="-translate-x-1/2 absolute flex h-[810px] items-center justify-center left-[calc(66.67%-3px)] top-[227px] w-[540px]" data-node-id="255:966">
+        <div className="-scale-y-100 flex-none rotate-180">
+          <div className="h-[810px] relative w-[540px]" data-name="레미_01 7">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[100.14%] left-0 max-w-none top-[-0.07%] w-full" src={img017} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[120px] left-[calc(16.67%+66px)] top-[703px] w-[156px]" data-node-id="255:967" data-name="레미_05 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img051} />
+      </div>
+      <div className="absolute h-[121px] left-[calc(25%+90px)] top-[703px] w-[157px]" data-node-id="255:968" data-name="레미_05 2">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img052} />
+      </div>
+      <div className="absolute h-[112px] left-[calc(33.33%+116px)] top-[707px] w-[156px]" data-node-id="255:969" data-name="레미_05 3">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-[0.26%] max-w-none top-0 w-[99.49%]" src={img053} />
+        </div>
+      </div>
+      <div className="absolute h-[120px] left-[calc(33.33%+116px)] top-[878px] w-[155px]" data-node-id="255:970" data-name="레미_05 6">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img056} />
+      </div>
+      <div className="absolute h-[121px] left-[calc(25%+90px)] top-[877px] w-[157px]" data-node-id="255:971" data-name="레미_05 5">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img055} />
+      </div>
+      <div className="absolute h-[104px] left-[calc(16.67%+66px)] top-[886px] w-[155px]" data-node-id="255:972" data-name="레미_05 4">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-[0.14%] max-w-none top-0 w-[99.71%]" src={img054} />
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Pretendard:Regular'] leading-[0] left-[calc(29.17%-174px)] not-italic text-[#5eefd3] text-[16px] top-[501px] tracking-[-0.16px] w-[442px]" data-node-id="255:973">
+        <p className="leading-[1.5] mb-0">운동 정체기를 겪고 있는 사람들이 점차 많아지자</p>
+        <p className="leading-[1.5] mb-0">올바른 운동을 지도하기 위해 이세계에서 넘어온 헬스의 정령.</p>
+        <p className="leading-[1.5] mb-0">자신이 계획한 운동 루틴을 완벽하게 수행하지 못하면</p>
+        <p className="leading-[1.5] mb-0">화를 참지 못하는 성격.</p>
+        <p className="leading-[1.5]">하지만 악의는 없으며 언제나 운동에 진심이다.</p>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Pretendard:Bold'] leading-[0] left-[calc(37.5%-334px)] not-italic text-[#5eefd3] text-[36px] top-[381px] tracking-[-0.36px] w-[597px]" data-node-id="255:974">
+        <p className="leading-[1.3] mb-0">운동을 좋아하는</p>
+        <p className="leading-[1.3]">헬스의 정령, 레미</p>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#0a0a0a] bottom-[-1918px] h-[200px] left-[calc(50%+2px)] w-[1920px]" data-node-id="255:975" />
+      <div className="-translate-x-1/2 absolute h-[30px] left-[calc(50%+1.57px)] top-[2988px] w-[257.143px]" data-node-id="255:976" data-name="스팟미_로고_white 2">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWhite2} />
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#61656a] blur-[4px] h-[272px] left-[calc(25%+10px)] rounded-[40px] top-[1526px] w-[252px]" data-node-id="255:994" />
+      <div className="-translate-x-1/2 absolute blur-[4px] h-[111px] left-[calc(25%+10px)] top-[1635px] w-[134px]" data-node-id="255:995" data-name="몬스터_피로누적형1_일반 3">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[100.13%] left-0 max-w-none top-[-0.06%] w-full" src={img13} />
+        </div>
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute blur-[4px] font-['Pretendard:SemiBold'] leading-[1.1] left-[calc(16.67%+170px)] not-italic text-[#919ea5] text-[28px] text-center top-[1560px] tracking-[-0.28px] w-[252px]" data-node-id="255:996">
+        기괴한 오크
+      </p>
+      <div className="-translate-x-1/2 absolute bg-[#343a40] blur-[2.5px] h-[368px] left-[calc(33.33%+20px)] rounded-[40px] top-[1478px] w-[340px]" data-node-id="255:997" />
+      <div className="-translate-x-1/2 absolute blur-[2px] h-[137px] left-[calc(37.5%-58px)] top-[1615px] w-[222px]" data-node-id="255:998" data-name="몬스터_피로누적형1_일반 4">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-[0.04%] max-w-none top-0 w-[99.91%]" src={img14} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex h-[272px] items-center justify-center left-[calc(75%-5px)] top-[1526px] w-[252px]" data-node-id="255:999">
+        <div className="flex-none rotate-180">
+          <div className="bg-[#61656a] blur-[4px] h-[272px] relative rounded-[40px] w-[252px]" />
+        </div>
+      </div>
+      <div className="absolute blur-[4px] h-[111px] left-[calc(66.67%+83px)] top-[1635px] w-[144px]" data-node-id="255:1000" data-name="몬스터_피로누적형1_일반 15">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-[-0.15%] max-w-none top-0 w-[100.17%]" src={img115} />
+        </div>
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute blur-[4px] font-['Pretendard:SemiBold'] h-[31px] leading-[1.1] left-[calc(66.67%+155px)] not-italic text-[#919ea5] text-[28px] text-center top-[1560px] tracking-[-0.28px] w-[252px]" data-node-id="255:1001">
+        슬라임
+      </p>
+      <div className="-translate-x-1/2 absolute flex h-[368px] items-center justify-center left-[calc(66.67%-15px)] top-[1478px] w-[340px]" data-node-id="255:1002">
+        <div className="flex-none rotate-180">
+          <div className="bg-[#343a40] blur-[2.5px] h-[368px] relative rounded-[40px] w-[340px]" />
+        </div>
+      </div>
+      <div className="absolute blur-[2px] h-[173px] left-[calc(58.33%+69px)] top-[1597px] w-[152px]" data-node-id="255:1003" data-name="몬스터_피로누적형1_일반 14">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[100.13%] left-0 max-w-none top-[-0.06%] w-full" src={img114} />
+        </div>
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute blur-[2.5px] font-['Pretendard:SemiBold'] leading-[1.1] left-[calc(25%+180px)] not-italic text-[#919ea5] text-[28px] text-center top-[1510px] tracking-[-0.28px] w-[340px]" data-node-id="255:1004">
+        스톤골렘
+      </p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute blur-[2.5px] font-['Pretendard:SemiBold'] leading-[1.1] left-[calc(50%+305px)] not-italic text-[#919ea5] text-[28px] text-center top-[1510px] tracking-[-0.28px] w-[340px]" data-node-id="255:1005">
+        팬텀
+      </p>
+      <div className="-translate-x-1/2 absolute bg-[#0a0a0a] h-[520px] left-1/2 rounded-[40px] shadow-[0px_4px_6px_0px_rgba(0,0,0,0.25),0px_10px_18px_0px_rgba(0,0,0,0.25),0px_18px_56px_0px_rgba(0,0,0,0.25)] top-[1402px] w-[480px]" data-node-id="255:1006" />
+      <div className="-translate-x-1/2 absolute bg-gradient-to-b from-[#ff3232] h-[225px] left-1/2 rounded-tl-[40px] rounded-tr-[40px] to-[#0a0a0a] top-[1402px] w-[480px]" data-node-id="255:1007" />
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:SemiBold'] leading-[1.1] left-1/2 not-italic text-[#fafaf8] text-[28px] text-center top-[1452px] tracking-[-0.28px] w-[480px]" data-node-id="255:1008">
+        도깨비
+      </p>
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[0] left-[calc(50%+0.5px)] not-italic text-[#fafaf8] text-[20px] text-center top-[1789px] tracking-[-0.2px] w-[433px]" data-node-id="255:1009">
+        <p className="leading-[1.5] mb-0">주당 운동 시간이 10시간을 넘거나,</p>
+        <p className="leading-[1.5] mb-0">본인의 한계치 이상의 강도로 7일 간 운동 시</p>
+        <p>
+          <span className="leading-[1.5]">{`나타나는 `}</span>
+          <span className="[word-break:break-word] font-['Pretendard:SemiBold'] leading-[1.5] not-italic text-[#faed27]">피로 누적형</span>
+          <span className="leading-[1.5] text-[#faed27]">{` `}</span>
+          <span className="leading-[1.5]">몬스터</span>
+        </p>
+      </div>
+      <div className="-translate-x-1/2 absolute h-[190px] left-[calc(50%+0.5px)] top-[1541px] w-[255px]" data-node-id="255:1010" data-name="몬스터_피로누적형1_일반 12">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img112} />
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

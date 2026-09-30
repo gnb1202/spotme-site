@@ -1,0 +1,25 @@
+{
+  "overall_match": 100.0,
+  "design_size": [
+    1920,
+    5305
+  ],
+  "screenshot_size": [
+    1920,
+    5305
+  ],
+  "threshold": 30,
+  "heatmap": "reports\\migration\\home-02\\diff_heatmap.png",
+  "overlay": "reports\\migration\\home-02\\diff_overlay.png",
+  "regions": {
+    "top-left": 99.9,
+    "top-center": 100.0,
+    "top-right": 100.0,
+    "mid-left": 100.0,
+    "mid-center": 99.7,
+    "mid-right": 100.0,
+    "bot-left": 100.0,
+    "bot-center": 100.0,
+    "bot-right": 100.0
+  }
+}

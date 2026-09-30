@@ -1,0 +1,21 @@
+{
+  "description": "User-delivered newasset replacements. Frozen Figma and historical delivery audits remain unchanged; this mapping records the current website overrides.",
+  "assets": [
+    {
+      "nodeId": "254:33",
+      "source": "D:/Github/spotme-site/스팟미_웹사이트_260925_v1/03_오브젝트/newasset/배경_홍보영상.jpg",
+      "canonical": "D:/Github/spotme-site/스팟미_웹사이트_260925_v1/03_오브젝트/배경_홍보영상.jpg",
+      "sha256": "4cf0f12a46b3fb5c3d1bd318badba66052ea75f700707a49dd4ffb0dcb0cd35a",
+      "width": 8000, "height": 16125,
+      "replacedSha256": "6dd16663e9306da54fd9626d45ab2ec27a3a1a2e67602cd421b9833a4e29c0f3"
+    },
+    {
+      "nodeId": "256:615",
+      "source": "D:/Github/spotme-site/스팟미_웹사이트_260925_v1/03_오브젝트/newasset/레미_홍보영상.png",
+      "canonical": "D:/Github/spotme-site/스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홍보영상.png",
+      "sha256": "6577c33130d122ea997e6c3a82fde6f896ae2ed4cfae626614938277644283f9",
+      "width": 3125, "height": 4500,
+      "replacedSha256": "4a174cfd179cda4beee42dc261086b6eab6d4f4c96a0cca6d434f6e390318083"
+    }
+  ]
+}

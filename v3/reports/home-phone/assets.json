@@ -1,0 +1,189 @@
+[
+  {
+    "id": "home",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_메인2.png",
+    "sourceSha256": "d14ca2947fe669c7ba9ad7ae522d76cb4675a88d8b0ee7de417598650db5af76",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/home.webp",
+    "outputSha256": "4cfc72eb4c3ca233c9ace0e5e7c5944f593f256857923337bb5bd842424f9ed9",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 81380,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "routine",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_AI추천운동.png",
+    "sourceSha256": "7b8d24de13354355fd5e4629c8a60b86187508961df18d19b0de20a1f5b9c22b",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/routine.webp",
+    "outputSha256": "ef194a6b0b615dfd842f1b3a039fd9a14d7dc2f68d31af0a2701271c5c264104",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 92958,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "workout",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_c_01.png",
+    "sourceSha256": "4fc0269a2d5d99c4ac18cfedb444b47063fe4ce1a066ec53f5a4fe13ee504af3",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/workout.webp",
+    "outputSha256": "b3eda732d68fc0168df4b409af174ceb494a1652d76d2623ba361f5fd305ace9",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 90148,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "adjust",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동 - 운동진행3-4B.png",
+    "sourceSha256": "b09885837f2556d57ebf02222ac7ce01a0c9e587bfbbe5aa07f496dc59a6f06d",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/adjust.webp",
+    "outputSha256": "92af4131fafc06d7e391fdb9ba6d1ba23c76fdec5627ca1262277e2b3d35e814",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 84106,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "result",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_f_01b.png",
+    "sourceSha256": "6ea481b646713cd8dc81b7904a7b98559b91c7af0d60306a4bacacf6e1bd207b",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/result.webp",
+    "outputSha256": "40d887ff8fb17637fd072b196d2b573f5dc82933886132d68cd6473b539d62ba",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 76910,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "ai",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/2_레미AI_03.png",
+    "sourceSha256": "cce2ae2f2df614acffc5defdb6a70ebcb0610423e2105a6d0f5ceb1b22b65084",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/ai.webp",
+    "outputSha256": "b6bea5cb2503e7da2e59ebe50de7634571353312e204bd8bcffd80d52e7d5546",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 109104,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "report",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/3_리포트2.png",
+    "sourceSha256": "2599f32632c457f17f1cc9f9934a4100a3374e15570839fdb22ae2f339f77b33",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/report.webp",
+    "outputSha256": "28f0b79fe8b1729a0d53bdc1834736a2f0c7b8ba9fa5f83812c7466b3ab07029",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 94822,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "quest",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_퀘스트_주간퀘스트_조건달성.png",
+    "sourceSha256": "dc81272686d9b85ef2117c49af282356878e86fed52c0db13dd114d355ed1ae2",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/quest.webp",
+    "outputSha256": "8d0863ad129733d75d9c421a38f02a72eaebbeda054bbdbf39d05fd1635665a4",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 86372,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "gym",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_헬스장키우기.png",
+    "sourceSha256": "953533dd30a18b4626a3f83048ea3cf0cd0c7e453be3b304838714795b099bdf",
+    "sourceSize": [
+      1660,
+      3452
+    ],
+    "output": "public/home-overview/gym.webp",
+    "outputSha256": "f63728f50749b47e1c162ae6f8a5c4c6665a3fc228144147c40cd05679d06712",
+    "outputSize": [
+      1000,
+      2080
+    ],
+    "bytes": 57902,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "ranking",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/4_랭킹_이번달.png",
+    "sourceSha256": "85a98b788e179829451f9ba58b74a0a30e385209a6f43af9209ee681d11f2b90",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/ranking.webp",
+    "outputSha256": "9c17384ca5c748c40ccd91a41f6694f8756afcde445a478dd7abfaf4108fada0",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 90450,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  },
+  {
+    "id": "profile",
+    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/5_프로필2.png",
+    "sourceSha256": "df47659c306a728eb7dcc9564ca69531a063d599d2a12a04941cf2d710ef7394",
+    "sourceSize": [
+      1572,
+      3408
+    ],
+    "output": "public/home-overview/profile.webp",
+    "outputSha256": "76276c87d3dacf3713dfb141d3357740c8a9e45fedf1a9c40ed2e22ecc84b7e8",
+    "outputSize": [
+      1000,
+      2168
+    ],
+    "bytes": 90718,
+    "transform": "Proportional resize to max 1000px wide, WebP quality 94; no cropping or replacement"
+  }
+]

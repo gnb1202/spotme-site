@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';import sharp from 'sharp';
+const root=path.resolve('../스팟미_웹사이트_260925_v1'),manifest=JSON.parse(await fs.readFile('designs/assets.json')),raw=JSON.parse(await fs.readFile('designs/figma-data.json'));
+const hash=(b,alg='sha256')=>createHash(alg).update(b).digest('hex');
+async function inspect(file){const bytes=await fs.readFile(file),s=sharp(bytes),m=await s.metadata();return{path:file,sha256:hash(bytes),sha1:hash(bytes,'sha1'),width:m.width,height:m.height,pixels:hash(await s.ensureAlpha().raw().toBuffer())}}
+const local=[];async function walk(dir){for(const e of await fs.readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())await walk(p);else if(e.name.endsWith('.png'))local.push(await inspect(p));}}await walk(root);
+const matches=[],unmatched=[];for(const f of manifest.fills){const a=await inspect('public/'+f.path),match=local.find(l=>l.sha256===a.sha256||l.pixels===a.pixels||l.sha1===f.imageRef);(match?matches:unmatched).push({imageRef:f.imageRef,current:f.path,width:a.width,height:a.height,...(match?{delivery:path.relative(root,match.path).replaceAll('\\','/'),kind:match.sha256===a.sha256?'identical-bytes':'identical-pixels'}:{})})}
+const refs=new Map();function visit(n){for(const f of n.fills??[])if(f.type==='IMAGE'){const a=refs.get(f.imageRef)??{imageRef:f.imageRef,nodes:[]};a.nodes.push({id:n.id,name:n.name});refs.set(f.imageRef,a)}n.children?.forEach(visit)}Object.values(raw.nodes).forEach(x=>visit(x.document));
+const sha1Matches=[...refs.values()].flatMap(r=>{const m=local.find(l=>l.sha1===r.imageRef);return m?[{...r,delivery:path.relative(root,m.path)}]:[]});
+console.log(JSON.stringify({deliveryCount:local.length,fillMatches:matches,unmatched,sha1Matches,delivery:local.map(l=>({path:path.relative(root,l.path),width:l.width,height:l.height}))},null,2));
+await fs.writeFile('designs/delivery-audit.json',JSON.stringify({deliveryCount:local.length,local,matches,unmatched,sha1Matches},null,2));

@@ -1,0 +1,4 @@
+/* Body portal: particles may cross the phone and story column boundaries. */
+.rj-cheese-pop{position:fixed;inset:0;width:100%;height:100%;z-index:80;pointer-events:none;opacity:0}
+.rj-cheese-pop[data-active=true]{opacity:1}
+@media(prefers-reduced-motion:reduce){.rj-cheese-pop{display:none}}

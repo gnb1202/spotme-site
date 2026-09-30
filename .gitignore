@@ -6,3 +6,9 @@ node_modules/
 .omc/
 **/.omc/
 tools/
+!v3/tools/
+!v3/tools/**
+!v3/react-site/tools/
+!v3/react-site/tools/**
+!v3/next-site/tools/
+!v3/next-site/tools/**

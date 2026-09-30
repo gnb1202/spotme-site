@@ -1,0 +1,6 @@
+/* Shared navigation font. Home content uses its original Figma typography. */
+@font-face{font-family:SpotExperience;src:url('/assets/fonts/Pretendard-Regular.otf') format('opentype');font-weight:400;font-display:swap}
+@font-face{font-family:SpotExperience;src:url('/assets/fonts/Pretendard-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:SpotExperience;src:url('/assets/fonts/Pretendard-SemiBold.otf') format('opentype');font-weight:600;font-display:swap}
+@font-face{font-family:SpotExperience;src:url('/assets/fonts/Pretendard-Bold.otf') format('opentype');font-weight:700;font-display:swap}
+.site-navigation{font-family:SpotExperience,Pretendard,sans-serif;letter-spacing:-.025em}

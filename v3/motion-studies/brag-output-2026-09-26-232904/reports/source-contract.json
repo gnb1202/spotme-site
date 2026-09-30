@@ -1,0 +1,59 @@
+{
+  "title": {
+    "x": 17,
+    "y": 327,
+    "width": 1887,
+    "height": 396
+  },
+  "remi": {
+    "x": 640,
+    "y": 285,
+    "width": 642,
+    "height": 480
+  },
+  "font": "Strelka, sans-serif",
+  "fontSize": "180px",
+  "leading": 198,
+  "sourceNodes": [
+    "20:128",
+    "20:197",
+    "20:132",
+    "20:131",
+    "81:1051",
+    "81:1477",
+    "81:1478",
+    "81:1479",
+    "145:65",
+    "205:3",
+    "20:200",
+    "205:4",
+    "254:244"
+  ],
+  "asset": {
+    "imageRef": "3e5a317e2f8079e53ffec7b08123cb6cc37273b4",
+    "nodeIds": [
+      "254:244"
+    ],
+    "path": "assets/delivery-260925/2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c.png",
+    "sourcePath": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홈A_01.png",
+    "sha256": "2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c",
+    "pixelWidth": 1450,
+    "pixelHeight": 1080,
+    "format": "png",
+    "match": "inspected same artwork / different raster size"
+  },
+  "originalRemiHash": "2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c",
+  "fingerprints": {
+    "assets/delivery-260925/2f16854db11cfacc636b5679ad31a6405798bd92ed4ea23183b8028ae230149c.png": "2f16854db11cfacc636b5679ad31a6405798bd92ed4ea23183b8028ae230149c",
+    "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png": "006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7",
+    "assets/delivery-260925/2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c.png": "2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c",
+    "assets/fonts/Pretendard-Light.otf": "51418ee96ef96e9059db88d7da82f24fada1f4aca70d5157c878ea6b460dd343",
+    "assets/fonts/Pretendard-Regular.otf": "3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93",
+    "assets/fonts/Pretendard-Medium.ttf": "a3263bd8b5f853a5a871c2bd4e2e97d177501b633e5dca98803bbc8b10e6b012",
+    "assets/fonts/Pretendard-SemiBold.otf": "c89bc43027dc7cde5726e96223376f8eec09302b2fc1f8147fd5b57cfc376118",
+    "assets/fonts/Pretendard-Bold.otf": "2e91915fab54df71cc9598ebf608b2bdb54c6fe3c066ac61dff0bc44fca71cc7",
+    "assets/fonts/Pretendard-ExtraBold.otf": "e95562e417055e3992780ffddb070b486584a4fe1449d0305041c177bf9b5311",
+    "assets/fonts/Strelka Ultra.otf": "3aa1ef5fcc655d718dcfae60cd81f51de245331006e3626c2532f3eed8f53777"
+  },
+  "temporaryAssetHash": "654b53bce6d53793d99321d5e83290c81c9be3328e521a8e6e39e3906ff6fd94"
+}

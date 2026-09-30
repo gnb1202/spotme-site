@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {nextFeatureStop} from '../src/concept/experience/feature-stops.js';
+const stops=[2960,3680,3792,4502];
+assert.equal(nextFeatureStop(1500,1,stops),null,'keep first demo scroll-driven');
+assert.equal(nextFeatureStop(2950,1,stops),null,'do not leave an unfinished demo');
+assert.equal(nextFeatureStop(2960,1,stops),3680,'report end to card heading');
+assert.equal(nextFeatureStop(3680,1,stops),3792,'heading to captions');
+assert.equal(nextFeatureStop(3792,1,stops),4502,'captions to Remi heading');
+assert.equal(nextFeatureStop(4502,1,stops),null,'keep Remi sequence scroll-driven');
+assert.equal(nextFeatureStop(4502,-1,stops),3792);
+assert.equal(nextFeatureStop(3792,-1,stops),3680);
+assert.equal(nextFeatureStop(3680,-1,stops),2960);
+assert.equal(nextFeatureStop(2960,-1,stops),null);
+assert.equal(nextFeatureStop(4508,-1,stops),null,'no hijacking within final demo');
+assert.equal(nextFeatureStop(3680.4,1,stops),3792,'fractional pixel landing');
+console.log('PASS: feature boundary navigation, two card frames and reverse flow');

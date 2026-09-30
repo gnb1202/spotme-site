@@ -1,0 +1,19 @@
+
+Mimikyu Structural Verify — 17 text nodes, 17 matched, 11 mismatches, 0 unmatched
+
+  ❌ AI 운동 서포트 ("AI 운동 서포트")
+      x: expected 413.0 / actual 1050.0
+      y: expected 215.0 / actual 44.0
+      fontSize: expected 50 / actual 18.0
+      fontWeight: expected 800 / actual 700
+      lineHeight: expected 55.0 (figma 55.0) / actual 21.6
+  ❌ AI 운동 서포트 ("AI 운동 서포트")
+      x: expected 1050.0 / actual 413.0
+      y: expected 43.0 / actual 216.0
+      fontSize: expected 18 / actual 50.0
+      fontWeight: expected 700 / actual 800
+      lineHeight: expected 21.6 (figma 21.6) / actual 55.0
+  ❌ WORKOUT SUPPORT ("WORKOUT SUPPORT")
+      y: expected 400.0 / actual 405.0
+
+  nodes: 14/17 passed · checks: 106/117 passed · overlaps: 0

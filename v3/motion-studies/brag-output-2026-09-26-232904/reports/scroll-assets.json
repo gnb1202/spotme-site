@@ -1,0 +1,25 @@
+{
+  "standing": {
+    "source": "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_홈A_02.png",
+    "sha256": "f8fedce711eb6c55d355d76412b01306c237883441805b7a6ae2096c3c92747d",
+    "width": 1060,
+    "height": 1080
+  },
+  "sourceAssets": [
+    "assets/delivery-260925/2f16854db11cfacc636b5679ad31a6405798bd92ed4ea23183b8028ae230149c.png",
+    "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+    "assets/figma-v3/112-721.svg",
+    "assets/delivery-260925/c0ef852a35dfa181a2c41895b8657ba30315e2a5dbcade502c915e3a260f261e.png",
+    "assets/figma-v3/112-723.svg",
+    "assets/delivery-260925/a412b036de9a5eb71c65ec20a19eff95a6bc2f4f34c161ae13e4efb56e0e1b3d.png",
+    "assets/delivery-260925/4fc0269a2d5d99c4ac18cfedb444b47063fe4ce1a066ec53f5a4fe13ee504af3.png",
+    "assets/delivery-260925/0349532d0b5de37d9bb8f66875d19520553ea808077e3ffc595e97bc245551c9.png",
+    "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+    "assets/delivery-260925/d14ca2947fe669c7ba9ad7ae522d76cb4675a88d8b0ee7de417598650db5af76.png",
+    "assets/delivery-260925/a1f6f14632bf6d315d8931619dd788dbb024c49b2ffc8ba8b44c85b4b77fa8c1.png",
+    "assets/delivery-260925/2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c.png",
+    "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+    "assets/figma-v3/255-775.png"
+  ],
+  "nextSectionSourceY": 1080
+}

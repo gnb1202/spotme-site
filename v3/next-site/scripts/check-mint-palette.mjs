@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {routePalette,paletteFor} from '../src/integration/palette.js';
+const light=hex=>{const rgb=hex.match(/[a-f\d]{2}/gi).map(v=>parseInt(v,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
+const contrast=(a,b)=>(Math.max(light(a),light(b))+.05)/(Math.min(light(a),light(b))+.05);
+const pairs=[['feature copy','#4d6961',routePalette['/features/'].background],['feature inactive','#527066',routePalette['/features/'].background],['remi copy','#365f53',routePalette['/remi-ai/'].background],['remi accent','#15644f',routePalette['/remi-ai/'].background],['phone copy','#fafaf8','#2b3137']];
+for(const [label,fg,bg] of pairs)assert(contrast(fg,bg)>=4.5,`${label}: ${contrast(fg,bg).toFixed(2)}`);
+for(const path of ['/', '/features/','/remi-ai/','/video/'])assert(routePalette[path]);
+assert.equal(paletteFor('/concept/'),routePalette['/features/']);
+const root=new URL('../src/integration/',import.meta.url);
+for(const file of ['SiteNavigation.jsx','RouteTransition.jsx'])assert((await readFile(new URL(file,root),'utf8')).includes("from './palette'"),'Use shared route palette: '+file);
+const css=await readFile(new URL('mint-palette.css',root),'utf8');
+assert(css.includes('.remi-demo-phone{color:#fafaf8;'),'Keep app screen readable');
+for(const id of ['254:33','254:36','145:216','145:225','145:224','255:1243'])assert(!css.includes(id),'Do not override original video artwork: '+id);
+assert.equal(routePalette['/video/'].background,'#494949','Video transition uses the approved background gray');
+console.log(JSON.stringify({result:'PASS',palette:routePalette,contrast:pairs.map(([label,a,b])=>({label,ratio:+contrast(a,b).toFixed(2)}))},null,2));

@@ -1,4 +1,48 @@
-# SPOT ME — Rail
+# SPOT ME — 웹사이트
+
+## 현재 운영 배포 대상 — Next.js
+
+2026-09-29 운영 홈 교체 요청에 따라 `v3/next-site/`의 최신 시안을 `/`에 연결했습니다. AI·게임·레미·영상 상세 경로는 유지합니다. 배포는 **반드시 아래 폴더에서** 실행합니다. 루트의 Vite 설정은 이전 버전용이며 현재 운영 배포에 사용하지 않습니다.
+
+```powershell
+cd D:\Github\spotme-site\v3\next-site
+npm run build
+npx --yes vercel@59.15.1 deploy --prod --yes --scope gnb1202-navercoms-projects
+```
+
+운영 주소: https://spotme-site.vercel.app/ . 배포 기록과 검증 범위는 `v3/next-site/README.md`를 참고합니다.
+
+## 이전 기본 구현 — React/Vite (보존 기록)
+
+2026-09-28 토스 참고 기술 스택 실험은 `v3/next-site/`에 별도로 구성했습니다. Next.js App Router + React + Motion + Lenis + Lottie 기반이며 개발 포트는 4189, 빌드본 확인 포트는 4192입니다. 아래 Vite 버전과 현재 배포 설정은 비교를 위해 보존했습니다. 세부 차이와 실행 방법은 `v3/next-site/README.md`에 기록했습니다.
+
+2026-09-27부터 기본 개발·빌드 대상은 `v3/react-site/`입니다. React + Vite에 SmoothUI 기반 메뉴와 기존 승인된 에셋을 사용합니다. 기존 정적 사이트는 비교용으로 보존하며 새 빌드에서는 사용하지 않습니다.
+
+```powershell
+npm ci --prefix v3/react-site
+npm run dev
+# 배포용 출력 생성 (배포하지 않음)
+npm run build
+```
+
+로컬 주소는 http://127.0.0.1:4187/ 입니다. Vercel 설정은 `v3/react-site/dist`로 변경했으며 SPA 직접 경로 접근을 지원합니다. 이번 전환은 로컬 설정 변경이며 운영 배포·원격 푸시·병합은 아직 수행하지 않았습니다.
+
+React의 `public/`과 `src/generated/`는 이제 보존해야 하는 독립 빌드 입력입니다. `sync`는 기존 HTML을 재가져오는 이관 도구이므로 일반 개발·배포에서 실행하지 않습니다. 원본 데이터의 출처 정보는 유지합니다.
+
+## 이전 정적 사이트 기록 (아래 실행·배포 지침은 현재 구성에 적용하지 않음)
+
+## 이전 로컬 제작 작업
+
+2026-09-25 신규 시안 작업은 이 저장소의 `v3/`에서 진행합니다. 에셋 원본은 `스팟미_웹사이트_260925_v1/`입니다. `D:/Github/SpotMe`는 앱 저장소이며 사이트 작업 경로가 아닙니다.
+
+```powershell
+cd v3
+npm run dev
+```
+
+로컬 주소: http://127.0.0.1:4184/ . 신규 작업은 아직 배포하지 않았습니다. 아래 내용과 루트 `public/`은 기존 운영 버전 기록이며 신규 초안으로 교체하지 않았습니다.
+
+## 기존 운영 버전 — Rail
 
 승인된 rail 버전의 정적 웹사이트입니다. 별도의 설치·빌드·환경 변수·백엔드는 필요하지 않습니다.
 

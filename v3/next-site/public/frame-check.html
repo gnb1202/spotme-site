@@ -1,0 +1,58 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SPOT ME 프레임 측정</title>
+<style>body{margin:0;background:#17231f;color:#effff8;font:14px system-ui}header{height:64px;display:flex;align-items:center;gap:16px;padding:0 16px}button{padding:10px 16px;cursor:pointer}iframe{display:block;border:0;width:100%;height:calc(100vh - 64px)}pre{white-space:pre-wrap;padding:20px;margin:0}details{position:fixed;right:12px;bottom:12px;background:#17231fee;max-height:65vh;overflow:auto;max-width:700px}summary{padding:12px;cursor:pointer}</style>
+<header><button id="run">프레임 측정 시작</button><span id="status" role="status">대기 · 실제 화면 표시 FPS가 아닌 rAF 프레임 간격 측정</span></header>
+<iframe id="site" src="/features/" title="측정 대상 SPOT ME"></iframe><details><summary>측정 결과 JSON</summary><pre id="result"></pre></details>
+<script>
+const frame=document.querySelector('#site'),button=document.querySelector('#run'),status=document.querySelector('#status'),output=document.querySelector('#result');
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+let baseline=16.667;
+const summarize=samples=>{
+ const sorted=samples.map(s=>s.dt).sort((a,b)=>a-b),sum=sorted.reduce((a,b)=>a+b,0);
+ const round=x=>Math.round(x*100)/100;
+ return {frames:sorted.length,meanCadenceFps:round(sorted.length*1000/sum),medianMs:round(sorted[Math.floor(sorted.length*.5)]||0),p95Ms:round(sorted[Math.floor(sorted.length*.95)]||0),maxMs:round(sorted.at(-1)||0),overBudget:sorted.filter(n=>n>baseline*1.5).length,over50ms:sorted.filter(n=>n>50).length};
+};
+async function sample(label,action){
+ const w=frame.contentWindow,d=w.document,samples=[],tasks=[],phases=[];let last,raf,phase='',hidden=false;
+ const started=w.performance.now();
+ const tick=t=>{const next=d.querySelector('[data-route-content]')?.dataset.routePhase||'none';if(next!==phase){phase=next;phases.push({phase,atMs:t-started});}if(last!==undefined)samples.push({dt:t-last,phase});last=t;hidden ||= d.hidden;raf=w.requestAnimationFrame(tick);};
+ const observer=new w.PerformanceObserver(list=>tasks.push(...list.getEntries().map(e=>({duration:e.duration,startTime:e.startTime-started}))));
+ if(w.PerformanceObserver.supportedEntryTypes.includes('longtask'))observer.observe({type:'longtask'});
+ raf=w.requestAnimationFrame(tick);
+ let extra;
+ try{extra=await action(w,d);}finally{w.cancelAnimationFrame(raf);observer.disconnect();}
+ return {label,elapsedMs:Math.round(w.performance.now()-started),hidden,summary:summarize(samples),animationOnly:summarize(samples.filter(s=>s.phase==='covering'||s.phase==='revealing')),phases,longTasks:tasks,...extra};
+}
+async function navigate(target){
+ return sample('tab '+target,async(w,d)=>{
+  const link=[...d.querySelectorAll('.site-navigation a')].find(a=>new URL(a.href).pathname===target);
+  if(!link)throw Error('Missing tab '+target);link.click();
+  const deadline=Date.now()+18000;
+  while(Date.now()<deadline){await sleep(20);if(w.location.pathname===target&&d.querySelector('[data-route-content]')?.dataset.routePhase==='idle')return {target};}
+  throw Error('Transition timed out: '+target);
+ });
+}
+button.addEventListener('click',async()=>{
+ button.disabled=true;delete status.dataset.done;output.textContent='';const records=[];
+ try{
+  status.textContent='화면과 리소스 준비 중…';const w=frame.contentWindow,d=w.document;
+  await d.fonts.ready;await Promise.allSettled([...d.images].map(i=>i.decode()));await sleep(1500);
+  records.push(await sample('idle baseline',()=>sleep(2000)));baseline=records[0].summary.medianMs||16.667;
+  for(let round=1;round<=2;round++)for(const target of ['/remi-ai/','/video/','/','/features/']){
+   status.textContent=`탭 전환 ${round}/2 · ${target}`;const record=await navigate(target);record.round=round;records.push(record);
+   if(target==='/'){const deadline=Date.now()+8000;while(d.querySelector('[data-react-motion]')?.dataset.phase==='opening'&&Date.now()<deadline)await sleep(100);}
+   await sleep(250);
+  }
+  for(const part of ['overview','growth']){
+   const anchor=d.getElementById(part);w.scrollTo({top:anchor?anchor.getBoundingClientRect().top+w.scrollY:0,behavior:'instant'});await sleep(500);
+   status.textContent=`스크롤 측정 · ${part}`;
+   records.push(await sample('scroll '+part,()=>new Promise(resolve=>{
+    const start=w.scrollY,distance=Math.min(part==='overview'?4000:2000,d.documentElement.scrollHeight-w.innerHeight-start);let first;
+    function step(t){first??=t;const progress=Math.min(1,(t-first)/6000);w.scrollTo({top:start+distance*progress,behavior:'instant'});if(progress<1)w.requestAnimationFrame(step);else resolve({distancePx:distance,actualStart:start,actualEnd:w.scrollY});}
+    w.requestAnimationFrame(step);
+   })));
+  }
+  const report={method:'same-origin iframe rAF cadence; not GPU-presented FPS or a DevTools dropped-frame trace',url:location.origin,viewport:{width:w.innerWidth,height:w.innerHeight,dpr:w.devicePixelRatio},desktopScroll:w.matchMedia('(min-width: 901px) and (min-height: 701px)').matches,reducedMotion:w.matchMedia('(prefers-reduced-motion: reduce)').matches,baselineMs:baseline,records};
+  output.textContent=JSON.stringify(report,null,2);status.textContent='측정 완료';status.dataset.done='true';
+ }catch(error){status.textContent='측정 실패: '+error.message;output.textContent=JSON.stringify(records,null,2);}finally{button.disabled=false;}
+});
+</script></html>

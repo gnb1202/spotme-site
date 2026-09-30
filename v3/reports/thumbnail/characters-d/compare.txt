@@ -1,0 +1,26 @@
+{
+  "overall_match": 98.0,
+  "design_size": [
+    634,
+    1024
+  ],
+  "screenshot_size": [
+    634,
+    1024
+  ],
+  "threshold": 30,
+  "heatmap": "reports\\thumbnail\\characters-d\\diff_heatmap.png",
+  "overlay": "reports\\thumbnail\\characters-d\\diff_overlay.png",
+  "regions": {
+    "top-left": 97.9,
+    "top-center": 97.1,
+    "top-right": 97.7,
+    "mid-left": 98.5,
+    "mid-center": 97.5,
+    "mid-right": 97.7,
+    "bot-left": 98.7,
+    "bot-center": 99.0,
+    "bot-right": 97.4
+  },
+  "side_by_side": "reports\\thumbnail\\characters-d\\side_by_side.png"
+}

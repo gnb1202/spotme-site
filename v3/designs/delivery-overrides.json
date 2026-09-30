@@ -1,0 +1,21 @@
+{
+  "description": "Visually inspected same-artwork exports with different raster dimensions. Frozen Figma layout/crop/effects remain authoritative; originals are copied without editing.",
+  "mappings": [
+    {"imageRef":"3442a13be83a788a4cf14be3b490aac31f0f3e9c","file":"앱소개_스토리_02.png"},
+    {"imageRef":"3e5a317e2f8079e53ffec7b08123cb6cc37273b4","file":"레미_홈A_01.png"},
+    {"imageRef":"e68aaa2a3d9d20586128e80f9f2db97f8983b457","file":"레미_홈A_02.png"},
+    {"imageRef":"fd8f121ee52e50fd5cf0eb05c4b3ef256984ecd1","file":"레미_운동서포트_01.png"},
+    {"imageRef":"2e181d7302f9fce5567165ebd72d0118eea7ebbc","file":"3_리포트2_full.png"},
+    {"imageRef":"02f2f5cf574bb182cfec1978fbffc79127cc989a","file":"배경_게이미피케이션_01.png"},
+    {"imageRef":"fe6a8f1fa79bc5f18b2ba3b97ca84d03583c854d","file":"레미_게이미피케이션.png","registration":[1.0297980308532715,-0.00008945089939516038,-0.000023177708499133587,0.9988695979118347,-0.01491882186383009,0.0007737973937764764]},
+    {"imageRef":"c393c46ac6d36416ae0901c457a11006e9ad10d4","file":"배경_캐릭터.png"},
+    {"imageRef":"0f199531395ec45dae3edf4cbc6279275d9ea15a","file":"배경_공용.png","registration":[0.9749153852462769,0.000004435979008121649,-0.000033189520763698965,0.9995595812797546,0.007004163693636656,0.0002075642696581781]},
+    {"imageRef":"49cc1d340dc21af332f432ffe5b194e69bbdca50","file":"배경_홍보영상.png","registration":[0.9890021681785583,0.00003502706385916099,-0.0000837515908642672,0.9997680187225342,0.005601613316684961,0.0000814050217741169]},
+    {"imageRef":"5e60b09c8237b512fa971c3e4c2011134cd7d554","file":"배경_게이미피케이션_02.png","rotation":-90},
+    {"imageRef":"bd95542aa09a7ea0e278ce44b61e9cae52671b57","file":"레미_홍보영상.png"}
+  ],
+  "exceptions": [
+    {"imageRef":"0b1a972a1b53213cde0395821b635d69f1cfa0ac","reason":"Delivered gym-building screenshot shows a different construction state (50/500 versus source 200/500). Not silently substituted."},
+    {"imageRef":"a7c30aa9e92885bf7222524f72537021dce8d189","reason":"Source footer logo is white; delivered logo B is mint/yellow. Preserve the source variant."}
+  ]
+}

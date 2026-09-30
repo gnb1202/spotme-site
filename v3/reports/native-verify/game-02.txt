@@ -1,0 +1,23 @@
+
+Mimikyu Structural Verify — 14 text nodes, 14 matched, 15 mismatches, 0 unmatched
+
+  ❌ 게임처럼 즐기는 운동 ("게임처럼 즐기는 운동")
+      x: expected 413.0 / actual 1193.0
+      y: expected 215.0 / actual 44.0
+      fontSize: expected 50 / actual 18.0
+      fontWeight: expected 800 / actual 700
+      lineHeight: expected 55.0 (figma 55.0) / actual 21.6
+  ❌ 게임처럼 즐기는 운동 ("게임처럼 즐기는 운동")
+      x: expected 1193.0 / actual 413.0
+      y: expected 43.0 / actual 216.0
+      fontSize: expected 18 / actual 50.0
+      fontWeight: expected 700 / actual 800
+      lineHeight: expected 21.6 (figma 21.6) / actual 55.0
+  ❌ 게임처럼 즐기는 운동 ("게임처럼 즐기는 운동")
+      x: expected 413.0 / actual 1193.0
+      y: expected 215.0 / actual 43.0
+      fontSize: expected 50 / actual 18.0
+      fontWeight: expected 800 / actual 700
+      lineHeight: expected 55.0 (figma 55.0) / actual 21.6
+
+  nodes: 11/14 passed · checks: 83/98 passed · overlaps: 0

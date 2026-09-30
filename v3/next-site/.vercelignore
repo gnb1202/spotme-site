@@ -1,0 +1,16 @@
+# Upload runtime sources only; keep QA, local evidence and source-path manifests local.
+node_modules/
+.next/
+.next-dev/
+.vercel/
+reports/
+scripts/
+*.md
+!THIRD_PARTY_NOTICES.md
+concept-image-prompts.json
+public/**/manifest.json
+**/.env*
+# Local original and comparison/profiling tools; production uses the approved compressed MP4.
+public/videos/spotme-site-demo.mp4
+public/video-compression-test.html
+public/frame-check.html

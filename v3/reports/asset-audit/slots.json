@@ -1,0 +1,2111 @@
+{
+  "checkedAt": "2026-09-25T17:02:46.213Z",
+  "sourceVersion": "2402852869719739567",
+  "slots": [
+    {
+      "page": "home",
+      "node": "20:197",
+      "name": "스팟미_웹사이트_배경_01 1",
+      "imageRef": "ccb3ad0835dabaf04bc0dd0d2f040c17e122cfcd",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/앱소개_스토리_01.png",
+      "rendered": "assets/delivery-260925/2f16854db11cfacc636b5679ad31a6405798bd92ed4ea23183b8028ae230149c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "20:131",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "120:969",
+      "name": "Screen (Replace here)",
+      "imageRef": "c0104bcc3e0f23d75ef37f8b5f87a04a82bfed99",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/운동수준2C.png",
+      "rendered": "assets/delivery-260925/c0ef852a35dfa181a2c41895b8657ba30315e2a5dbcade502c915e3a260f261e.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "120:982",
+      "name": "Screen (Replace here)",
+      "imageRef": "332ae8c04f60d3d2149079a9e41e82a257e66360",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/운동루틴준비2.png",
+      "rendered": "assets/delivery-260925/a412b036de9a5eb71c65ec20a19eff95a6bc2f4f34c161ae13e4efb56e0e1b3d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "120:995",
+      "name": "Screen (Replace here)",
+      "imageRef": "ad9fc61d0180b9e267e4ebdb6a315956d53b9cf2",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_c_01.png",
+      "rendered": "assets/delivery-260925/4fc0269a2d5d99c4ac18cfedb444b47063fe4ce1a066ec53f5a4fe13ee504af3.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "139:59",
+      "name": "Placeholder",
+      "imageRef": "ee1f60d9a0a70f37e2eb70ec8b5bdc45dab45ffe",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동 - 운동진행3-4C.png",
+      "rendered": "assets/delivery-260925/0349532d0b5de37d9bb8f66875d19520553ea808077e3ffc595e97bc245551c9.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "139:52",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "home",
+      "node": "139:61",
+      "name": "Placeholder",
+      "imageRef": "ed94d45461133e0a9e0b5238e5c1f7569236fe54",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_메인2.png",
+      "rendered": "assets/delivery-260925/d14ca2947fe669c7ba9ad7ae522d76cb4675a88d8b0ee7de417598650db5af76.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "139:56",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "home",
+      "node": "145:212",
+      "name": "레미_루틴완료 1",
+      "imageRef": "eb1a4dba6b08a2c7d487fbe6abe4ba272ff2d123",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_루틴완료.png",
+      "rendered": "assets/delivery-260925/a1f6f14632bf6d315d8931619dd788dbb024c49b2ffc8ba8b44c85b4b77fa8c1.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home",
+      "node": "254:244",
+      "name": "image 16",
+      "imageRef": "3e5a317e2f8079e53ffec7b08123cb6cc37273b4",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홈A_01.png",
+      "rendered": "assets/delivery-260925/2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "home",
+      "node": "254:30",
+      "name": "image 9",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "home-02",
+      "node": "255:780",
+      "name": "image 9",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "home-02",
+      "node": "254:345",
+      "name": "스팟미_웹사이트_배경_01 1",
+      "imageRef": "ccb3ad0835dabaf04bc0dd0d2f040c17e122cfcd",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/앱소개_스토리_01.png",
+      "rendered": "assets/delivery-260925/2f16854db11cfacc636b5679ad31a6405798bd92ed4ea23183b8028ae230149c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:348",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:384",
+      "name": "Screen (Replace here)",
+      "imageRef": "c0104bcc3e0f23d75ef37f8b5f87a04a82bfed99",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/운동수준2C.png",
+      "rendered": "assets/delivery-260925/c0ef852a35dfa181a2c41895b8657ba30315e2a5dbcade502c915e3a260f261e.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:397",
+      "name": "Screen (Replace here)",
+      "imageRef": "332ae8c04f60d3d2149079a9e41e82a257e66360",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/운동루틴준비2.png",
+      "rendered": "assets/delivery-260925/a412b036de9a5eb71c65ec20a19eff95a6bc2f4f34c161ae13e4efb56e0e1b3d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:410",
+      "name": "Screen (Replace here)",
+      "imageRef": "ad9fc61d0180b9e267e4ebdb6a315956d53b9cf2",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_c_01.png",
+      "rendered": "assets/delivery-260925/4fc0269a2d5d99c4ac18cfedb444b47063fe4ce1a066ec53f5a4fe13ee504af3.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:429",
+      "name": "Placeholder",
+      "imageRef": "ee1f60d9a0a70f37e2eb70ec8b5bdc45dab45ffe",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동 - 운동진행3-4C.png",
+      "rendered": "assets/delivery-260925/0349532d0b5de37d9bb8f66875d19520553ea808077e3ffc595e97bc245551c9.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:430",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "home-02",
+      "node": "254:433",
+      "name": "Placeholder",
+      "imageRef": "ed94d45461133e0a9e0b5238e5c1f7569236fe54",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_메인2.png",
+      "rendered": "assets/delivery-260925/d14ca2947fe669c7ba9ad7ae522d76cb4675a88d8b0ee7de417598650db5af76.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:434",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "home-02",
+      "node": "254:435",
+      "name": "레미_루틴완료 1",
+      "imageRef": "eb1a4dba6b08a2c7d487fbe6abe4ba272ff2d123",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_루틴완료.png",
+      "rendered": "assets/delivery-260925/a1f6f14632bf6d315d8931619dd788dbb024c49b2ffc8ba8b44c85b4b77fa8c1.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "home-02",
+      "node": "254:438",
+      "name": "image 19",
+      "imageRef": "e68aaa2a3d9d20586128e80f9f2db97f8983b457",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홈A_02.png",
+      "rendered": "assets/delivery-260925/f8fedce711eb6c55d355d76412b01306c237883441805b7a6ae2096c3c92747d.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "ai",
+      "node": "256:478",
+      "name": "image 23",
+      "imageRef": "3442a13be83a788a4cf14be3b490aac31f0f3e9c",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/앱소개_스토리_02.png",
+      "rendered": "assets/delivery-260925/a6bada085166f8bacc60d27a6058ff44008e24f254a548b6c0cfb392280d9ba1.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "ai",
+      "node": "211:19",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "145:142",
+      "name": "Placeholder",
+      "imageRef": "fe02a5be08ff7de49615474a21e3c25f9ccd4c4f",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/2_레미AI_03.png",
+      "rendered": "assets/delivery-260925/cce2ae2f2df614acffc5defdb6a70ebcb0610423e2105a6d0f5ceb1b22b65084.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "145:143",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "ai",
+      "node": "145:146",
+      "name": "Placeholder",
+      "imageRef": "aec601006377bc600b3c3e34b8e0d38e5a72e091",
+      "source": "assets/figma-v3/fill-aec601006377bc600b3c3e34b8e0d38e5a72e091.png",
+      "rendered": "assets/figma-v3/fill-aec601006377bc600b3c3e34b8e0d38e5a72e091.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "ai",
+      "node": "145:147",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "ai",
+      "node": "145:137",
+      "name": "Placeholder",
+      "imageRef": "0142bd79e315b366161b585de4133897d49c1bf1",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_f_01b.png",
+      "rendered": "assets/delivery-260925/6ea481b646713cd8dc81b7904a7b98559b91c7af0d60306a4bacacf6e1bd207b.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "145:132",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "ai",
+      "node": "145:135",
+      "name": "Placeholder",
+      "imageRef": "a0f80e0ea6b3241edd4b4f8ef83f98f8fa0ecba6",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_AI추천운동.png",
+      "rendered": "assets/delivery-260925/7b8d24de13354355fd5e4629c8a60b86187508961df18d19b0de20a1f5b9c22b.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "145:128",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "ai",
+      "node": "250:9",
+      "name": "image 4",
+      "imageRef": "fd8f121ee52e50fd5cf0eb05c4b3ef256984ecd1",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_운동서포트_01.png",
+      "rendered": "assets/delivery-260925/f86cfcb9d26efb95ee5e14bbc87c381a9d195375aaf722c4aab1de893dcd4a63.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "ai",
+      "node": "254:42",
+      "name": "image 13",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "ai",
+      "node": "112:669",
+      "name": "Screen (Replace here)",
+      "imageRef": "8dc5b578af3e61eee23d0355deda321d3a10ca0f",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_운동결과1A-1.png",
+      "rendered": "assets/delivery-260925/c098b86aeefaa45b25a1ff46ba87512d6a7962cce19a76488d7e888fc12e7f8d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "112:682",
+      "name": "Screen (Replace here)",
+      "imageRef": "a01d3f30a826d28b05552db847b9a15ceb9148aa",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/3_리포트2.png",
+      "rendered": "assets/delivery-260925/2599f32632c457f17f1cc9f9934a4100a3374e15570839fdb22ae2f339f77b33.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "112:696",
+      "name": "Screen (Replace here)",
+      "imageRef": "ad9fc61d0180b9e267e4ebdb6a315956d53b9cf2",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_c_01.png",
+      "rendered": "assets/delivery-260925/4fc0269a2d5d99c4ac18cfedb444b47063fe4ce1a066ec53f5a4fe13ee504af3.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "112:709",
+      "name": "Screen (Replace here)",
+      "imageRef": "97c15bab6b501fe8e33c87631fd71f9e6e45cf7c",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동 - 운동진행3-4B.png",
+      "rendered": "assets/delivery-260925/b09885837f2556d57ebf02222ac7ce01a0c9e587bfbbe5aa07f496dc59a6f06d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "112:722",
+      "name": "Screen (Replace here)",
+      "imageRef": "ee1f60d9a0a70f37e2eb70ec8b5bdc45dab45ffe",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동 - 운동진행3-4C.png",
+      "rendered": "assets/delivery-260925/0349532d0b5de37d9bb8f66875d19520553ea808077e3ffc595e97bc245551c9.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "ai",
+      "node": "112:750",
+      "name": "3_리포트2_full 1",
+      "imageRef": "2e181d7302f9fce5567165ebd72d0118eea7ebbc",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/3_리포트2_full.png",
+      "rendered": "assets/delivery-260925/616ffaa4de8e472d7050874f418d12d4cc9a2e798582bfc6f81693e5113e9d73.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "ai",
+      "node": "255:778",
+      "name": "스팟미_로고_white 2",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "256:463",
+      "name": "image 8",
+      "imageRef": "92f3d466d28c66146c30f13469c529bbfb60c36e",
+      "source": "assets/figma-v3/fill-92f3d466d28c66146c30f13469c529bbfb60c36e.png",
+      "rendered": "assets/figma-v3/fill-92f3d466d28c66146c30f13469c529bbfb60c36e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "256:468",
+      "name": "image 22",
+      "imageRef": "5e60b09c8237b512fa971c3e4c2011134cd7d554",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_게이미피케이션_02.png",
+      "rendered": "assets/delivery-260925/ebbe81070fd9b030aaf877b385f7b4f9199e70d96c23fa74aa30d1a4a56117b1.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game",
+      "node": "145:204",
+      "name": "Placeholder",
+      "imageRef": "c83ad1b6bee87b5aaa1d44dd96352bbfff2f2e47",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/5_프로필2.png",
+      "rendered": "assets/delivery-260925/df47659c306a728eb7dcc9564ca69531a063d599d2a12a04941cf2d710ef7394.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game",
+      "node": "145:197",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "145:202",
+      "name": "Placeholder",
+      "imageRef": "536f7af37e2b2995748fd0dcf0c2039fe5b5e9dc",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/4_랭킹_이번달.png",
+      "rendered": "assets/delivery-260925/85a98b788e179829451f9ba58b74a0a30e385209a6f43af9209ee681d11f2b90.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game",
+      "node": "145:193",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "145:200",
+      "name": "Placeholder",
+      "imageRef": "91e4202720505d45b5c4b383d9f61ad56da223f3",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/5_프로필1.png",
+      "rendered": "assets/delivery-260925/15236e07ef210328dd9e2d0a3f48ceb4df7436af048b1b2f9bef69caecd5829c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game",
+      "node": "145:189",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "256:461",
+      "name": "image 21",
+      "imageRef": "02f2f5cf574bb182cfec1978fbffc79127cc989a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_게이미피케이션_01.png",
+      "rendered": "assets/delivery-260925/bec42f63ea6826e94df3243d28c5ecc13dcc573ba60155ac083faf9ff6031dc4.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game",
+      "node": "145:240",
+      "name": "Placeholder",
+      "imageRef": "ea4c87049182e84e56233caf739f05ff884a12a6",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_퀘스트_주간퀘스트_조건달성.png",
+      "rendered": "assets/delivery-260925/dc81272686d9b85ef2117c49af282356878e86fed52c0db13dd114d355ed1ae2.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game",
+      "node": "145:241",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "145:244",
+      "name": "Placeholder",
+      "imageRef": "0b1a972a1b53213cde0395821b635d69f1cfa0ac",
+      "source": "assets/figma-v3/fill-0b1a972a1b53213cde0395821b635d69f1cfa0ac.png",
+      "rendered": "assets/figma-v3/fill-0b1a972a1b53213cde0395821b635d69f1cfa0ac.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "145:245",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "256:456",
+      "name": "image 20",
+      "imageRef": "fe6a8f1fa79bc5f18b2ba3b97ca84d03583c854d",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_게이미피케이션.png",
+      "rendered": "assets/delivery-260925/e2b7646904f93674b760288ee3bb7a7fb4e44ea903f8dab1fa272ada052390ea.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game",
+      "node": "211:31",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game",
+      "node": "215:442",
+      "name": "Ellipse 230",
+      "imageRef": "8a1a122845afe035678ee3f951dcdf56db822235",
+      "source": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "rendered": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "215:443",
+      "name": "Ellipse 231",
+      "imageRef": "8a1a122845afe035678ee3f951dcdf56db822235",
+      "source": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "rendered": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "215:445",
+      "name": "체력바 1",
+      "imageRef": "8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0",
+      "source": "assets/figma-v3/fill-8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0.png",
+      "rendered": "assets/figma-v3/fill-8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game",
+      "node": "215:449",
+      "name": "레미_전투_01 1",
+      "imageRef": "f25ae60046dbc0adec5957005bdfa60c64fd545b",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_운동진행_01.png",
+      "rendered": "assets/delivery-260925/fe2a7c0c864704f74e12b4b1157dcfa21eb0dd080dfd7ca4ab8751be2aa593d7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game",
+      "node": "215:450",
+      "name": "monster-golem 1",
+      "imageRef": "31bd022720d26e31c56784dcf64118bb7acd43ae",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_일반.png",
+      "rendered": "assets/delivery-260925/367477adbf470525aa50ad1bcb1df15a22dbb8181524d217e726e9b39fc1ecce.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1088",
+      "name": "image 8",
+      "imageRef": "92f3d466d28c66146c30f13469c529bbfb60c36e",
+      "source": "assets/figma-v3/fill-92f3d466d28c66146c30f13469c529bbfb60c36e.png",
+      "rendered": "assets/figma-v3/fill-92f3d466d28c66146c30f13469c529bbfb60c36e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1102",
+      "name": "image 22",
+      "imageRef": "5e60b09c8237b512fa971c3e4c2011134cd7d554",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_게이미피케이션_02.png",
+      "rendered": "assets/delivery-260925/ebbe81070fd9b030aaf877b385f7b4f9199e70d96c23fa74aa30d1a4a56117b1.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1107",
+      "name": "Placeholder",
+      "imageRef": "c83ad1b6bee87b5aaa1d44dd96352bbfff2f2e47",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/5_프로필2.png",
+      "rendered": "assets/delivery-260925/df47659c306a728eb7dcc9564ca69531a063d599d2a12a04941cf2d710ef7394.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1108",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1111",
+      "name": "Placeholder",
+      "imageRef": "536f7af37e2b2995748fd0dcf0c2039fe5b5e9dc",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/4_랭킹_이번달.png",
+      "rendered": "assets/delivery-260925/85a98b788e179829451f9ba58b74a0a30e385209a6f43af9209ee681d11f2b90.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1112",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1115",
+      "name": "Placeholder",
+      "imageRef": "91e4202720505d45b5c4b383d9f61ad56da223f3",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/5_프로필1.png",
+      "rendered": "assets/delivery-260925/15236e07ef210328dd9e2d0a3f48ceb4df7436af048b1b2f9bef69caecd5829c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1116",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1117",
+      "name": "image 21",
+      "imageRef": "02f2f5cf574bb182cfec1978fbffc79127cc989a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_게이미피케이션_01.png",
+      "rendered": "assets/delivery-260925/bec42f63ea6826e94df3243d28c5ecc13dcc573ba60155ac083faf9ff6031dc4.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1122",
+      "name": "Placeholder",
+      "imageRef": "ea4c87049182e84e56233caf739f05ff884a12a6",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_퀘스트_주간퀘스트_조건달성.png",
+      "rendered": "assets/delivery-260925/dc81272686d9b85ef2117c49af282356878e86fed52c0db13dd114d355ed1ae2.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1123",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1126",
+      "name": "Placeholder",
+      "imageRef": "0b1a972a1b53213cde0395821b635d69f1cfa0ac",
+      "source": "assets/figma-v3/fill-0b1a972a1b53213cde0395821b635d69f1cfa0ac.png",
+      "rendered": "assets/figma-v3/fill-0b1a972a1b53213cde0395821b635d69f1cfa0ac.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1127",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1128",
+      "name": "image 20",
+      "imageRef": "fe6a8f1fa79bc5f18b2ba3b97ca84d03583c854d",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_게이미피케이션.png",
+      "rendered": "assets/delivery-260925/e2b7646904f93674b760288ee3bb7a7fb4e44ea903f8dab1fa272ada052390ea.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1131",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1148",
+      "name": "Ellipse 231",
+      "imageRef": "8a1a122845afe035678ee3f951dcdf56db822235",
+      "source": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "rendered": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1150",
+      "name": "Ellipse 230",
+      "imageRef": "8a1a122845afe035678ee3f951dcdf56db822235",
+      "source": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "rendered": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1158",
+      "name": "monster-golem 1",
+      "imageRef": "16c5819b7409331a4a5a66b031a48d29d5fe58f3",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_딸피.png",
+      "rendered": "assets/delivery-260925/842c2bc100749aed4e9b5c45f90a15e52e613263475f70e66c27ce7bb4d77971.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1152",
+      "name": "체력바 1",
+      "imageRef": "8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0",
+      "source": "assets/figma-v3/fill-8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0.png",
+      "rendered": "assets/figma-v3/fill-8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-02",
+      "node": "255:1157",
+      "name": "레미_전투_01 1",
+      "imageRef": "8f35966bb4bc2ff11b3a9b361c3cf924460eb9e4",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_운동진행_03.png",
+      "rendered": "assets/delivery-260925/68ef7e0747480a0ac1871abb8f91e3b95a91d987f291119f82bc07135f46a841.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1165",
+      "name": "image 8",
+      "imageRef": "92f3d466d28c66146c30f13469c529bbfb60c36e",
+      "source": "assets/figma-v3/fill-92f3d466d28c66146c30f13469c529bbfb60c36e.png",
+      "rendered": "assets/figma-v3/fill-92f3d466d28c66146c30f13469c529bbfb60c36e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1179",
+      "name": "image 22",
+      "imageRef": "5e60b09c8237b512fa971c3e4c2011134cd7d554",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_게이미피케이션_02.png",
+      "rendered": "assets/delivery-260925/ebbe81070fd9b030aaf877b385f7b4f9199e70d96c23fa74aa30d1a4a56117b1.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1184",
+      "name": "Placeholder",
+      "imageRef": "c83ad1b6bee87b5aaa1d44dd96352bbfff2f2e47",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/5_프로필2.png",
+      "rendered": "assets/delivery-260925/df47659c306a728eb7dcc9564ca69531a063d599d2a12a04941cf2d710ef7394.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1185",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1188",
+      "name": "Placeholder",
+      "imageRef": "536f7af37e2b2995748fd0dcf0c2039fe5b5e9dc",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/4_랭킹_이번달.png",
+      "rendered": "assets/delivery-260925/85a98b788e179829451f9ba58b74a0a30e385209a6f43af9209ee681d11f2b90.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1189",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1192",
+      "name": "Placeholder",
+      "imageRef": "91e4202720505d45b5c4b383d9f61ad56da223f3",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/5_프로필1.png",
+      "rendered": "assets/delivery-260925/15236e07ef210328dd9e2d0a3f48ceb4df7436af048b1b2f9bef69caecd5829c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1193",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1194",
+      "name": "image 21",
+      "imageRef": "02f2f5cf574bb182cfec1978fbffc79127cc989a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_게이미피케이션_01.png",
+      "rendered": "assets/delivery-260925/bec42f63ea6826e94df3243d28c5ecc13dcc573ba60155ac083faf9ff6031dc4.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1199",
+      "name": "Placeholder",
+      "imageRef": "ea4c87049182e84e56233caf739f05ff884a12a6",
+      "source": "../스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_퀘스트_주간퀘스트_조건달성.png",
+      "rendered": "assets/delivery-260925/dc81272686d9b85ef2117c49af282356878e86fed52c0db13dd114d355ed1ae2.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1200",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1203",
+      "name": "Placeholder",
+      "imageRef": "0b1a972a1b53213cde0395821b635d69f1cfa0ac",
+      "source": "assets/figma-v3/fill-0b1a972a1b53213cde0395821b635d69f1cfa0ac.png",
+      "rendered": "assets/figma-v3/fill-0b1a972a1b53213cde0395821b635d69f1cfa0ac.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1204",
+      "name": "Blue",
+      "imageRef": "f035ac52ccd7a4a9c36651b6710f77e7ee8b714e",
+      "source": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "rendered": "assets/figma-v3/fill-f035ac52ccd7a4a9c36651b6710f77e7ee8b714e.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1205",
+      "name": "image 20",
+      "imageRef": "fe6a8f1fa79bc5f18b2ba3b97ca84d03583c854d",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_게이미피케이션.png",
+      "rendered": "assets/delivery-260925/e2b7646904f93674b760288ee3bb7a7fb4e44ea903f8dab1fa272ada052390ea.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1208",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1227",
+      "name": "Ellipse 230",
+      "imageRef": "8a1a122845afe035678ee3f951dcdf56db822235",
+      "source": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "rendered": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1228",
+      "name": "Ellipse 231",
+      "imageRef": "8a1a122845afe035678ee3f951dcdf56db822235",
+      "source": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "rendered": "assets/figma-v3/fill-8a1a122845afe035678ee3f951dcdf56db822235.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1230",
+      "name": "체력바 1",
+      "imageRef": "8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0",
+      "source": "assets/figma-v3/fill-8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0.png",
+      "rendered": "assets/figma-v3/fill-8d56ec7d986f8840c04e6d0d1028c76eb0aad9b0.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1234",
+      "name": "monster-golem 1",
+      "imageRef": "0e4d40e5d72e261b1da517e2ca7638294f37cd8d",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_사망.png",
+      "rendered": "assets/delivery-260925/bbea6f7ba7547ee46276d81ce03de179871bcde7f85d236037e0e2c51f022d74.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "game-03",
+      "node": "255:1241",
+      "name": "레미_전투_01 1",
+      "imageRef": "f25ae60046dbc0adec5957005bdfa60c64fd545b",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_운동진행_01.png",
+      "rendered": "assets/delivery-260925/fe2a7c0c864704f74e12b4b1157dcfa21eb0dd080dfd7ca4ab8751be2aa593d7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "256:582",
+      "name": "image 24",
+      "imageRef": "c393c46ac6d36416ae0901c457a11006e9ad10d4",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_캐릭터.png",
+      "rendered": "assets/delivery-260925/fb24e60ee8ee2474886a3b52491156479f78abc0c6aa9a3104afc48eed2e656c.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters",
+      "node": "255:784",
+      "name": "image 9",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters",
+      "node": "254:218",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:205",
+      "name": "몬스터_피로누적형1_일반 2",
+      "imageRef": "5c5585aacde872d5e625be5a1007017bea10e581",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_기록정체형1_일반.png",
+      "rendered": "assets/delivery-260925/41c8b632eba20dd29f60ffb3bab262161c1cc31944a0fa1c2befabeb631c63eb.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:200",
+      "name": "몬스터_피로누적형1_일반 11",
+      "imageRef": "c7e0fa7f3682f7a37cdac32fd36407ba8b1b1c88",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_피로누적형1_일반.png",
+      "rendered": "assets/delivery-260925/82d2bd8cef9da0d063929f655d60aee777c88e2c1994695310df685c38206d96.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:202",
+      "name": "몬스터_피로누적형1_일반 12",
+      "imageRef": "b135ef5fae54235f07536777f51d560218693e5b",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_목표상실형1_일반.png",
+      "rendered": "assets/delivery-260925/9e2ed010e703a85afa9c3d3f75a0176517ae3144df1333dffc99e9e1abda17fc.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:207",
+      "name": "몬스터_피로누적형1_일반 4",
+      "imageRef": "bd3b8762d36ff633cac9d190c80b9947ec028f7a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_루틴편식형1_일반.png",
+      "rendered": "assets/delivery-260925/0109be457c83119506bd34efd7fbd0d24be3edf3104af62428dc6d711288b14f.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:225",
+      "name": "아이콘_이전_black 1",
+      "imageRef": "17be35913d0cd0313816c850929778de3fc74ce5",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이전_black.png",
+      "rendered": "assets/delivery-260925/e391f4de06f53bcf08763eb63628cb64ee33a0ed5c652e0d990a77a4c8aa3f93.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:226",
+      "name": "아이콘_이전_black 2",
+      "imageRef": "3e9eb042d219c04a6443af0391943325c8b40662",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이후_black.png",
+      "rendered": "assets/delivery-260925/7cc7e473cd07efef36bc8ba332af90e6137a5785371cc0846e0e73670555c079.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:229",
+      "name": "몬스터_피로누적형1_일반 3",
+      "imageRef": "31bd022720d26e31c56784dcf64118bb7acd43ae",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_일반.png",
+      "rendered": "assets/delivery-260925/367477adbf470525aa50ad1bcb1df15a22dbb8181524d217e726e9b39fc1ecce.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "256:587",
+      "name": "image 25",
+      "imageRef": "912371c845d925a2a663c494c861fb40a5cccbb7",
+      "source": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "rendered": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters",
+      "node": "254:194",
+      "name": "레미_01 7",
+      "imageRef": "605656591189b8e57f81e5e8f1ea5d233ff75913",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_07.png",
+      "rendered": "assets/delivery-260925/43434ce7388e4e8ab3e831c26ec73983743ff059fba6c4b8a080b2087a25a843.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:210",
+      "name": "레미_05 1",
+      "imageRef": "e214135caa920e5ce7e9c8536467b06607450d70",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_05.png",
+      "rendered": "assets/delivery-260925/50c0d177ea85609d741d97b4a9863c5b5b6bb01f50d6e5b4d88ee21b733f1cd1.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:214",
+      "name": "레미_05 2",
+      "imageRef": "76e35be6bf04436855fe19770550bbaafa571a94",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_02.png",
+      "rendered": "assets/delivery-260925/b843d019967152339b27ea028efd72bc25f8d66bb26bb390ec0259223a5ec7c7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:215",
+      "name": "레미_05 3",
+      "imageRef": "ad0e838536fc9b656ae24ada866a59a381b86ba9",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_05.png",
+      "rendered": "assets/delivery-260925/6dc770fa8e4e61639383292f1c2c69803a420cee03781a80fa9de645c54b7678.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:213",
+      "name": "레미_05 6",
+      "imageRef": "f116e2204a9e364614a1daf8bccefdc6a9286703",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_02.png",
+      "rendered": "assets/delivery-260925/eb0992f912ea0664fd7f0bd7f1f9e957c92bb289ed8bf1a4c8c35dd7151af891.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:212",
+      "name": "레미_05 5",
+      "imageRef": "95403834cf9148ef0a35181b31a64661021d99ba",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_01.png",
+      "rendered": "assets/delivery-260925/b875f964048d7eb1cb0f461bf45ff5014e3af50e9cd12b30f3f557e41440a59d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "254:211",
+      "name": "레미_05 4",
+      "imageRef": "c483e37164407b777416a16ac44d2290f78f810a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_06.png",
+      "rendered": "assets/delivery-260925/595b336a307f155ef7b7b8e5bd9b1f04d9f6828a73fcb204e587cb61546cd82c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters",
+      "node": "255:913",
+      "name": "스팟미_로고_white 2",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:789",
+      "name": "image 24",
+      "imageRef": "c393c46ac6d36416ae0901c457a11006e9ad10d4",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_캐릭터.png",
+      "rendered": "assets/delivery-260925/fb24e60ee8ee2474886a3b52491156479f78abc0c6aa9a3104afc48eed2e656c.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:791",
+      "name": "image 9",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:802",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:822",
+      "name": "아이콘_이전_black 1",
+      "imageRef": "17be35913d0cd0313816c850929778de3fc74ce5",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이전_black.png",
+      "rendered": "assets/delivery-260925/e391f4de06f53bcf08763eb63628cb64ee33a0ed5c652e0d990a77a4c8aa3f93.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:823",
+      "name": "아이콘_이전_black 2",
+      "imageRef": "3e9eb042d219c04a6443af0391943325c8b40662",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이후_black.png",
+      "rendered": "assets/delivery-260925/7cc7e473cd07efef36bc8ba332af90e6137a5785371cc0846e0e73670555c079.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:830",
+      "name": "image 25",
+      "imageRef": "912371c845d925a2a663c494c861fb40a5cccbb7",
+      "source": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "rendered": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:832",
+      "name": "레미_01 7",
+      "imageRef": "605656591189b8e57f81e5e8f1ea5d233ff75913",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_07.png",
+      "rendered": "assets/delivery-260925/43434ce7388e4e8ab3e831c26ec73983743ff059fba6c4b8a080b2087a25a843.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:833",
+      "name": "레미_05 1",
+      "imageRef": "e214135caa920e5ce7e9c8536467b06607450d70",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_05.png",
+      "rendered": "assets/delivery-260925/50c0d177ea85609d741d97b4a9863c5b5b6bb01f50d6e5b4d88ee21b733f1cd1.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:834",
+      "name": "레미_05 2",
+      "imageRef": "76e35be6bf04436855fe19770550bbaafa571a94",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_02.png",
+      "rendered": "assets/delivery-260925/b843d019967152339b27ea028efd72bc25f8d66bb26bb390ec0259223a5ec7c7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:835",
+      "name": "레미_05 3",
+      "imageRef": "ad0e838536fc9b656ae24ada866a59a381b86ba9",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_05.png",
+      "rendered": "assets/delivery-260925/6dc770fa8e4e61639383292f1c2c69803a420cee03781a80fa9de645c54b7678.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:836",
+      "name": "레미_05 6",
+      "imageRef": "f116e2204a9e364614a1daf8bccefdc6a9286703",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_02.png",
+      "rendered": "assets/delivery-260925/eb0992f912ea0664fd7f0bd7f1f9e957c92bb289ed8bf1a4c8c35dd7151af891.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:837",
+      "name": "레미_05 5",
+      "imageRef": "95403834cf9148ef0a35181b31a64661021d99ba",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_01.png",
+      "rendered": "assets/delivery-260925/b875f964048d7eb1cb0f461bf45ff5014e3af50e9cd12b30f3f557e41440a59d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:838",
+      "name": "레미_05 4",
+      "imageRef": "c483e37164407b777416a16ac44d2290f78f810a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_06.png",
+      "rendered": "assets/delivery-260925/595b336a307f155ef7b7b8e5bd9b1f04d9f6828a73fcb204e587cb61546cd82c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:842",
+      "name": "몬스터_피로누적형1_일반 11",
+      "imageRef": "b135ef5fae54235f07536777f51d560218693e5b",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_목표상실형1_일반.png",
+      "rendered": "assets/delivery-260925/9e2ed010e703a85afa9c3d3f75a0176517ae3144df1333dffc99e9e1abda17fc.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:846",
+      "name": "몬스터_피로누적형1_일반 2",
+      "imageRef": "c7e0fa7f3682f7a37cdac32fd36407ba8b1b1c88",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_피로누적형1_일반.png",
+      "rendered": "assets/delivery-260925/82d2bd8cef9da0d063929f655d60aee777c88e2c1994695310df685c38206d96.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:851",
+      "name": "몬스터_피로누적형1_일반 12",
+      "imageRef": "31bd022720d26e31c56784dcf64118bb7acd43ae",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_일반.png",
+      "rendered": "assets/delivery-260925/367477adbf470525aa50ad1bcb1df15a22dbb8181524d217e726e9b39fc1ecce.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:852",
+      "name": "몬스터_피로누적형1_일반 4",
+      "imageRef": "5c5585aacde872d5e625be5a1007017bea10e581",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_기록정체형1_일반.png",
+      "rendered": "assets/delivery-260925/41c8b632eba20dd29f60ffb3bab262161c1cc31944a0fa1c2befabeb631c63eb.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:855",
+      "name": "몬스터_피로누적형1_일반 3",
+      "imageRef": "bd3b8762d36ff633cac9d190c80b9947ec028f7a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_루틴편식형1_일반.png",
+      "rendered": "assets/delivery-260925/0109be457c83119506bd34efd7fbd0d24be3edf3104af62428dc6d711288b14f.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-b",
+      "node": "255:916",
+      "name": "스팟미_로고_white 2",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:862",
+      "name": "image 24",
+      "imageRef": "c393c46ac6d36416ae0901c457a11006e9ad10d4",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_캐릭터.png",
+      "rendered": "assets/delivery-260925/fb24e60ee8ee2474886a3b52491156479f78abc0c6aa9a3104afc48eed2e656c.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:864",
+      "name": "image 9",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:873",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:881",
+      "name": "아이콘_이전_black 1",
+      "imageRef": "17be35913d0cd0313816c850929778de3fc74ce5",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이전_black.png",
+      "rendered": "assets/delivery-260925/e391f4de06f53bcf08763eb63628cb64ee33a0ed5c652e0d990a77a4c8aa3f93.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:882",
+      "name": "아이콘_이전_black 2",
+      "imageRef": "3e9eb042d219c04a6443af0391943325c8b40662",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이후_black.png",
+      "rendered": "assets/delivery-260925/7cc7e473cd07efef36bc8ba332af90e6137a5785371cc0846e0e73670555c079.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:884",
+      "name": "image 25",
+      "imageRef": "912371c845d925a2a663c494c861fb40a5cccbb7",
+      "source": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "rendered": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:886",
+      "name": "레미_01 7",
+      "imageRef": "605656591189b8e57f81e5e8f1ea5d233ff75913",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_07.png",
+      "rendered": "assets/delivery-260925/43434ce7388e4e8ab3e831c26ec73983743ff059fba6c4b8a080b2087a25a843.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:887",
+      "name": "레미_05 1",
+      "imageRef": "e214135caa920e5ce7e9c8536467b06607450d70",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_05.png",
+      "rendered": "assets/delivery-260925/50c0d177ea85609d741d97b4a9863c5b5b6bb01f50d6e5b4d88ee21b733f1cd1.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:888",
+      "name": "레미_05 2",
+      "imageRef": "76e35be6bf04436855fe19770550bbaafa571a94",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_02.png",
+      "rendered": "assets/delivery-260925/b843d019967152339b27ea028efd72bc25f8d66bb26bb390ec0259223a5ec7c7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:889",
+      "name": "레미_05 3",
+      "imageRef": "ad0e838536fc9b656ae24ada866a59a381b86ba9",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_05.png",
+      "rendered": "assets/delivery-260925/6dc770fa8e4e61639383292f1c2c69803a420cee03781a80fa9de645c54b7678.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:890",
+      "name": "레미_05 6",
+      "imageRef": "f116e2204a9e364614a1daf8bccefdc6a9286703",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_02.png",
+      "rendered": "assets/delivery-260925/eb0992f912ea0664fd7f0bd7f1f9e957c92bb289ed8bf1a4c8c35dd7151af891.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:891",
+      "name": "레미_05 5",
+      "imageRef": "95403834cf9148ef0a35181b31a64661021d99ba",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_01.png",
+      "rendered": "assets/delivery-260925/b875f964048d7eb1cb0f461bf45ff5014e3af50e9cd12b30f3f557e41440a59d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:892",
+      "name": "레미_05 4",
+      "imageRef": "c483e37164407b777416a16ac44d2290f78f810a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_06.png",
+      "rendered": "assets/delivery-260925/595b336a307f155ef7b7b8e5bd9b1f04d9f6828a73fcb204e587cb61546cd82c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:919",
+      "name": "스팟미_로고_white 2",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:922",
+      "name": "몬스터_피로누적형1_일반 12",
+      "imageRef": "31bd022720d26e31c56784dcf64118bb7acd43ae",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_일반.png",
+      "rendered": "assets/delivery-260925/367477adbf470525aa50ad1bcb1df15a22dbb8181524d217e726e9b39fc1ecce.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:925",
+      "name": "몬스터_피로누적형1_일반 3",
+      "imageRef": "bd3b8762d36ff633cac9d190c80b9947ec028f7a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_루틴편식형1_일반.png",
+      "rendered": "assets/delivery-260925/0109be457c83119506bd34efd7fbd0d24be3edf3104af62428dc6d711288b14f.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:928",
+      "name": "몬스터_피로누적형1_일반 13",
+      "imageRef": "b135ef5fae54235f07536777f51d560218693e5b",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_목표상실형1_일반.png",
+      "rendered": "assets/delivery-260925/9e2ed010e703a85afa9c3d3f75a0176517ae3144df1333dffc99e9e1abda17fc.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:932",
+      "name": "몬스터_피로누적형1_일반 2",
+      "imageRef": "c7e0fa7f3682f7a37cdac32fd36407ba8b1b1c88",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_피로누적형1_일반.png",
+      "rendered": "assets/delivery-260925/82d2bd8cef9da0d063929f655d60aee777c88e2c1994695310df685c38206d96.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-c",
+      "node": "255:935",
+      "name": "몬스터_피로누적형1_일반 4",
+      "imageRef": "5c5585aacde872d5e625be5a1007017bea10e581",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_기록정체형1_일반.png",
+      "rendered": "assets/delivery-260925/41c8b632eba20dd29f60ffb3bab262161c1cc31944a0fa1c2befabeb631c63eb.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:942",
+      "name": "image 24",
+      "imageRef": "c393c46ac6d36416ae0901c457a11006e9ad10d4",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_캐릭터.png",
+      "rendered": "assets/delivery-260925/fb24e60ee8ee2474886a3b52491156479f78abc0c6aa9a3104afc48eed2e656c.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:944",
+      "name": "image 9",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:953",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:961",
+      "name": "아이콘_이전_black 1",
+      "imageRef": "17be35913d0cd0313816c850929778de3fc74ce5",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이전_black.png",
+      "rendered": "assets/delivery-260925/e391f4de06f53bcf08763eb63628cb64ee33a0ed5c652e0d990a77a4c8aa3f93.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:962",
+      "name": "아이콘_이전_black 2",
+      "imageRef": "3e9eb042d219c04a6443af0391943325c8b40662",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이후_black.png",
+      "rendered": "assets/delivery-260925/7cc7e473cd07efef36bc8ba332af90e6137a5785371cc0846e0e73670555c079.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:964",
+      "name": "image 25",
+      "imageRef": "912371c845d925a2a663c494c861fb40a5cccbb7",
+      "source": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "rendered": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:966",
+      "name": "레미_01 7",
+      "imageRef": "605656591189b8e57f81e5e8f1ea5d233ff75913",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_07.png",
+      "rendered": "assets/delivery-260925/43434ce7388e4e8ab3e831c26ec73983743ff059fba6c4b8a080b2087a25a843.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:967",
+      "name": "레미_05 1",
+      "imageRef": "e214135caa920e5ce7e9c8536467b06607450d70",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_05.png",
+      "rendered": "assets/delivery-260925/50c0d177ea85609d741d97b4a9863c5b5b6bb01f50d6e5b4d88ee21b733f1cd1.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:968",
+      "name": "레미_05 2",
+      "imageRef": "76e35be6bf04436855fe19770550bbaafa571a94",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_02.png",
+      "rendered": "assets/delivery-260925/b843d019967152339b27ea028efd72bc25f8d66bb26bb390ec0259223a5ec7c7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:969",
+      "name": "레미_05 3",
+      "imageRef": "ad0e838536fc9b656ae24ada866a59a381b86ba9",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_05.png",
+      "rendered": "assets/delivery-260925/6dc770fa8e4e61639383292f1c2c69803a420cee03781a80fa9de645c54b7678.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:970",
+      "name": "레미_05 6",
+      "imageRef": "f116e2204a9e364614a1daf8bccefdc6a9286703",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_02.png",
+      "rendered": "assets/delivery-260925/eb0992f912ea0664fd7f0bd7f1f9e957c92bb289ed8bf1a4c8c35dd7151af891.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:971",
+      "name": "레미_05 5",
+      "imageRef": "95403834cf9148ef0a35181b31a64661021d99ba",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_01.png",
+      "rendered": "assets/delivery-260925/b875f964048d7eb1cb0f461bf45ff5014e3af50e9cd12b30f3f557e41440a59d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:972",
+      "name": "레미_05 4",
+      "imageRef": "c483e37164407b777416a16ac44d2290f78f810a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_06.png",
+      "rendered": "assets/delivery-260925/595b336a307f155ef7b7b8e5bd9b1f04d9f6828a73fcb204e587cb61546cd82c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:976",
+      "name": "스팟미_로고_white 2",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:995",
+      "name": "몬스터_피로누적형1_일반 3",
+      "imageRef": "bd3b8762d36ff633cac9d190c80b9947ec028f7a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_루틴편식형1_일반.png",
+      "rendered": "assets/delivery-260925/0109be457c83119506bd34efd7fbd0d24be3edf3104af62428dc6d711288b14f.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:998",
+      "name": "몬스터_피로누적형1_일반 4",
+      "imageRef": "5c5585aacde872d5e625be5a1007017bea10e581",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_기록정체형1_일반.png",
+      "rendered": "assets/delivery-260925/41c8b632eba20dd29f60ffb3bab262161c1cc31944a0fa1c2befabeb631c63eb.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:1000",
+      "name": "몬스터_피로누적형1_일반 15",
+      "imageRef": "31bd022720d26e31c56784dcf64118bb7acd43ae",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_일반.png",
+      "rendered": "assets/delivery-260925/367477adbf470525aa50ad1bcb1df15a22dbb8181524d217e726e9b39fc1ecce.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:1003",
+      "name": "몬스터_피로누적형1_일반 14",
+      "imageRef": "b135ef5fae54235f07536777f51d560218693e5b",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_목표상실형1_일반.png",
+      "rendered": "assets/delivery-260925/9e2ed010e703a85afa9c3d3f75a0176517ae3144df1333dffc99e9e1abda17fc.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-d",
+      "node": "255:1010",
+      "name": "몬스터_피로누적형1_일반 12",
+      "imageRef": "c7e0fa7f3682f7a37cdac32fd36407ba8b1b1c88",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_피로누적형1_일반.png",
+      "rendered": "assets/delivery-260925/82d2bd8cef9da0d063929f655d60aee777c88e2c1994695310df685c38206d96.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1015",
+      "name": "image 24",
+      "imageRef": "c393c46ac6d36416ae0901c457a11006e9ad10d4",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_캐릭터.png",
+      "rendered": "assets/delivery-260925/fb24e60ee8ee2474886a3b52491156479f78abc0c6aa9a3104afc48eed2e656c.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1017",
+      "name": "image 9",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1026",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1034",
+      "name": "아이콘_이전_black 1",
+      "imageRef": "17be35913d0cd0313816c850929778de3fc74ce5",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이전_black.png",
+      "rendered": "assets/delivery-260925/e391f4de06f53bcf08763eb63628cb64ee33a0ed5c652e0d990a77a4c8aa3f93.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1035",
+      "name": "아이콘_이전_black 2",
+      "imageRef": "3e9eb042d219c04a6443af0391943325c8b40662",
+      "source": "../스팟미_웹사이트_260925_v1/02_아이콘/아이콘_이후_black.png",
+      "rendered": "assets/delivery-260925/7cc7e473cd07efef36bc8ba332af90e6137a5785371cc0846e0e73670555c079.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1037",
+      "name": "image 25",
+      "imageRef": "912371c845d925a2a663c494c861fb40a5cccbb7",
+      "source": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "rendered": "assets/figma-v3/fill-912371c845d925a2a663c494c861fb40a5cccbb7.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1039",
+      "name": "레미_01 7",
+      "imageRef": "605656591189b8e57f81e5e8f1ea5d233ff75913",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_07.png",
+      "rendered": "assets/delivery-260925/43434ce7388e4e8ab3e831c26ec73983743ff059fba6c4b8a080b2087a25a843.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1040",
+      "name": "레미_05 1",
+      "imageRef": "e214135caa920e5ce7e9c8536467b06607450d70",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_05.png",
+      "rendered": "assets/delivery-260925/50c0d177ea85609d741d97b4a9863c5b5b6bb01f50d6e5b4d88ee21b733f1cd1.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1041",
+      "name": "레미_05 2",
+      "imageRef": "76e35be6bf04436855fe19770550bbaafa571a94",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_02.png",
+      "rendered": "assets/delivery-260925/b843d019967152339b27ea028efd72bc25f8d66bb26bb390ec0259223a5ec7c7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1042",
+      "name": "레미_05 3",
+      "imageRef": "ad0e838536fc9b656ae24ada866a59a381b86ba9",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_05.png",
+      "rendered": "assets/delivery-260925/6dc770fa8e4e61639383292f1c2c69803a420cee03781a80fa9de645c54b7678.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1043",
+      "name": "레미_05 6",
+      "imageRef": "f116e2204a9e364614a1daf8bccefdc6a9286703",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_02.png",
+      "rendered": "assets/delivery-260925/eb0992f912ea0664fd7f0bd7f1f9e957c92bb289ed8bf1a4c8c35dd7151af891.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1044",
+      "name": "레미_05 5",
+      "imageRef": "95403834cf9148ef0a35181b31a64661021d99ba",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_구조모드_01.png",
+      "rendered": "assets/delivery-260925/b875f964048d7eb1cb0f461bf45ff5014e3af50e9cd12b30f3f557e41440a59d.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1045",
+      "name": "레미_05 4",
+      "imageRef": "c483e37164407b777416a16ac44d2290f78f810a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_06.png",
+      "rendered": "assets/delivery-260925/595b336a307f155ef7b7b8e5bd9b1f04d9f6828a73fcb204e587cb61546cd82c.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1049",
+      "name": "스팟미_로고_white 2",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1068",
+      "name": "몬스터_피로누적형1_일반 13",
+      "imageRef": "5c5585aacde872d5e625be5a1007017bea10e581",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_기록정체형1_일반.png",
+      "rendered": "assets/delivery-260925/41c8b632eba20dd29f60ffb3bab262161c1cc31944a0fa1c2befabeb631c63eb.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1071",
+      "name": "몬스터_피로누적형1_일반 2",
+      "imageRef": "c7e0fa7f3682f7a37cdac32fd36407ba8b1b1c88",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_피로누적형1_일반.png",
+      "rendered": "assets/delivery-260925/82d2bd8cef9da0d063929f655d60aee777c88e2c1994695310df685c38206d96.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1073",
+      "name": "몬스터_피로누적형1_일반 3",
+      "imageRef": "bd3b8762d36ff633cac9d190c80b9947ec028f7a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_루틴편식형1_일반.png",
+      "rendered": "assets/delivery-260925/0109be457c83119506bd34efd7fbd0d24be3edf3104af62428dc6d711288b14f.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1078",
+      "name": "몬스터_피로누적형1_일반 12",
+      "imageRef": "31bd022720d26e31c56784dcf64118bb7acd43ae",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_의욕고갈형1_일반.png",
+      "rendered": "assets/delivery-260925/367477adbf470525aa50ad1bcb1df15a22dbb8181524d217e726e9b39fc1ecce.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "characters-e",
+      "node": "255:1083",
+      "name": "몬스터_피로누적형1_일반 11",
+      "imageRef": "b135ef5fae54235f07536777f51d560218693e5b",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/02_몬스터/몬스터_목표상실형1_일반.png",
+      "rendered": "assets/delivery-260925/9e2ed010e703a85afa9c3d3f75a0176517ae3144df1333dffc99e9e1abda17fc.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "video",
+      "node": "145:345",
+      "name": "스팟미_로고_white 1",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    },
+    {
+      "page": "video",
+      "node": "254:33",
+      "name": "image 10",
+      "imageRef": "49cc1d340dc21af332f432ffe5b194e69bbdca50",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_홍보영상.png",
+      "rendered": "assets/delivery-260925/6dd16663e9306da54fd9626d45ab2ec27a3a1a2e67602cd421b9833a4e29c0f3.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "video",
+      "node": "211:55",
+      "name": "스팟미_로고_b_01 1",
+      "imageRef": "fc4754304f1f1a211235b00218eb37e40fd20110",
+      "source": "../스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_A1.png",
+      "rendered": "assets/delivery-260925/006c32d7b4ec2a216a3fd69f5b66c766ef61ef423fc7ad6f50b5c65eff2fffb7.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "video",
+      "node": "254:36",
+      "name": "image 11",
+      "imageRef": "0f199531395ec45dae3edf4cbc6279275d9ea15a",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/배경_공용.png",
+      "rendered": "assets/delivery-260925/b45318d30dcb3b52b4931289f3a1ba535368c4b1e01feff0172bcaf5e26c7328.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "video",
+      "node": "145:333",
+      "name": "레미_레미AI_05 1",
+      "imageRef": "ad0e838536fc9b656ae24ada866a59a381b86ba9",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_레미AI_05.png",
+      "rendered": "assets/delivery-260925/6dc770fa8e4e61639383292f1c2c69803a420cee03781a80fa9de645c54b7678.png",
+      "local": true,
+      "match": "identical image hash"
+    },
+    {
+      "page": "video",
+      "node": "256:615",
+      "name": "image 26",
+      "imageRef": "bd95542aa09a7ea0e278ce44b61e9cae52671b57",
+      "source": "../스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홍보영상.png",
+      "rendered": "assets/delivery-260925/4a174cfd179cda4beee42dc261086b6eab6d4f4c96a0cca6d434f6e390318083.png",
+      "local": true,
+      "match": "inspected same artwork / different raster size"
+    },
+    {
+      "page": "video",
+      "node": "255:1244",
+      "name": "스팟미_로고_white 2",
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "source": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "rendered": "assets/figma-v3/fill-a7c30aa9e92885bf7222524f72537021dce8d189.png",
+      "local": false,
+      "match": "Figma fallback"
+    }
+  ],
+  "unused": [
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\01_로고\\스팟미_로고_B.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_레미AI_01.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_레미AI_03.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_레미AI_04.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_레미AI_07.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_운동서포트_02.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_음성활성화.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_홈B.png",
+    "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\@_UI패턴\\1_운동_헬스장키우기.png"
+  ],
+  "exceptions": [
+    {
+      "imageRef": "0b1a972a1b53213cde0395821b635d69f1cfa0ac",
+      "reason": "Delivered gym-building screenshot shows a different construction state (50/500 versus source 200/500). Not silently substituted."
+    },
+    {
+      "imageRef": "a7c30aa9e92885bf7222524f72537021dce8d189",
+      "reason": "Source footer logo is white; delivered logo B is mint/yellow. Preserve the source variant."
+    }
+  ],
+  "figmaExports": [
+    {
+      "id": "255:775",
+      "path": "assets/figma-v3/255-775.png",
+      "name": "스팟미_로고_white 2",
+      "reason": "Source vector or no matching delivered standalone artwork. Retain same-version Figma export."
+    },
+    {
+      "id": "254:358",
+      "path": "assets/figma-v3/254-358.png",
+      "name": "스팟미_로고_white 1",
+      "reason": "Source vector or no matching delivered standalone artwork. Retain same-version Figma export."
+    },
+    {
+      "id": "112:723",
+      "path": "assets/figma-v3/112-723.svg",
+      "name": "Buttons",
+      "reason": "Source vector or no matching delivered standalone artwork. Retain same-version Figma export."
+    },
+    {
+      "id": "112:690",
+      "path": "assets/figma-v3/112-690.svg",
+      "name": "Vector 1",
+      "reason": "Source vector or no matching delivered standalone artwork. Retain same-version Figma export."
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "imageSlots": 205,
+    "localSlots": 153,
+    "localFiles": 48,
+    "unusedDeliveryFiles": 9,
+    "phoneCompositions": 18
+  }
+}

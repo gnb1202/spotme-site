@@ -1,0 +1,9 @@
+{
+  "name": "spotme-site",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix v3/react-site",
+    "build": "npm run build --prefix v3/react-site",
+    "preview": "npm run preview --prefix v3/react-site"
+  }
+}

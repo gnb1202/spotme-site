@@ -1,0 +1,84 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/c0798c14-d466-44e0-9599-a6b750c5c180";
+const imgWhite1 = `${assetPathPrefix}/d2139.png`;
+const imgImage10 = `${assetPathPrefix}/cec6b.png`;
+const imgB011 = `${assetPathPrefix}/dc3d7.png`;
+const imgImage11 = `${assetPathPrefix}/0dd0f.png`;
+const imgAi051 = `${assetPathPrefix}/774bb.png`;
+const imgImage26 = `${assetPathPrefix}/c7613.png`;
+
+export default function Component() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="145:215" data-name="홍보영상">
+      <div className="absolute bg-[#5eefd3] h-[4408px] left-0 top-0 w-[1920px]" data-node-id="145:216" />
+      <div className="-translate-x-1/2 absolute bg-[#0a0a0a] bottom-[-3328px] h-[200px] left-1/2 w-[1920px]" data-node-id="145:224" />
+      <div className="-translate-x-1/2 absolute h-[30px] left-[calc(50%-0.43px)] opacity-30 top-[4293px] w-[257.143px]" data-node-id="145:345" data-name="스팟미_로고_white 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWhite1} />
+      </div>
+      <div className="absolute h-[4426px] left-px top-0 w-[1920px]" data-node-id="254:33" data-name="image 10">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-[-7.19%] max-w-none top-0 w-[114.33%]" src={imgImage10} />
+        </div>
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:ExtraBold'] leading-[1.1] left-1/2 not-italic text-[#fafaf8] text-[50px] text-center top-[215px] tracking-[-0.5px] w-[1094px]" data-node-id="145:225">
+        홍보 영상
+      </p>
+      <div className="absolute h-[115px] left-0 overflow-clip top-0 w-[1920px]" data-node-id="211:54">
+        <div className="absolute h-[29px] left-[351px] top-[44px] w-[205px]" data-node-id="211:55" data-name="스팟미_로고_b_01 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgB011} />
+        </div>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[normal] left-[1421px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="211:56">
+          파트너 레미
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Bold'] leading-[normal] left-[1535px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="211:57">
+          홍보 영상
+        </p>
+        <a className="-translate-x-1/2 [word-break:break-word] absolute block cursor-pointer font-['Pretendard:Regular'] leading-[0] left-[1266px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="211:58">
+          <p className="leading-[normal]">게임처럼 즐기는 운동</p>
+        </a>
+        <a className="-translate-x-1/2 [word-break:break-word] absolute block cursor-pointer font-['Pretendard:Regular'] leading-[0] left-[1101px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="211:59">
+          <p className="leading-[normal]">AI 운동 서포트</p>
+        </a>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[normal] left-[1002px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="211:60">
+          홈
+        </p>
+      </div>
+      <div className="absolute h-[2627px] left-0 top-[1798px] w-[1921px]" data-node-id="254:36" data-name="image 11">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[100.04%] left-[-20.15%] max-w-none top-[-0.02%] w-[140.24%]" src={imgImage11} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute contents left-1/2 top-[2951px]" data-node-id="254:38">
+        <div className="-translate-x-1/2 absolute bg-[#0a0a0a] h-[1036px] left-1/2 top-[2951px] w-[1840px]" data-node-id="145:236" />
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:SemiBold'] h-[66px] leading-[1.1] left-1/2 not-italic text-[#fafaf8] text-[40px] text-center top-[3622px] tracking-[-0.4px] w-[1652px]" data-node-id="145:332">
+          추후 공개 예정
+        </p>
+        <div className="-translate-x-1/2 absolute h-[338px] left-[calc(50%+0.5px)] top-[3250px] w-[469px]" data-node-id="145:333" data-name="레미_레미AI_05 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAi051} />
+        </div>
+      </div>
+      <div className="absolute flex h-[1983.327px] items-center justify-center left-[115.46px] top-[884.84px] w-[1689.079px]" data-node-id="256:615">
+        <div className="flex-none rotate-[-14.72deg]">
+          <div className="h-[1709.846px] relative w-[1297.219px]" data-name="image 26">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage26} />
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#0a0a0a] bottom-[-3345px] h-[200px] left-[calc(50%+2px)] w-[1920px]" data-node-id="255:1243" />
+      <div className="-translate-x-1/2 absolute h-[30px] left-[calc(50%+1.57px)] top-[4310px] w-[257.143px]" data-node-id="255:1244" data-name="스팟미_로고_white 2">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWhite1} />
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

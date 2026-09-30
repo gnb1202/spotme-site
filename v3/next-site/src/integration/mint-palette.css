@@ -1,0 +1,38 @@
+/* Approved mint-base revision. Preserve original artwork and in-phone UI colors. */
+[data-site-theme]{background:var(--page-mint);color:#343a40}
+[data-site-theme] .site-navigation{color:#343a40}
+
+/* Features: a readable light-mint canvas, with slightly richer mint for benefit art. */
+[data-site-theme=features] .xp{--paper:var(--page-mint);--muted:#4d6961;background:var(--page-mint)}
+[data-site-theme=features] .xp .ov-reference-feature{border-color:#accfc3}
+[data-site-theme=features] .xp .ov-reference-feature h2{color:#527066}
+[data-site-theme=features] .xp .ov-reference-feature.selected h2{color:#263d35}
+[data-site-theme=features] .xp .ov-reference-body>p{color:#4d6961}
+[data-site-theme=features] .xp-gym-art{background:radial-gradient(ellipse at 0 0,#e6fff4,transparent 70%),#bfe9d9}
+[data-site-theme=features] .xp-tier-art{background:radial-gradient(ellipse at 100% 100%,#78dbc2,transparent 80%),#c7f1e4}
+[data-site-theme=features] .xp-report-art{background:radial-gradient(ellipse at 100% 100%,#9edbc6,transparent 65%),#d3f2e7}
+[data-site-theme=features] .xp-footer{border-color:#accfc3;color:#4d6961}
+
+/* Remi: bright mint stage, dark app screen. Keep clear contrast on both surfaces. */
+[data-site-theme=remi] .remi-studio{background:var(--page-mint);color:#263d35;color-scheme:light}
+[data-site-theme=remi] .remi-studio-eyebrow{color:#205c4d}
+[data-site-theme=remi] .remi-studio h1 span{color:#15644f}
+[data-site-theme=remi] .remi-studio-intro,[data-site-theme=remi] .remi-studio-caption p{color:#365f53}
+[data-site-theme=remi] .remi-studio-menu button{color:#365f53;border-color:#528e7c66}
+[data-site-theme=remi] .remi-studio-menu button:hover,[data-site-theme=remi] .remi-studio-menu button[aria-pressed=true]{color:#154e3f}
+[data-site-theme=remi] .remi-studio-menu button[aria-pressed=true]{background:#ffffff24}
+[data-site-theme=remi] .remi-menu-number,[data-site-theme=remi] .remi-demo-notice{color:#365f53}
+[data-site-theme=remi] .remi-studio-menu button:focus-visible{outline-color:#154e3f}
+[data-site-theme=remi] .remi-stage-aura{background:radial-gradient(ellipse,#e6fff4b3,transparent 67%)}
+[data-site-theme=remi] .remi-demo-phone{color:#fafaf8;color-scheme:dark;box-shadow:0 0 0 1px #587c7066,4px 4px 0 #648b7e,0 40px 90px #1e695438}
+
+/* Video is excluded: source backgrounds, opacity, title and footer stay original. */
+[data-site-theme=video] .site-navigation{color:#fafaf8}
+html:has([data-site-theme=video]),body:has([data-site-theme=video]){background:#494949}
+
+/* Loading is mint-based too, so dark flashes do not separate otherwise related tabs. */
+.route-curtain{background:#c6ebdf;color:#263d35}
+.route-loading{color:#365f53}
+.route-loading img{background:#263d35;border-radius:8px;padding:8px 12px;box-sizing:content-box}
+.route-loading i{background:linear-gradient(90deg,transparent,#24755e,transparent)}
+.route-loading a,.route-loading button{color:#205c4d;border-color:#528e7c}

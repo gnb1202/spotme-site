@@ -1,0 +1,25 @@
+{
+  "base": "http://127.0.0.1:4189",
+  "results": [
+    "Desktop: opening handoff, all feature selectors, in-phone workout flow, keyboard focus, tour advance/offscreen pause/manual stop/Escape",
+    "Responsive 390×844: no horizontal overflow, screenshot captured",
+    "Responsive 768×1024: no horizontal overflow, screenshot captured",
+    "Responsive 1920×1080: no horizontal overflow, screenshot captured",
+    "Normal motion: hero charge, handoff, replay and skip preserved; phone transition settles"
+  ],
+  "errors": [],
+  "screens": [
+    "home",
+    "routine",
+    "workout",
+    "adjust",
+    "result",
+    "ai",
+    "report",
+    "quest",
+    "gym",
+    "ranking",
+    "profile"
+  ],
+  "assetHashesVerified": 11
+}

@@ -1,0 +1,10 @@
+import {spawnSync} from 'node:child_process';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+const root=import.meta.dirname,cli=path.resolve(root,'../node_modules/hyperframes/bin/hyperframes.mjs');
+const result=spawnSync(process.execPath,[cli,'check','composition','--at','0,0.7,1.3,1.9,2.3,3.2,3.9,4.4,5','--no-browser-gpu','--json'],{cwd:root,encoding:'utf8',windowsHide:true,maxBuffer:8e6});
+await fs.writeFile(path.join(root,'reports/hyperframes-check.json'),result.stdout);
+await fs.writeFile(path.join(root,'reports/hyperframes-check.log'),result.stderr);
+assert.equal(result.status,0);const report=JSON.parse(result.stdout.slice(result.stdout.indexOf('{')));assert(report.ok);
+console.log('HyperFrames check passed. Full report saved. Contrast warnings:',report.contrast.warningCount);

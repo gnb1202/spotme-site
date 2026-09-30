@@ -1,0 +1,231 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/5602b26f-4648-4059-807b-47acf6a14f31";
+const img011 = `${assetPathPrefix}/5a372.png`;
+const imgB011 = `${assetPathPrefix}/dc3d7.png`;
+const imgScreenReplaceHere1 = `${assetPathPrefix}/e3b2f.png`;
+const imgScreenReplaceHere2 = `${assetPathPrefix}/7eb2b.png`;
+const imgScreenReplaceHere3 = `${assetPathPrefix}/56f5f.png`;
+const imgPlaceholder = `${assetPathPrefix}/76147.png`;
+const imgIphone142 = `${assetPathPrefix}/9cf6a.png`;
+const imgPlaceholder1 = `${assetPathPrefix}/031c4.png`;
+const img1 = `${assetPathPrefix}/94119.png`;
+const imgImage16 = `${assetPathPrefix}/e4018.png`;
+const imgImage9 = `${assetPathPrefix}/d5441.png`;
+const imgWhite2 = `${assetPathPrefix}/d2139.png`;
+const imgScreenReplaceHere = `${assetPathPrefix}/e6938.svg`;
+const imgButtons = `${assetPathPrefix}/0095d.svg`;
+const imgButtons1 = `${assetPathPrefix}/05cf6.svg`;
+const imgEllipse10 = `${assetPathPrefix}/bb988.svg`;
+
+export default function Component01() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="20:127" data-name="홈_01">
+      <div className="absolute bg-[#5eefd3] h-[5300px] left-0 top-0 w-[1920px]" data-node-id="20:128" />
+      <div className="absolute h-[1180px] left-0 top-0 w-[1920px]" data-node-id="20:197" data-name="스팟미_웹사이트_배경_01 1">
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 overflow-hidden">
+            <img alt="" className="absolute h-[162.71%] left-0 max-w-none top-[-19.17%] w-full" src={img011} />
+          </div>
+          <div className="absolute bg-gradient-to-r from-[rgba(10,10,10,0.8)] inset-0 to-[140.6%] to-[rgba(10,10,10,0)]" />
+        </div>
+      </div>
+      <div className="absolute bg-[#5eefd3] h-[1080px] left-0 rounded-tl-[100px] rounded-tr-[100px] top-[1080px] w-[1920px]" data-node-id="207:24" />
+      <div className="absolute h-[115px] left-0 overflow-clip top-0 w-[1920px]" data-node-id="20:132">
+        <div className="absolute h-[29px] left-[351px] top-[44px] w-[198.857px]" data-node-id="20:131" data-name="스팟미_로고_b_01 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgB011} />
+        </div>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[normal] left-[1421px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="81:1479">
+          파트너 레미
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Regular'] leading-[normal] left-[1535.5px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="145:65">
+          홍보 영상
+        </p>
+        <a className="-translate-x-1/2 [word-break:break-word] absolute block cursor-pointer font-['Pretendard:Regular'] leading-[0] left-[1266px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="81:1478">
+          <p className="leading-[normal]">게임처럼 즐기는 운동</p>
+        </a>
+        <a className="-translate-x-1/2 [word-break:break-word] absolute block cursor-pointer font-['Pretendard:Regular'] leading-[0] left-[1101px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="81:1477">
+          <p className="leading-[normal]">AI 운동 서포트</p>
+        </a>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Bold'] leading-[normal] left-[1002px] not-italic text-[#fafaf8] text-[18px] text-center top-[43px] tracking-[-0.18px] whitespace-nowrap" data-node-id="81:1051">
+          홈
+        </p>
+      </div>
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Strelka:Ultra'] leading-[0] left-[calc(50%+0.5px)] not-italic text-[180px] text-[transparent] text-center top-[327px] w-[1887px]" data-node-id="205:3">
+        <p className="leading-[1.1] mb-0">SPOT ME MY</p>
+        <p className="leading-[1.1]">WORKOUT</p>
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Bold'] leading-[1.3] left-[calc(50%+0.5px)] not-italic text-[#5eefd3] text-[30px] text-center top-[807px] tracking-[-0.3px] w-[751px]" data-node-id="20:200">
+        나의 운동을 보조해주는 AI 운동 파트너
+      </p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Bold'] leading-[1.3] left-[calc(50%+0.5px)] not-italic text-[#fafaf8] text-[14px] text-center top-[976px] tracking-[2.8px] w-[751px]" data-node-id="205:4">
+        SCROLL
+      </p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Strelka:Ultra'] leading-[1.3] left-1/2 not-italic text-[#0a0a0a] text-[60px] text-center top-[2409px] w-[1094px]" data-node-id="120:954">
+        HOW TO USE
+      </p>
+      <div className="absolute bg-[#0a0a0a] h-[390px] left-[calc(16.67%+31px)] rounded-[30px] top-[2567px] w-[396px]" data-node-id="120:955" />
+      <div className="absolute bg-[#0a0a0a] h-[390px] left-[calc(33.33%+122px)] rounded-[30px] top-[2567px] w-[396px]" data-node-id="120:956" />
+      <div className="absolute bg-[#0a0a0a] h-[390px] left-[calc(58.33%+53px)] rounded-[30px] top-[2567px] w-[396px]" data-node-id="120:957" />
+      <p className="[word-break:break-word] absolute font-['Pretendard:SemiBold'] leading-[1.3] left-[calc(25%+71px)] not-italic text-[#5eefd3] text-[24px] top-[2771px] tracking-[-0.24px] w-[196px]" data-node-id="120:958">
+        프로필 설정
+      </p>
+      <p className="[word-break:break-word] absolute font-['Pretendard:SemiBold'] leading-[1.3] left-[calc(50%+2px)] not-italic text-[#5eefd3] text-[24px] top-[2771px] tracking-[-0.24px] w-[196px]" data-node-id="120:959">{`AI 운동 루틴 생성 `}</p>
+      <p className="[word-break:break-word] absolute font-['Pretendard:SemiBold'] leading-[1.3] left-[calc(66.67%+93px)] not-italic text-[#5eefd3] text-[24px] top-[2771px] tracking-[-0.24px] w-[194px]" data-node-id="120:960">
+        운동 시작
+      </p>
+      <div className="[word-break:break-word] absolute font-['Pretendard:Medium'] h-[72px] leading-[0] left-[calc(50%+2px)] not-italic text-[#fafaf8] text-[16px] top-[2823px] tracking-[-0.16px] w-[163px]" data-node-id="120:961">
+        <p className="leading-[1.5] mb-0">프로필 설정을 완료하면 AI 운동 파트너가 개인화된</p>
+        <p className="leading-[1.5]">운동 루틴을 제공해요.</p>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Pretendard:Medium'] leading-[0] left-[calc(25%+71px)] not-italic text-[#fafaf8] text-[16px] top-[2823px] tracking-[-0.16px] w-[196px]" data-node-id="120:962">
+        <p className="leading-[1.5] mb-0">운동 수준, 목적, 사용 가능한</p>
+        <p className="leading-[1.5]">기구 등을 알려주세요.</p>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Pretendard:Medium'] leading-[0] left-[calc(66.67%+93px)] not-italic text-[#fafaf8] text-[16px] top-[2823px] tracking-[-0.16px] w-[194px]" data-node-id="120:963">
+        <p className="leading-[1.5] mb-0">운동을 꾸준히 할수록</p>
+        <p className="leading-[1.5] mb-0">레미가 사용자의 운동</p>
+        <p className="leading-[1.5]">패턴에 적응해요.</p>
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[333px] left-[calc(20.83%+53.5px)] top-[calc(50%+2221.5px)] w-[165px]" data-node-id="120:964" data-name="iPhone 14 Pro">
+        <div className="absolute contents inset-[0_0.98%]" data-node-id="120:965" data-name="Body">
+          <div className="absolute inset-[0_0.98%] pointer-events-none rounded-[20px]" data-node-id="120:966" data-name="Screen Background">
+            <div aria-hidden className="absolute bg-[#0a0a0a] inset-0 rounded-[20px]" />
+            <div className="absolute inset-0 rounded-[inherit] shadow-[inset_0px_-5px_20px_0px_#212121,inset_-10px_0px_24px_-15px_#212121]" />
+          </div>
+          <div className="absolute contents inset-[1.94%_5.6%_2.46%_5.6%]" data-node-id="120:967" data-name="Screen">
+            <div className="absolute inset-[1.94%_5.6%_2.46%_5.6%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[146.52px_318.35px]" data-node-id="120:969" style={{ maskImage: `url("${imgScreenReplaceHere}")` }} data-name="Screen (Replace here)">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" height="318.35" src={imgScreenReplaceHere1} width="146.52" />
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-[18.12%_0.46%_59.82%_0]" data-node-id="120:970" data-name="Buttons">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgButtons} />
+        </div>
+        <div className="absolute contents inset-[4.53%_38.49%_92.15%_36.18%]" data-node-id="120:975" data-name="Front Camera">
+          <div className="absolute bg-[#0a0a0a] inset-[4.53%_38.49%_92.15%_36.18%] rounded-[35.785px]" data-node-id="120:976" data-name="Rectangle" />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[333px] left-[calc(45.83%-15.5px)] top-[calc(50%+2221.5px)] w-[165px]" data-node-id="120:977" data-name="iPhone 14 Pro">
+        <div className="absolute contents inset-[0_0.98%]" data-node-id="120:978" data-name="Body">
+          <div className="absolute inset-[0_0.98%] pointer-events-none rounded-[20px]" data-node-id="120:979" data-name="Screen Background">
+            <div aria-hidden className="absolute bg-[#0a0a0a] inset-0 rounded-[20px]" />
+            <div className="absolute inset-0 rounded-[inherit] shadow-[inset_0px_-5px_20px_0px_#212121,inset_-10px_0px_24px_-15px_#212121]" />
+          </div>
+          <div className="absolute contents inset-[1.94%_5.6%_2.46%_5.6%]" data-node-id="120:980" data-name="Screen">
+            <div className="absolute inset-[1.94%_5.6%_2.46%_5.6%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[146.52px_318.35px]" data-node-id="120:982" style={{ maskImage: `url("${imgScreenReplaceHere}")` }} data-name="Screen (Replace here)">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" height="318.35" src={imgScreenReplaceHere2} width="146.52" />
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-[18.12%_0.46%_59.82%_0]" data-node-id="120:983" data-name="Buttons">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgButtons1} />
+        </div>
+        <div className="absolute contents inset-[4.53%_38.49%_92.15%_36.18%]" data-node-id="120:988" data-name="Front Camera">
+          <div className="absolute bg-[#0a0a0a] inset-[4.53%_38.49%_92.15%_36.18%] rounded-[35.785px]" data-node-id="120:989" data-name="Rectangle" />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[333px] left-[calc(66.67%-4.5px)] top-[calc(50%+2221.5px)] w-[165px]" data-node-id="120:990" data-name="iPhone 14 Pro">
+        <div className="absolute contents inset-[0_0.98%]" data-node-id="120:991" data-name="Body">
+          <div className="absolute inset-[0_0.98%] pointer-events-none rounded-[20px]" data-node-id="120:992" data-name="Screen Background">
+            <div aria-hidden className="absolute bg-[#0a0a0a] inset-0 rounded-[20px]" />
+            <div className="absolute inset-0 rounded-[inherit] shadow-[inset_0px_-5px_20px_0px_#212121,inset_-10px_0px_24px_-15px_#212121]" />
+          </div>
+          <div className="absolute contents inset-[1.94%_5.6%_2.46%_5.6%]" data-node-id="120:993" data-name="Screen">
+            <div className="absolute inset-[1.94%_5.6%_2.46%_5.6%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[146.52px_318.35px]" data-node-id="120:995" style={{ maskImage: `url("${imgScreenReplaceHere}")` }} data-name="Screen (Replace here)">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" height="318.35" src={imgScreenReplaceHere3} width="146.52" />
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-[18.12%_0.46%_59.82%_0]" data-node-id="120:996" data-name="Buttons">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgButtons} />
+        </div>
+        <div className="absolute contents inset-[4.53%_38.49%_92.15%_36.18%]" data-node-id="120:1001" data-name="Front Camera">
+          <div className="absolute bg-[#0a0a0a] inset-[4.53%_38.49%_92.15%_36.18%] rounded-[35.785px]" data-node-id="120:1002" data-name="Rectangle" />
+        </div>
+      </div>
+      <div className="absolute left-[calc(25%+71px)] size-[90px] top-[2630px]" data-node-id="120:1003">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse10} />
+      </div>
+      <div className="absolute left-[calc(50%+2px)] size-[90px] top-[2630px]" data-node-id="145:74">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse10} />
+      </div>
+      <div className="absolute left-[calc(66.67%+93px)] size-[90px] top-[2630px]" data-node-id="145:76">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse10} />
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Strelka:Ultra'] h-[54px] leading-[1.1] left-[calc(25%+116px)] not-italic text-[#5eefd3] text-[50px] text-center top-[2648px] tracking-[-0.5px] w-[90px]" data-node-id="120:1006">
+        1
+      </p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Strelka:Ultra'] h-[54px] leading-[1.1] left-[calc(50%+47px)] not-italic text-[#5eefd3] text-[50px] text-center top-[2648px] tracking-[-0.5px] w-[90px]" data-node-id="145:75">
+        2
+      </p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Strelka:Ultra'] h-[54px] leading-[1.1] left-[calc(66.67%+138px)] not-italic text-[#5eefd3] text-[50px] text-center top-[2648px] tracking-[-0.5px] w-[90px]" data-node-id="145:77">
+        3
+      </p>
+      <p className="[word-break:break-word] absolute font-['Pretendard:Bold'] leading-[1.3] left-[calc(29.17%-209px)] not-italic text-[#0a0a0a] text-[20px] top-[1270px] tracking-[5px] w-[491px]" data-node-id="106:3">
+        ABOUT SPOTME
+      </p>
+      <div className="[word-break:break-word] absolute font-['Pretendard:Bold'] leading-[0] left-[calc(16.67%+31px)] not-italic text-[#0a0a0a] text-[36px] top-[1332px] tracking-[-0.36px] w-[493px]" data-node-id="120:1010">
+        <p className="leading-[1.3] mb-0">운동 정체기 극복을 위한</p>
+        <p className="leading-[1.3]">AI 운동 파트너 애플리케이션</p>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Pretendard:Regular'] h-[48px] leading-[0] left-[calc(29.17%-209px)] not-italic text-[#0a0a0a] text-[16px] top-[1444px] tracking-[-0.16px] w-[491px]" data-node-id="120:1011">
+        <p className="leading-[1.5] mb-0">스팟미는 운동 세트를 진행한 후 AI 파트너를 호출해보세요.</p>
+        <p className="leading-[1.5]">운동에 대해 궁금한 점을 물어보거나 루틴 수정을 부탁할 수 있습니다.</p>
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute flex h-[571.379px] items-center justify-center left-[calc(70.83%+32.91px)] top-[calc(50%+1057.4px)] w-[352.745px]" data-node-id="139:50">
+        <div className="flex-none rotate-10">
+          <div className="h-[533.626px] relative shadow-[0px_4px_6px_0px_rgba(0,0,0,0.25),0px_10px_18px_0px_rgba(0,0,0,0.25),0px_18px_56px_0px_rgba(0,0,0,0.25),150px_50px_250px_0px_rgba(9,20,50,0.15)] w-[264.094px]" data-name="Iphone 14 - 2">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[509.36px] left-[calc(50%-0.11px)] overflow-clip rounded-[32px] top-[calc(50%-0.07px)] w-[235.359px]" data-node-id="139:58" data-name="Screen (to update)">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[508.484px] left-[calc(50%+0.01px)] top-[calc(50%+1.13px)] w-[235.346px]" data-node-id="139:59" data-name="Placeholder">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder} />
+              </div>
+            </div>
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIphone142} />
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute flex h-[565.188px] items-center justify-center left-[calc(62.5%-58.82px)] top-[calc(50%+1054.3px)] w-[335.79px]" data-node-id="139:54">
+        <div className="-rotate-8 flex-none">
+          <div className="h-[533.626px] relative shadow-[0px_4px_6px_0px_rgba(0,0,0,0.25),0px_10px_18px_0px_rgba(0,0,0,0.25),0px_18px_56px_0px_rgba(0,0,0,0.25),250px_50px_250px_0px_rgba(9,20,50,0.15)] w-[264.094px]" data-name="Iphone 14 - 1">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[510.529px] left-[calc(50%-0.05px)] overflow-clip rounded-[32px] top-[calc(50%-0.87px)] w-[235.087px]" data-node-id="139:60" data-name="Screen (to update)">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[510.271px] left-[calc(50%-0.12px)] top-[calc(50%+0.1px)] w-[237.166px]" data-node-id="139:61" data-name="Placeholder">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder1} />
+              </div>
+            </div>
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIphone142} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-[316.735px] items-center justify-center left-[calc(41.67%+145px)] top-[1734.63px] w-[311.564px]" data-node-id="145:212">
+        <div className="flex-none rotate-[-13.51deg]">
+          <div className="h-[264px] relative shadow-[0px_4px_4px_0px_#faed27] w-[257px]" data-name="레미_루틴완료 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img1} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[480px] left-[33.33%] shadow-[0px_4px_4px_0px_#faed27] top-[285px] w-[642px]" data-node-id="254:244" data-name="image 16">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage16} />
+      </div>
+      <div className="-translate-x-1/2 absolute h-[1905px] left-[calc(50%+6.5px)] top-[3400px] w-[1933px]" data-node-id="254:30" data-name="image 9">
+        <img alt="" className="absolute inset-0 max-w-none mix-blend-multiply object-cover pointer-events-none size-full" src={imgImage9} />
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#0a0a0a] bottom-[-4220px] h-[200px] left-[calc(50%+2px)] w-[1920px]" data-node-id="255:774" />
+      <div className="-translate-x-1/2 absolute h-[30px] left-[calc(50%+1.57px)] top-[5185px] w-[257.143px]" data-node-id="255:775" data-name="스팟미_로고_white 2">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWhite2} />
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Neutrals/White: #FFFFFF.
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

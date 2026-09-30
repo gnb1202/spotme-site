@@ -1,0 +1,26 @@
+/* Figma authored these canvases at 1920px. Shrink to fit; never enlarge artwork
+   or the 1840 x 1036 video beyond its source size on wide monitors. */
+:is([data-react-page="/video/"],[data-react-page="/"]){
+  container-type:inline-size;
+  width:100%;
+  max-width:1920px;
+  margin-inline:auto;
+}
+:is([data-react-page="/video/"],[data-react-page="/"])>.viewport{
+  height:calc(var(--source-height)*100cqw/1920);
+}
+:is([data-react-page="/video/"],[data-react-page="/"])>.viewport>.canvas{
+  transform:scale(calc(100cqw/1920px));
+}
+[data-react-motion] #next-content>.viewport{
+  max-width:1920px;
+  margin-inline:auto;
+  overflow:visible;
+}
+/* Retain the required player control in the original placeholder text slot. */
+[data-react-page="/video/"] [data-source-node-id="256:615"]{top:max(1500px,var(--video-art-top,1500px))!important}
+[data-react-page="/video/"] .video-demo-play{
+  left:94px;top:671px;width:1652px;height:66px;
+  transform:none;justify-content:center;
+  line-height:44px;letter-spacing:-.4px;
+}

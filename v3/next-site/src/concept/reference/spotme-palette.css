@@ -1,0 +1,78 @@
+/* Palette-only study: geometry, type, content and motion stay in reference.css.
+   Source: frozen v3/designs/figma-data.json. Original raster UI is not recolored. */
+.reference-study {
+  --spot-mint:#5eefd3;
+  --spot-paper:#fafaf8;
+  --spot-black:#0a0a0a;
+  --spot-ink:#343a40;
+  --spot-muted:#61656a;
+  --spot-muted-light:#919ea5;
+  --spot-pink:#ef5e7a;
+  --spot-line:color-mix(in srgb,var(--spot-ink) 12%,var(--spot-paper));
+  --spot-soft:color-mix(in srgb,var(--spot-mint) 12%,var(--spot-paper));
+  --ref-blue:var(--spot-mint);
+  background:var(--spot-paper);
+  color:var(--spot-ink);
+  color-scheme:light;
+}
+body:has(.reference-study){background:#fafaf8;color:#343a40}
+.reference-study button:focus-visible,.reference-study a:focus-visible{outline-color:var(--spot-ink)}
+.ref-study-nav a{background:var(--spot-muted-light)}
+.ref-study-nav a:hover,.ref-study-nav a:focus{background:var(--spot-ink)}
+.ref-assets-copy h1,.ref-finance>h2{color:var(--spot-black)}
+.ref-assets-glow{background-image:radial-gradient(ellipse at 50% 42%,color-mix(in srgb,var(--spot-mint) 24%,transparent),transparent 65%)}
+.ref-feature{border-color:var(--spot-line)}
+.ref-feature:last-child{border-color:var(--spot-line)}
+.ref-feature>button{color:var(--spot-muted-light)}
+.ref-feature.selected>button{color:var(--spot-ink)}
+.ref-feature-body{color:var(--spot-muted)}
+.ref-feature-body a{background:var(--spot-mint);color:var(--spot-ink)}
+.ref-feature-body a span{background:var(--spot-ink);color:var(--spot-mint)}
+.ref-phone-glass{background:var(--spot-paper)}
+.ref-phone-card{background:var(--spot-paper);border-color:var(--spot-line);box-shadow:0 8px 90px #343a400d}
+.ref-pills button{background:var(--spot-soft);border-color:var(--spot-line);color:var(--spot-ink)}
+.ref-pills button:hover,.ref-pills button:focus-visible{background:var(--spot-mint)}
+/* Retain the original backgrounds' soft texture, tint their neutral luminance. */
+.ref-finance-art{background:color-mix(in srgb,var(--spot-mint) 18%,var(--spot-paper))}
+.ref-finance-card:nth-child(2) .ref-finance-art{background:color-mix(in srgb,var(--spot-mint) 48%,var(--spot-paper))}
+.ref-finance-card:nth-child(3) .ref-finance-art{background:color-mix(in srgb,var(--spot-pink) 12%,var(--spot-paper))}
+.ref-finance-bg{filter:grayscale(1);mix-blend-mode:multiply;opacity:.5}
+.ref-finance-caption h3{color:var(--spot-ink)}
+.ref-finance-caption p{color:var(--spot-muted)}
+.ref-round-arrow{background:#343a400d!important;border-color:var(--spot-line)!important;color:var(--spot-ink)!important}
+.ref-round-arrow:hover,.ref-round-arrow:focus-visible{background:var(--spot-mint)!important}
+.ref-loan-panel,.ref-insurance-panel{background:radial-gradient(ellipse at 30% 5%,#fafaf8f2,#fafaf8a6)}
+.ref-loan-panel>small,.ref-insurance-panel>small{color:var(--spot-muted-light)}
+.ref-rate,.ref-loan-panel li>div,.ref-insurance-panel>strong,.ref-insurance-panel li b{color:var(--spot-ink)}
+.ref-skeleton{background:var(--spot-paper)}
+.ref-loan-panel li b{color:var(--spot-ink)}
+.ref-check{background:var(--spot-mint);color:var(--spot-ink)}
+.ref-credit-face{background:var(--spot-paper);box-shadow:0 12px 24px #343a401a,inset 0 0 0 1px #343a4005}
+.ref-credit-face small{color:var(--spot-muted)}
+.ref-credit-face strong{color:var(--spot-ink)}
+.ref-insurance-panel li{background:#fafaf880;border-color:#fafaf899}
+.ref-spinner{border-color:var(--spot-muted-light)}
+.ref-insurance-status.normal{background:color-mix(in srgb,var(--spot-mint) 30%,var(--spot-paper));color:var(--spot-ink)}
+.ref-insurance-status.over{background:var(--spot-pink);color:var(--spot-black)}
+.ref-insurance-panel li.over{border-color:var(--spot-pink);background:color-mix(in srgb,var(--spot-pink) 12%,var(--spot-paper))}
+.ref-sheet{background:var(--spot-paper)}
+.ref-sheet-handle{background:var(--spot-line)}
+.ref-price,.ref-discounts b{color:var(--spot-ink)}
+.ref-sheet .ref-product-name,.ref-discounts small{color:var(--spot-muted)}
+.ref-discounts{background:var(--spot-soft)}
+.ref-coupon-icon{background:var(--spot-mint);color:var(--spot-ink)}
+.ref-toggle{background:var(--spot-line)!important}
+.ref-toggle.on{background:var(--spot-mint)!important}
+.ref-toggle i{background:var(--spot-paper)}
+.ref-swipe{background:var(--spot-mint)!important;color:var(--spot-ink)!important}
+.ref-swipe i{background:var(--spot-ink);color:var(--spot-mint)}
+.ref-shop-complete{background:var(--spot-paper)}
+.ref-complete-check{background:var(--spot-mint);color:var(--spot-ink)}
+.ref-shop-complete>p,.ref-shop-complete small{color:var(--spot-muted)}
+.ref-shop-complete>div{background:var(--spot-paper);box-shadow:0 12px 40px -14px #343a4017}
+.ref-checkpoint h2{color:var(--spot-ink)}
+.ref-checkpoint p{color:var(--spot-muted)}
+.ref-progress-line{background:linear-gradient(transparent,var(--spot-mint) 40%,var(--spot-ink))}
+.ref-shop-cta{background:var(--spot-mint);color:var(--spot-ink)!important}
+.ref-shop-cta span{background:var(--spot-ink);color:var(--spot-mint)}
+.ref-attribution{color:var(--spot-muted)}

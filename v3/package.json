@@ -1,0 +1,1 @@
+{"name":"spotme-v3-initial-20260925","private":true,"type":"module","scripts":{"build":"node tools/sync-delivery.mjs && node tools/build.mjs","sync:assets":"node tools/sync-delivery.mjs","dev":"node tools/server.mjs","check":"node tools/check.mjs && node tools/check-asset-slots.mjs","capture":"node tools/capture.mjs"},"devDependencies":{"playwright":"1.63.0","sharp":"0.35.4"}}

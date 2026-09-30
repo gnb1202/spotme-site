@@ -1,0 +1,28 @@
+[
+  {
+    "name": "01-capabilities",
+    "refs": [
+      "@_UI패턴/1_운동_AI추천운동.png"
+    ],
+    "prompt": "Create one polished horizontal 16:10 desktop website SECTION design mockup, for SPOT ME Korean AI workout partner. This is section 1 only, not whole page. Reference image is authentic app screenshot: display it unchanged inside a right-side straight phone, do not invent additional product UI. Left large charcoal Korean headline exactly '운동의 고민은 덜고,\\n내 운동에 집중하세요.' Below it three large editorial selectable labels '내게 맞는 루틴', '운동 중 레미와 대화', '쌓이는 운동 기록'. First selected has one short description '수준과 목표, 사용할 기구를 반영해 운동을 준비해요.' Mint vertical selection rule, generous line spacing. Small header SPOT ME wordmark and Korean nav 홈 / AI 운동 서포트 / 게임처럼 즐기는 운동 / 파트너 레미 / 홍보 영상. Inspired by premium Korean consumer product storytelling: airy neutral near-white canvas, vivid mint accents only, precise large Pretendard-like Korean typography, sport purposeful not fintech clone. Phone on pale mint rectangular visual field right; tasteful enlargement of recommendation banner at front using same source snippet. No gradients, no external logos, no generic floating blobs, no added badges, metrics, text or CTA. Clean buildable high fidelity layout, content safety margins."
+  },
+  {
+    "name": "02-benefits",
+    "refs": [
+      "03_오브젝트/@_캐릭터/01_레미/레미_홈A_01.png"
+    ],
+    "prompt": "Create one polished horizontal 16:10 website SECTION mockup for SPOT ME. This is section 2 only, same near-white / charcoal / mint Korean premium sports-product visual language. Heading large black exactly '다시 운동하고 싶어지는\\n작은 이유들.' Three large adjacent visual panels, no phone frames. First mint pale panel with sculptural charcoal weight disc and a warm yellow cheese reward token. Second pale lavender-gray panel with architectural ascending 3-step sports podium. Third pale butter panel with miniature gym bench and weight racks as a simplified gym model. Original supplied mint mouse Remi art is a small accurate unmodified brand accent beside third panel, not a redesigned mascot. Below first panel headline '오늘의 운동이 퀘스트가 되고', below second '쌓인 운동은 경쟁의 기록으로', below third '보상으로 내 헬스장을 키워요'. Small links '퀘스트 화면 보기', '랭킹 화면 보기', '헬스장 화면 보기'. Premium art direction, matte softly lit tactile sports objects with studio shadows, spacious flush composition, exact readable typography. No invented performance statistics, no medals as real app rewards, no external brand marks, no extra sections."
+  },
+  {
+    "name": "03-journey",
+    "refs": [
+      "@_UI패턴/운동수준2C.png",
+      "@_UI패턴/운동루틴준비2.png"
+    ],
+    "prompt": "Create one polished horizontal 16:10 desktop website SECTION design mockup for SPOT ME. Section 3 only, consistent premium Korean consumer sports product site, warm near-white, charcoal and mint. Left side large straight phone displaying reference image 1 unchanged, on generous muted mint background square. Right side large headline '시작은 간단하게.\\n운동은 나답게.' Then vertically spaced three checkpoints '내 운동 수준을 알려주세요', '준비된 루틴을 확인해요', '레미와 운동을 시작해요'. Active first title charcoal with mint slim progress line; other headings gray but legible. Only active item's short support sentence '프로필에서 운동 수준과 목표를 설정해요.' Image 2 is the next state reference only, not a second phone. A sticky phone and scrolling checkpoint narrative, one shared phone location throughout states. No rendered scroll UI, no arrows/badges/fake statistics, no header needed. Flat editorial clean layout, generous whitespace and precise Korean typography, desktop horizontal section suitable for faithful HTML implementation."
+  },
+  {
+    "name": "benefit-objects",
+    "prompt": "Create a single wide horizontal 3:1 triptych editorial illustration asset for a Korean fitness app website, no typography and no UI. Three equal square panels flush adjacent: left pale mint background, center very pale lavender, right pale warm butter. Left panel features a premium matte black small dumbbell standing at diagonal with three solid yellow cheese wedges as a metaphor for in-app quest rewards, no currency text. Center panel has a bold charcoal and mint 3-step sculptural podium, front view slight isometric, no numbers, no trophy. Right panel has a miniature simplified gym bench and weight rack on a rectangular floor slab, rendered in matte charcoal and mint; metaphor, not actual app graphics. Each subject fully contained within its own panel with wide breathing room, centered in bottom two thirds, consistent soft studio lighting and crisp silhouette, subtle tactile rubber surface, not clay toy, purposeful sporty consumer branding. No characters, no logos, no text, no borders, no gradients, no extra objects. Beautiful premium art-directed 3D product illustration for three separate benefits; physically grounded contact shadows. This is a visual metaphor, not a screenshot. Exact equal thirds so web can crop panels independently."
+  }
+]

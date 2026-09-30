@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const read=p=>readFile(new URL('../'+p,import.meta.url),'utf8');
+const node=await read('src/DesignNode.jsx');
+const css=await read('src/integration/integration.css');
+const runtime=await read('src/generated/scroll-runtime.js');
+assert(node.includes('type="button">오프닝 다시보기</button>'));
+assert(css.includes('#study-tools #restart{position:fixed;left:max(14px'));
+assert(!css.includes('#restart,[data-react-motion] #study-tools a{display:none}'));
+assert(runtime.includes("scope.querySelector('#restart').onclick=()=>reset(true)"));
+assert(runtime.includes('chargeTween?.kill();finishTween?.kill();moveTween?.kill();stopShake();stopHint();target=0'));
+assert(runtime.includes('reset(!hasSeenOpening()'));
+console.log('PASS: bottom-left opening replay, clean restart and session-once auto-play');

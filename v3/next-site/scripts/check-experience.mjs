@@ -1,0 +1,78 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {createHash} from 'node:crypto';
+import {reportMonths,overview,checkpoints,tierPreview,tierHaloColors} from '../src/concept/experience/data.js';
+const root=resolve(import.meta.dirname,'..');
+const manifest=JSON.parse(await readFile(resolve(root,'public/concept/experience/manifest.json'),'utf8'));
+const hash=data=>createHash('sha256').update(data).digest('hex');
+for(const asset of manifest){
+ assert.equal(hash(await readFile(asset.source)),asset.sourceSha256,asset.id+' source changed');
+ assert.equal(hash(await readFile(resolve(root,'public'+asset.path))),asset.outputSha256,asset.id+' output changed');
+}
+assert.equal(overview.length,4);assert.equal(checkpoints.length,3);
+assert.deepEqual(tierPreview,['iron','silver','platinum','diamond','grandmaster','challenger']);
+for(const id of tierPreview)assert(manifest.some(asset=>asset.id===id),'Missing tier asset: '+id);
+for(const id of tierPreview)assert(/^#[0-9a-f]{6}$/i.test(tierHaloColors[id]),'Missing halo color: '+id);
+assert.deepEqual(reportMonths.map(m=>[m.sessions,m.total]),[[4,9110],[8,30690]]);
+assert.equal(reportMonths[1].total-reportMonths[0].total,21580);
+for(const month of reportMonths){assert.equal(month.points.at(-1),month.total);assert.equal(month.points.length,month.sessions+1);}
+const source=await readFile(resolve(root,'src/concept/experience/Experience.jsx'),'utf8');
+const approvedFrame='https://static.toss.im/assets/toss-im/asset/shopping/phone-frame.png';
+assert(source.includes(approvedFrame),'Use the user-requested original phone frame');
+assert(!/static\.toss|framerusercontent|fetch\(|localStorage|sessionStorage/.test(source.replace(approvedFrame,'')),'Only the approved reference frame; no data writes');
+const gymSource=source.slice(source.indexOf('function GymScene'),source.indexOf('function TierCard'));
+assert(!/type="range"|clipPath|xp-gym-divider/.test(gymSource),'Gym is hover/tap, not drag comparison');
+assert(gymSource.includes('onPointerLeave')&&gymSource.includes('aria-pressed={chosen}')&&gymSource.includes('!reduced&&active'),'Hover reset, keyboard alternative and reduced-motion sheen guard');
+const journey=await readFile(resolve(root,'src/concept/experience/RemiJourney.jsx'),'utf8');
+const overviewSource=await readFile(resolve(root,'src/concept/experience/ActualOverview.jsx'),'utf8');
+assert(!/aria-expanded|role="tab"|<a |<Link /.test(overviewSource),'Long scroll without feature tabs or links');
+assert(overviewSource.includes('useScroll')&&overviewSource.includes('reportProgress=clamp(progress*4-3)'),'Report fills from the fourth scroll segment');
+assert.deepEqual([...overviewSource.matchAll(/id:'(overview-[^']+)',label:/g)].map(match=>match[1]),['overview-remi','overview-gym','overview-battle','overview-report'],'Battle precedes report in labels, screens and anchors');
+assert(overviewSource.includes('index===2?<BattleDemo progress={reduced?1:clamp(progress*4-2)}/>:<ReportDemo progress={reportProgress}/>'),'Battle uses the third segment; report uses the fourth');
+assert(!/type="range"|setAmount|ov-report-scrub|드래그해서 운동 기록|다시 채우기/.test(overviewSource),'No manual report fill controls or state');
+assert.equal((overviewSource.match(/className="ov-reference-sticky"/g)||[]).length,1,'One pinned reference composition');
+assert(!overviewSource.includes('function Story(')&&overviewSource.includes('ov-reference-list')&&overviewSource.includes('ov-reference-tilt'),'Keep the feature list and tilted phone, not four independent chapters');
+assert(overviewSource.includes('inert={active!==index}'),'Inactive phone screens cannot receive keyboard input');
+assert(!/setReady|setTimeout|추가 정보가 필요|알려주세요|답변을 준비하고/.test(overviewSource),'Chat returns a prepared result directly, without intake or loading timers');
+for(const result of ['세트 사이 90초 휴식','가슴·등·어깨를 고르게','총 반복 횟수는 36회','하루 식사 예시예요.'])assert(overviewSource.includes(result));
+assert(overviewSource.includes('choice.paragraphs?.map')&&overviewSource.includes('choice.closing')&&overviewSource.includes('ov-answer-content'),'Responses contain concrete detail and brief explanation, not bare labels');
+assert(!/fetch\(|getUserMedia|localStorage|sessionStorage/.test(overviewSource),'No actual chat or data persistence');
+for(const label of ['루틴 생성','운동 추천','기록 피드백','식단 추천'])assert(overviewSource.includes(label));
+const cells=JSON.parse(await readFile(resolve(root,'src/concept/experience/report-cells.json'),'utf8'));
+assert.equal(cells.length,31);assert(cells.some(c=>c.id==='1:5972'));
+const restIds=[...overviewSource.match(/const reportRestIds=new Set\(\[([^\]]+)\]\)/)[1].matchAll(/'(1:\d+)'/g)].map(m=>m[1]);
+assert.equal(new Set(restIds).size,4);for(const id of restIds)assert(cells.some(cell=>cell.id===id));
+assert.equal(cells.filter(cell=>!restIds.includes(cell.id)).length,27);
+assert(overviewSource.includes('filledCells=Math.floor(counts*reportWorkoutCells.length)')&&overviewSource.includes("className={filledIds.has(cell.id)?'active':''}")&&overviewSource.includes('<b>{filledCells}</b>'),'Fill 27 workout cells, preserve four gaps, and synchronize the displayed count');
+assert(!/className="(?:ov-demo-label|ov-reference-note)"/.test(overviewSource),'No overview demo captions');
+assert(!/className="(?:rj-watermark|rj-note)"/.test(journey),'No journey instructions or demo captions');
+assert(!/className="xp-disclaimer"|<span>성장 미리보기<\/span>|<span>운동 기록 예시<\/span>/.test(source),'No external preview labels');
+assert(!/fetch\(|getUserMedia|localStorage|sessionStorage/.test(journey),'Journey is a local simulation');
+assert(journey.includes('data-reference="393x852"')&&journey.includes('ResizeObserver'),'App coordinate canvas scales together');
+for(const id of ['voice','listening','fighter-hit','fighter-complete','monster-hit','part-chest'])assert(manifest.some(a=>a.id===id),id);
+assert(journey.includes('남은 세트 통일')&&journey.includes('adjustment.weight'),'Set edits persist into the workout');
+const battleSource=journey.slice(journey.indexOf('export function Battle'),journey.indexOf('function SetEditor'));
+assert(battleSource.includes('exercises.slice(0,4)')&&!/slice\(done|rj-empty-set/.test(battleSource),'Keep the same four workout cards during attack and completion');
+assert(battleSource.includes('data-exercise={id}')&&battleSource.includes('finished=done||(adjusted&&!current)'),'Other exercises stay completed in the last-set sequence');
+assert(battleSource.includes('remaining=hit?0:adjusted?1:4')&&battleSource.includes("finished?'✓':`${remaining}/4`"),'Current exercise progresses from one remaining set to zero, then completed');
+assert(journey.includes('rj-magic')&&journey.includes('ready&&!reduced'),'Reduced motion skips magic');
+const tierSource=source.slice(source.indexOf('function TierCard'),source.indexOf('function ReportCard'));
+assert(tierSource.includes('1000')&&tierSource.includes('clearTimeout(timer)')&&tierSource.includes('onPointerLeave={reset}')&&tierSource.includes('visibilitychange')&&tierSource.includes('!reduced'),'Tier cadence, exit cleanup, page visibility and reduced-motion guard');
+assert(tierSource.includes('if(!running||index===tierPreview.length-1)return;')&&tierSource.includes('turn*180')&&tierSource.includes('flipTo(0)'),'Hold challenger, restore 3D flip and return to iron');
+assert(tierSource.includes('settledTurn===turn')&&tierSource.includes('arrivingChampion&&!reduced')&&tierSource.includes('xp-tier-rays'),'Champion burst begins with the flip; reduced motion suppresses rings and rays');
+assert(tierSource.includes('if(!reduced)flipTo(1);setHover(true);'),'Hover starts the first flip immediately');
+assert(!tierSource.includes('xp-tier-orbit')&&tierSource.includes('tierHaloColors[id]'),'Remove fixed circle; use badge-specific halos');
+assert(tierSource.includes('champion&&!reduced&&turn%2===face')&&tierSource.includes('maskImage:')&&tierSource.includes('xp-tier-polish-streak'),'One-shot sheen on the visible challenger silhouette after its flip');
+assert(!/KEEP GOING|TOP TIER/.test(tierSource),'No extra tier slogans');
+assert(source.includes('onPointerCancel={reset}')&&source.includes("e.key==='Escape'"));
+const origin=process.argv[2]||'http://127.0.0.1:4189';
+for(const route of ['/concept/','/concept/reference/','/concept/review/','/ai/','/game/','/characters/','/video/']){
+ const response=await fetch(origin+route);assert.equal(response.status,200,route);
+ if(route==='/concept/'){
+  const html=await response.text();
+  for(const label of ['운동을 이어가는 일은','쌓이는 운동','혼자 고민하던 운동','헬스장 성장 미리보기','MY REPORT'])assert(html.includes(label),label);
+ }
+}
+for(const item of manifest)assert.equal((await fetch(origin+item.path)).status,200,item.path);
+console.log(JSON.stringify({result:'PASS',assets:manifest.length,totalAssetKB:Math.round(manifest.reduce((sum,a)=>sum+a.bytes,0)/1024),reportTotals:reportMonths.map(m=>m.total),routes:7,scope:'asset integrity, sample consistency, static markup and HTTP only; browser interaction QA separate'},null,2));

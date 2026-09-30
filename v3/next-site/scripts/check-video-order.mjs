@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {videoLayoutNode} from '../src/integration/video-layout.js';
+const source=JSON.parse(await readFile(new URL('../src/generated/pages/video.json',import.meta.url),'utf8'));
+const nodes=source.tree.children[0].children;
+const find=id=>nodes.find(n=>n.props['data-source-node-id']===id);
+const title=find('145:225').props.style;
+const player=videoLayoutNode(find('254:38')).props.style;
+const remi=videoLayoutNode(find('256:615')).props.style;
+assert.equal(player.top,'350px');
+assert.equal(player.width,'1840px');assert.equal(player.height,'1036px');
+assert(parseFloat(player.top)>parseFloat(title.top)+parseFloat(title.height));
+assert(parseFloat(remi.top)>parseFloat(player.top)+parseFloat(player.height));
+assert.equal(find('254:38').props.style.top,'2951px','Frozen source remains unchanged');
+assert.equal(videoLayoutNode(find('145:225')),find('145:225'));
+console.log('PASS: video below title, artwork below player, original sizes and source preserved');
