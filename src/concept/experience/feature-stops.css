@@ -1,0 +1,25 @@
+/* One reading frame: heading, artwork and captions together.
+   Narrow/short viewports retain the readable, ordinary document layout. */
+@media(min-width:901px) and (min-height:701px){
+  .xp .xp-benefits{min-height:100svh;padding-block:32px;display:flex;flex-direction:column;justify-content:center}
+  .xp .xp-benefits-heading{margin-bottom:28px}
+  .xp .xp-benefits-heading .xp-eyebrow{margin-bottom:12px!important}
+  .xp .xp-benefit-art{height:min(560px,calc(100svh - 230px));min-height:0;aspect-ratio:auto;padding:24px}
+  .xp .xp-benefit-art>h3{font-size:clamp(25px,2.3vw,32px);margin-top:14px;line-height:1.28}
+  .xp .xp-gym-phone{margin-top:24px}
+  .xp .xp-gym-reward{margin-top:24px;padding:14px 16px}
+  .xp .xp-tier-stage{width:min(65%,calc(100svh - 482px));margin-top:20px}
+  .xp .xp-tier-name{margin-top:8px}
+  .xp .xp-tier-progress{margin-top:12px}
+  .xp .xp-report-sheet{padding:16px;margin-top:20px}
+  .xp .xp-report-volume{margin-top:12px}
+  .xp .xp-report-volume strong{font-size:30px;line-height:1.3}
+  .xp .xp-report-sheet .xp-chart{height:clamp(70px,calc(100svh - 630px),115px)}
+  .xp .xp-report-stats{margin-top:12px;padding-top:12px;gap:22px}
+  .xp .xp-benefit>h3{font-size:clamp(21px,1.95vw,25px);margin:24px 12px 8px;line-height:1.4}
+  .xp .xp-benefit>p{font-size:clamp(14px,1.32vw,17px);line-height:1.6}
+  .xp .xp-benefit>h3,.xp .xp-benefit>p{transition:opacity .25s ease}
+}
+@media(prefers-reduced-motion:reduce){
+  .xp .xp-benefit>h3,.xp .xp-benefit>p{transition:none}
+}

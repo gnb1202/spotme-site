@@ -1,0 +1,21 @@
+{
+  "base": "http://127.0.0.1:4189",
+  "results": [
+    "Opening handoff; four keyboard-accessible feature selectors; one screen, short description and link per selection",
+    "1440x1000: full phone visible below header (373x786), no overflow",
+    "1366x768: full phone visible below header (268x558), no overflow",
+    "1920x1080: full phone visible below header (397x837), no overflow",
+    "1024x600: full phone visible below header (195x400), no overflow",
+    "768x1024: full phone visible below header (251x520), no overflow",
+    "390x844: full phone visible below header (247x512), no overflow",
+    "320x740: full phone visible below header (199x408), no overflow",
+    "Existing Remi AI detail navigation works"
+  ],
+  "errors": [],
+  "verifiedAssets": [
+    "home",
+    "ai",
+    "report",
+    "gym"
+  ]
+}

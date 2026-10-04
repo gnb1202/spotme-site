@@ -1,0 +1,18 @@
+{
+  "results": [
+    "Opening lands at pain section; pain, solution and overview follow in order.",
+    "Four survey percentages and bar lengths verified; survey footer removed; both Remi modes switch artwork, flow and detail links.",
+    "1440px: both sections fit, delivered images decode, no horizontal overflow.",
+    "768px: both sections fit, delivered images decode, no horizontal overflow.",
+    "390px: both sections fit, delivered images decode, no horizontal overflow.",
+    "320px: both sections fit, delivered images decode, no horizontal overflow.",
+    "Reduced motion leaves the complete curve visible.",
+    "Native scroll advances curve reveal: inset(-20% 82.275% -20% -2%) → inset(-20% 81.9849% -20% -2%).",
+    "Opening replay returns to the new first section."
+  ],
+  "errors": [],
+  "verifiedAssets": [
+    "support",
+    "reward"
+  ]
+}

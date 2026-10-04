@@ -1,119 +1,94 @@
-# SPOT ME — 웹사이트
+# SPOT ME — 토스 참고 기술 스택 전환본
 
-## 현재 운영 배포 대상 — Next.js
+## 현재 실행 위치 (2026-10-05)
 
-2026-09-29 운영 홈 교체 요청에 따라 `v3/next-site/`의 최신 시안을 `/`에 연결했습니다. AI·게임·레미·영상 상세 경로는 유지합니다. 배포는 **반드시 아래 폴더에서** 실행합니다. 루트의 Vite 설정은 이전 버전용이며 현재 운영 배포에 사용하지 않습니다.
+Next.js 앱은 저장소 루트 `D:/Github/spotme-site`로 이동했습니다.
+이 폴더에서 `npm ci`, `npm run dev`, `npm run build`, `npm run start`를 실행합니다.
+개발 포트는 4189, 프로덕션 테스트 포트는 4192입니다.
+
+- 현재 코드: `app/`, `src/`, `public/`, `scripts/`.
+- 이전 루트 파일: `legacy/root-before-next/`에 보존.
+- 원본 자료: `v3/designs/`와 `스팟미_웹사이트_260925_v1/`에 보존.
+- `v3/next-site/`에는 이전 로컬 캐시와 환경 설정만 남아 있습니다.
+- 이번 이동은 원격 설정 변경이나 배포를 포함하지 않습니다.
+
+아래는 과거 기록입니다. 과거의 실행 위치 대신 현재 저장소 루트를 사용하세요.
+
+2026-09-28. 기존 `../react-site/`는 보존하고 별도 Next.js App Router 프로젝트로 이관했다.
+
+## 운영 배포 — 2026-10-01
+
+- 후속 배포: 홈 브라우저 제목을 `SPOT ME | 혼자 막혔던 운동, 레미와 함께.`로 변경. 배포 `dpl_FMU8FHnjG3budtHaXJV1kWe1xHCj` (production, READY), 운영 브라우저에서 제목 및 HTTP 200 확인.
+
+- 사용자 요청으로 현재 `v3/next-site` 작업본을 https://spotme-site.vercel.app/ 에 운영 배포했다.
+- 배포 ID: `dpl_3cLScmRz9e9VBS1chZvJrcCT1zPg` (production, READY).
+- 배포 주소: https://spotme-site-7h4hbnhck-gnb1202-navercoms-projects.vercel.app
+- 원격 빌드 성공(20개 페이지). 운영 4개 경로의 HTTP 200, 홈 이미지 6개의 로컬/운영 SHA-256 일치, 비로그인 브라우저 접근, 최신 문구·굵은 그래프·배경색, 구간 스크롤, 레미 전환, 휴대폰 4화면 및 모바일 전체 노출을 확인했다. 브라우저 오류 0건.
+- 검증 기록: `../reports/home-phone/production-checks-20261001.json` 및 `production-*-20261001.png`. Git 커밋/푸시, 루트 배포 설정 및 환경 파일 변경은 수행하지 않았다.
+
+## 이전 운영 배포 — 2026-09-29
+
+- 사용자 승인 후 https://spotme-site.vercel.app/ 의 홈을 현재 시안으로 교체했다. `/concept/`도 유지하며 기존 상세 페이지 경로는 그대로다.
+- 배포 ID: `dpl_aA8Q8wcQdRUtaPQGeUDJ61M8tdev` (production, READY).
+- 로컬 및 Vercel 빌드 성공(18개 페이지), 운영 7개 경로·51개 에셋 검사 PASS. 운영 홈의 비로그인 열람과 레미 루틴 결과 표시를 브라우저에서 확인했다. 전체 모바일/모든 인터랙션 회귀 QA를 수행한 것은 아니다.
+- 기록: `reports/experience/production-home-20260929.png`. Git 커밋/푸시는 수행하지 않았다.
+- 운영 배포 명령: 이 폴더에서 `npx --yes vercel@59.15.1 deploy --prod --yes --scope gnb1202-navercoms-projects`.
+
+## 앞선 미리보기 배포 기록 — 2026-09-29
+
+- 현재 시안: https://spotme-site-r6vmtdsnw-gnb1202-navercoms-projects.vercel.app/concept/
+- Vercel 프로젝트: `spotme-site`, 배포 ID: `dpl_GcLDXh3yzVp9AGc4VF2dVdGq6t8M`.
+- Preview 배포만 수행했다. `spotme-site.vercel.app` 운영 홈, 루트의 기존 Vite 배포 설정, Git 원격은 변경하지 않았다.
+- Vercel의 미리보기 로그인 보호를 유지했다. 열람 시 해당 프로젝트 접근 권한이 있는 Vercel 계정 로그인이 필요하다.
+- 원격 Next.js 빌드 성공(18개 페이지), 인증된 `/concept/` 응답과 주요 문구 확인. 비로그인 브라우저에서는 로그인 화면까지만 확인했으며 배포 환경 전체 브라우저 QA를 완료한 것은 아니다.
+- 이 폴더의 `vercel.json`을 사용한다. `.vercelignore`에서 로컬 환경 변수, QA 보고서, 검증 스크립트 및 에셋 원본 경로가 담긴 manifest를 제외한다.
 
 ```powershell
 cd D:\Github\spotme-site\v3\next-site
-npm run build
-npx --yes vercel@59.15.1 deploy --prod --yes --scope gnb1202-navercoms-projects
+npx --yes vercel@59.15.1 deploy --target preview --yes --scope gnb1202-navercoms-projects
 ```
 
-운영 주소: https://spotme-site.vercel.app/ . 배포 기록과 검증 범위는 `v3/next-site/README.md`를 참고합니다.
+위 미리보기 이후 운영 홈 교체가 승인되어 배포를 완료했다. 저장소 루트에서 배포하면 이전 Vite 사이트 설정이 사용되므로 주의한다.
 
-## 이전 기본 구현 — React/Vite (보존 기록)
-
-2026-09-28 토스 참고 기술 스택 실험은 `v3/next-site/`에 별도로 구성했습니다. Next.js App Router + React + Motion + Lenis + Lottie 기반이며 개발 포트는 4189, 빌드본 확인 포트는 4192입니다. 아래 Vite 버전과 현재 배포 설정은 비교를 위해 보존했습니다. 세부 차이와 실행 방법은 `v3/next-site/README.md`에 기록했습니다.
-
-2026-09-27부터 기본 개발·빌드 대상은 `v3/react-site/`입니다. React + Vite에 SmoothUI 기반 메뉴와 기존 승인된 에셋을 사용합니다. 기존 정적 사이트는 비교용으로 보존하며 새 빌드에서는 사용하지 않습니다.
+## 실행
 
 ```powershell
-npm ci --prefix v3/react-site
-npm run dev
-# 배포용 출력 생성 (배포하지 않음)
-npm run build
-```
-
-로컬 주소는 http://127.0.0.1:4187/ 입니다. Vercel 설정은 `v3/react-site/dist`로 변경했으며 SPA 직접 경로 접근을 지원합니다. 이번 전환은 로컬 설정 변경이며 운영 배포·원격 푸시·병합은 아직 수행하지 않았습니다.
-
-React의 `public/`과 `src/generated/`는 이제 보존해야 하는 독립 빌드 입력입니다. `sync`는 기존 HTML을 재가져오는 이관 도구이므로 일반 개발·배포에서 실행하지 않습니다. 원본 데이터의 출처 정보는 유지합니다.
-
-## 이전 정적 사이트 기록 (아래 실행·배포 지침은 현재 구성에 적용하지 않음)
-
-## 이전 로컬 제작 작업
-
-2026-09-25 신규 시안 작업은 이 저장소의 `v3/`에서 진행합니다. 에셋 원본은 `스팟미_웹사이트_260925_v1/`입니다. `D:/Github/SpotMe`는 앱 저장소이며 사이트 작업 경로가 아닙니다.
-
-```powershell
-cd v3
+cd D:\Github\spotme-site\v3\next-site
+npm ci
 npm run dev
 ```
 
-로컬 주소: http://127.0.0.1:4184/ . 신규 작업은 아직 배포하지 않았습니다. 아래 내용과 루트 `public/`은 기존 운영 버전 기록이며 신규 초안으로 교체하지 않았습니다.
+개발: http://127.0.0.1:4189/ . `npm run build` 후 `npm run start`는 http://127.0.0.1:4192/ 에서 빌드본을 제공한다.
 
-## 기존 운영 버전 — Rail
+## 구현한 구성과 확인 범위
 
-승인된 rail 버전의 정적 웹사이트입니다. 별도의 설치·빌드·환경 변수·백엔드는 필요하지 않습니다.
+| 기술 | 적용 | 토스와의 관계 |
+|---|---|---|
+| Next.js | 15.5.24, App Router, 서버 페이지와 12개 경로 정적 사전 렌더링 | 공개 번들에서 확인한 버전과 동일 |
+| React / React DOM | 19.2.8 | 토스 번들의 19.2 canary 대신 보안 패치된 같은 계열 선택 |
+| Motion | 13.4.4, 메뉴 강조·화면 전환 | 토스에서 계열 코드 확인, 정확한 버전 미확인 |
+| Lenis | 1.3.26, 일반 페이지 부드러운 스크롤 | 토스의 lenis-prevent 흔적을 근거로 채택, 원본 사용/버전 확정 아님 |
+| Lottie | lottie-web 5.13.0, 지연 로딩 컴포넌트 준비 | 토스에서 로더 확인, 정확한 버전 미확인 |
+| GSAP | 3.15.0, 기존 승인된 모션 실험에서만 유지 | SPOT ME 기존 의존성, 토스 사용 여부 미확인 |
+| PostCSS | override 8.5.28 | 설치 감사에서 발견한 하위 패키지 취약점 패치 |
 
-운영 주소: [spotme-site.vercel.app](https://spotme-site.vercel.app)
+토스의 내부 소스/배포 인프라/전체 의존성을 복제한 것은 아니다. 토스 영상·브랜드 에셋은 가져오지 않았다. Lottie 재생 컴포넌트는 준비됐지만 승인된 SPOT ME JSON이 없어 실제 화면에 신규 그래픽을 추가하지 않았다. MP4도 신규 제작/추가하지 않았다.
 
-## 구성
+## 보존과 동작
 
-- `public/`: 실제 배포되는 HTML, CSS, JavaScript, 이미지 51개와 로컬 폰트
-- `vercel.json`: Vercel 정적 배포 설정 (`public` 디렉터리만 제공)
-- `.vercelignore`: 배포 파일 허용 목록
+- 기존 v3 React 버전의 정확한 데이터·폰트·에셋을 복사했다. 이전 Rail 등 다른 디자인을 가져오지 않았다.
+- 브라우저 history 직접 조작 대신 Next Link와 App Router로 페이지를 이동한다.
+- 상단 메뉴의 Motion 강조와 페이지 겹침 전환을 유지한다.
+- 페이지 코드·이미지는 진입 후 미리 불러오며, Next 라우트도 prefetch한다.
+- Lenis는 모션 감소 설정 및 `?experience=scroll` 실험에서 끈다. 경로 변경 시 인스턴스를 정리하며 터치의 기본 스크롤을 유지한다.
+- 기존 오프닝은 `/?experience=scroll&variant=a`에서만 실행한다. 기본 홈 자동 실행 없음.
+- 기존 전체 모션 실험의 재검증과 새 반응형 디자인 작업은 이번 기술 이관과 별개다.
 
-기본 내비게이션은 번호와 제목이 함께 보이는 연결형 블록 rail이며, 폭은 168px입니다. 화면 폭 1440px 이상에서 표시되고, 좁은 화면에서도 같은 콘텐츠를 연속 스크롤로 읽을 수 있습니다. 기존 원형 rail은 `?rail=circles`로 비교할 수 있습니다.
+## 확인 기록
 
-## 로컬 확인
+- Next.js 프로덕션 빌드 성공, 12개 경로 SSR 응답 200 및 존재하지 않는 경로 404 확인.
+- 복사한 에셋 156개 SHA-256이 React 원본과 일치.
+- 패치 적용 후 npm audit: 취약점 0건.
+- 전체 Figma 픽셀 일치·전체 모바일 QA를 새로 인증한 것은 아니다.
 
-`public/`을 루트로 정적 HTTP 서버를 실행합니다. 프로젝트 루트 전체를 웹 루트로 사용하지 않습니다.
-
-## Vercel 배포
-
-이 저장소를 연결한 뒤 프로젝트 루트는 저장소 루트, Framework Preset은 **Other**, Output Directory는 **public**으로 설정합니다. 설치와 빌드는 실행하지 않습니다. 관련 설정은 `vercel.json`에 포함되어 있습니다.
-
-운영 소스는 `main` 브랜치이며, GitHub Pages는 중단했습니다. 사이트 실행을 위한 비밀 키나 환경 변수를 추가할 필요가 없습니다.
-
-### 운영 및 검증
-
-로컬 폴더는 `gnb1202-navercoms-projects/spotme-site` 프로젝트에 연결되어 있습니다. 배포는 CLI로 수행하며, GitHub 자동 배포 연동은 해제되어 있습니다. GitHub에 푸시하는 것만으로 사이트가 갱신되지는 않습니다.
-
-Vercel CLI 로컬 빌드 결과의 정적 파일 62개가 승인된 rail 원본과 SHA-256 기준으로 모두 일치함을 확인했습니다. 인증 파일과 빌드 결과는 `.gitignore` 및 `.vercelignore`로 공개 대상에서 제외합니다.
-
-이 PC에서는 재연결 없이 저장소 루트에서 로컬 빌드를 검증할 수 있습니다.
-
-```powershell
-npx --yes vercel@59.15.1 build --yes --scope gnb1202-navercoms-projects
-```
-
-빌드는 로컬 `.vercel/output`을 생성하며 사이트를 배포하지 않습니다. [공식 빌드 안내](https://vercel.com/docs/cli/build)
-
-### 로컬 파일로 배포 준비
-
-다른 PC에서 처음 설정할 때는 저장소 루트에서 다음 명령으로 로그인하고, 사용할 계정·팀과 프로젝트를 선택합니다. 아래 두 명령은 사이트 배포를 실행하지 않습니다. 연결 도구가 GitHub 연동을 추가할 수 있으므로 자동 배포 사용 여부를 확인합니다.
-
-```powershell
-npx --yes vercel@59.15.1 login
-npx --yes vercel@59.15.1 link
-```
-
-연결이 끝난 뒤 실제 미리보기 배포를 진행할 때만 다음 명령을 실행합니다.
-
-```powershell
-npx --yes vercel@59.15.1 deploy --target preview --scope gnb1202-navercoms-projects
-```
-
-프로덕션 배포는 `main`에서 검증한 뒤 아래 명령으로 진행합니다. 빌드 결과가 `.vercel/output/static`에 실제로 포함되어 있는지 확인한 뒤 배포합니다. CLI 인증 정보와 `.vercel/` 연결 정보는 저장소에 커밋하지 않습니다.
-
-```powershell
-npx --yes vercel@59.15.1 build --prod --yes --scope gnb1202-navercoms-projects
-npx --yes vercel@59.15.1 deploy --prebuilt --prod --scope gnb1202-navercoms-projects
-```
-
-GitHub 연동으로 배포하려면 먼저 승인된 변경을 커밋·푸시해야 합니다. 로컬에서만 수정된 상태로 GitHub 저장소를 가져오면 원격의 이전 사이트가 배포됩니다.
-
-rail 전환 변경사항은 `codex/rail-vercel`에서 `main`으로 병합했습니다. 기존 GitHub Pages 주소 대신 Vercel 운영 주소를 사용합니다.
-
-명령 설명: [로그인](https://vercel.com/docs/cli/login), [프로젝트 연결](https://vercel.com/docs/cli/link), [CLI 배포](https://vercel.com/docs/cli/deploying-from-cli).
-
-## 관리 주의
-
-이전 배틀 데모와 개발용 파일은 저장소 밖에 백업한 뒤 제거했습니다. 기존 Git 이력은 보존했습니다.
-
-이 저장소는 더 이상 이전 `web/` 배포 사본이 아닙니다. 과거의 `web/tools/deploy.sh`를 실행하면 rail 버전이 덮어써질 수 있으므로 사용하지 마세요.
-
-GitHub Pages 게시 설정은 비활성화했습니다. 저장소와 Git 이력은 유지되며, 현재 구성은 Vercel 전용입니다.
-
-폰트 라이선스는 `public/assets/fonts/LICENSE.txt`에 포함되어 있습니다.
+참조: https://toss.im/ , https://nextjs.org/docs/app , https://github.com/darkroomengineering/lenis , https://github.com/airbnb/lottie-web

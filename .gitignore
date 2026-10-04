@@ -12,3 +12,7 @@ tools/
 !v3/react-site/tools/**
 !v3/next-site/tools/
 !v3/next-site/tools/**
+.next/
+.next-dev/
+/reports/
+/public/videos/spotme-site-demo.mp4

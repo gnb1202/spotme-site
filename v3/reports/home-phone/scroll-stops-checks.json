@@ -1,0 +1,12 @@
+{
+  "results": [
+    "One desktop wheel gesture stops at the full plateau graph, including trackpad momentum.",
+    "PageDown / PageUp move between Remi and the full phone overview.",
+    "Reverse scrolling returns through each section to the survey.",
+    "Escape cancels automatic travel.",
+    "Reduced motion uses immediate alignment after the compact survey.",
+    "Mobile keeps native scrolling for long content.",
+    "Detail navigation unmounts the home scroll controller."
+  ],
+  "errors": []
+}
