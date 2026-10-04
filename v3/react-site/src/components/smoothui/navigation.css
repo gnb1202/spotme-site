@@ -1,5 +1,0 @@
-.smooth-nav-link{isolation:isolate;outline-offset:9px!important}
-.smooth-nav-link .ink{position:relative;z-index:1}
-.smooth-nav-link::before{content:"";position:absolute;inset:-10px -12px}
-.smooth-nav-hover{position:absolute;inset:-8px -12px;background:currentColor;border-radius:7px;pointer-events:none;z-index:-1}
-.smooth-nav-indicator{position:absolute;left:0;right:0;bottom:-9px;height:2px;background:currentColor;border-radius:2px;pointer-events:none}

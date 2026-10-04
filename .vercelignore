@@ -1,6 +1,7 @@
 # Upload runtime sources only; keep QA, local evidence and source-path manifests local.
 node_modules/
 legacy/
+temp/
 v3/
 스팟미_웹사이트_260925_v1/
 .next/

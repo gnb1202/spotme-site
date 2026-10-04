@@ -1,4 +1,0 @@
-node_modules/
-dist/
-# public/ and src/generated/ are now standalone React build inputs.
-reports/
