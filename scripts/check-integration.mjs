@@ -20,8 +20,8 @@ for(const route of mainNavigation.map(x=>x.href)){
  if(route==='/remi-ai/'){assert(html.includes('remi-demo-phone'));for(const name of ['루틴 생성','운동 추천','기록 피드백','식단 추천'])assert(html.includes(name));}
  if(route==='/video/'){assert(html.includes('시연 영상'));assert(!html.includes('<iframe')&&!html.includes('<video'),'Video must wait for user activation');}
 }
-const figmaText=await read('../v3/designs/figma-data.json');
-const source=JSON.parse(await read('../v3/designs/source.json'));
+const figmaText=await read('../design-reference/figma-data.json');
+const source=JSON.parse(await read('../design-reference/source.json'));
 assert.equal(createHash('sha256').update(figmaText).digest('hex'),source.sha256,'Frozen Figma data changed');
 const figma=JSON.parse(figmaText);
 const find=(node,id,key='id')=>node[key]===id?node:(node.children||[]).map(child=>typeof child==='object'?find(child,id,key):null).find(Boolean);

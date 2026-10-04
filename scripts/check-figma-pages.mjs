@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 const read=p=>readFile(new URL('../'+p,import.meta.url),'utf8');
-const data=JSON.parse(await read('v3/designs/figma-data.json'));
+const data=JSON.parse(await read('design-reference/figma-data.json'));
 const find=(n,id)=>n.id===id?n:(n.children||[]).map(c=>find(c,id)).find(Boolean);
 const video=data.nodes['145:215'].document;
 const box=find(video,'254:38').absoluteBoundingBox;

@@ -68,5 +68,5 @@ try{
  results.push('Detail navigation unmounts the home scroll controller.');
 }finally{await browser.close();}
 assert.deepEqual(errors,[]);
-await writeFile(new URL('../v3/reports/home-phone/scroll-stops-checks.json',import.meta.url),JSON.stringify({results,errors},null,2));
+await writeFile(new URL('../reports/figma-legacy/home-phone/scroll-stops-checks.json',import.meta.url),JSON.stringify({results,errors},null,2));
 console.log(results.map(result=>'PASS: '+result).join('\n'));

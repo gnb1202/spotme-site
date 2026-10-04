@@ -6,7 +6,7 @@ import {chromium} from 'playwright';
 import {overviewFeatures} from '../src/integration/home-overview-data.js';
 
 const base=process.env.PREVIEW_URL||'http://127.0.0.1:4189';
-const report=new URL('../v3/reports/home-phone/',import.meta.url);
+const report=new URL('../reports/figma-legacy/home-phone/',import.meta.url);
 const manifest=JSON.parse(await readFile(new URL('assets.json',report),'utf8'));
 const hash=buffer=>createHash('sha256').update(buffer).digest('hex');
 for(const item of overviewFeatures){

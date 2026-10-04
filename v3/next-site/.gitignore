@@ -1,8 +1,0 @@
-node_modules/
-.next/
-.next-dev/
-reports/
-.env*
-.vercel/
-# Keep the oversized source video local; the approved web encode is versioned.
-public/videos/spotme-site-demo.mp4

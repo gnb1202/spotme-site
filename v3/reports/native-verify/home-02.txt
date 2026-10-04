@@ -1,9 +1,0 @@
-
-Mimikyu Structural Verify — 21 text nodes, 21 matched, 2 mismatches, 0 unmatched
-
-  ❌ SPOT ME MY WORKOUT ("SPOT ME MY WORKOUT")
-      y: expected 327.0 / actual 332.0
-  ❌ 프로필 설정을 완료하면 AI 운동 파트너가 개인화된 운동 루틴을 제공해요. ("프로필 설정을 완료하면 AI 운동 파트너가 ")
-      lineHeight: expected 36.0 (figma 24.0) / actual 24.0
-
-  nodes: 19/21 passed · checks: 143/145 passed · overlaps: 0

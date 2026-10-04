@@ -2,7 +2,7 @@ import {copyFileSync,readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {resolve,dirname} from 'node:path';
 import {createHash} from 'node:crypto';
 const root=resolve(import.meta.dirname,'..');
-const delivery=resolve(root,'스팟미_웹사이트_260925_v1');
+const delivery=resolve(root,'design-reference/assets/delivery-260925');
 const destination=resolve(import.meta.dirname,'../public/concept/assets');
 const assets={
   logo:'01_로고/스팟미_로고_B.png',
@@ -23,7 +23,7 @@ const manifest=Object.entries(assets).map(([id,file])=>{
   copyFileSync(source,target);
   const hash=path=>createHash('sha256').update(readFileSync(path)).digest('hex');
   if(hash(source)!==hash(target))throw Error('Asset mismatch: '+id);
-  return {id,source:'스팟미_웹사이트_260925_v1/'+file,path:'/concept/assets/'+id+'.png',sha256:hash(source),kind:'delivered-design-screen-or-artwork',runtimeVerified:false};
+  return {id,source:'design-reference/assets/delivery-260925/'+file,path:'/concept/assets/'+id+'.png',sha256:hash(source),kind:'delivered-design-screen-or-artwork',runtimeVerified:false};
 });
 writeFileSync(resolve(destination,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
 console.log(`Verified ${manifest.length} unmodified delivered assets.`);

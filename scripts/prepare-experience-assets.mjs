@@ -5,7 +5,7 @@ import sharp from 'sharp';
 
 const site=resolve(import.meta.dirname,'..');
 const app=resolve(site,'../SpotMe/스팟미_260920_v1');
-const delivery=resolve(site,'스팟미_웹사이트_260925_v1');
+const delivery=resolve(site,'design-reference/assets/delivery-260925');
 const output=resolve(import.meta.dirname,'../public/concept/experience');
 const sources={
  'cheese':[app,'02-3_아이콘-운동/아이콘_인앱재화.png',180],

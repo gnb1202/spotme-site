@@ -15,5 +15,9 @@ tools/
 .next/
 .next-dev/
 /reports/
+/v3/reports/
+/local-archive/
+/design-reference/*-urls.json
+/design-reference/context/*.b64
 /public/videos/spotme-site-demo.mp4
 /temp/to-delete/

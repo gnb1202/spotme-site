@@ -1,7 +1,7 @@
 [
   {
     "id": "logo",
-    "source": "스팟미_웹사이트_260925_v1/01_로고/스팟미_로고_B.png",
+    "source": "design-reference/assets/delivery-260925/01_로고/스팟미_로고_B.png",
     "path": "/concept/assets/logo.png",
     "sha256": "b88d67b1b5821d6e1fa4b91175053d74afa6b25539987e83ea1207e344943c47",
     "kind": "delivered-design-screen-or-artwork",
@@ -9,7 +9,7 @@
   },
   {
     "id": "remi",
-    "source": "스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홈A_01.png",
+    "source": "design-reference/assets/delivery-260925/03_오브젝트/@_캐릭터/01_레미/레미_홈A_01.png",
     "path": "/concept/assets/remi.png",
     "sha256": "2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c",
     "kind": "delivered-design-screen-or-artwork",
@@ -17,7 +17,7 @@
   },
   {
     "id": "routine",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_AI추천운동.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/1_운동_AI추천운동.png",
     "path": "/concept/assets/routine.png",
     "sha256": "7b8d24de13354355fd5e4629c8a60b86187508961df18d19b0de20a1f5b9c22b",
     "kind": "delivered-design-screen-or-artwork",
@@ -25,7 +25,7 @@
   },
   {
     "id": "chat",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동 - 운동진행3-4B.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/1_운동 - 운동진행3-4B.png",
     "path": "/concept/assets/chat.png",
     "sha256": "b09885837f2556d57ebf02222ac7ce01a0c9e587bfbbe5aa07f496dc59a6f06d",
     "kind": "delivered-design-screen-or-artwork",
@@ -33,7 +33,7 @@
   },
   {
     "id": "report",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/3_리포트2.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/3_리포트2.png",
     "path": "/concept/assets/report.png",
     "sha256": "2599f32632c457f17f1cc9f9934a4100a3374e15570839fdb22ae2f339f77b33",
     "kind": "delivered-design-screen-or-artwork",
@@ -41,7 +41,7 @@
   },
   {
     "id": "profile",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/운동수준2C.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/운동수준2C.png",
     "path": "/concept/assets/profile.png",
     "sha256": "c0ef852a35dfa181a2c41895b8657ba30315e2a5dbcade502c915e3a260f261e",
     "kind": "delivered-design-screen-or-artwork",
@@ -49,7 +49,7 @@
   },
   {
     "id": "ready",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/운동루틴준비2.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/운동루틴준비2.png",
     "path": "/concept/assets/ready.png",
     "sha256": "a412b036de9a5eb71c65ec20a19eff95a6bc2f4f34c161ae13e4efb56e0e1b3d",
     "kind": "delivered-design-screen-or-artwork",
@@ -57,7 +57,7 @@
   },
   {
     "id": "workout",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_c_01.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/1_운동_c_01.png",
     "path": "/concept/assets/workout.png",
     "sha256": "4fc0269a2d5d99c4ac18cfedb444b47063fe4ce1a066ec53f5a4fe13ee504af3",
     "kind": "delivered-design-screen-or-artwork",
@@ -65,7 +65,7 @@
   },
   {
     "id": "quest",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_퀘스트_주간퀘스트_조건달성.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/1_운동_퀘스트_주간퀘스트_조건달성.png",
     "path": "/concept/assets/quest.png",
     "sha256": "dc81272686d9b85ef2117c49af282356878e86fed52c0db13dd114d355ed1ae2",
     "kind": "delivered-design-screen-or-artwork",
@@ -73,7 +73,7 @@
   },
   {
     "id": "ranking",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/4_랭킹_이번달.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/4_랭킹_이번달.png",
     "path": "/concept/assets/ranking.png",
     "sha256": "85a98b788e179829451f9ba58b74a0a30e385209a6f43af9209ee681d11f2b90",
     "kind": "delivered-design-screen-or-artwork",
@@ -81,7 +81,7 @@
   },
   {
     "id": "gym",
-    "source": "스팟미_웹사이트_260925_v1/@_UI패턴/1_운동_헬스장키우기.png",
+    "source": "design-reference/assets/delivery-260925/@_UI패턴/1_운동_헬스장키우기.png",
     "path": "/concept/assets/gym.png",
     "sha256": "953533dd30a18b4626a3f83048ea3cf0cd0c7e453be3b304838714795b099bdf",
     "kind": "delivered-design-screen-or-artwork",

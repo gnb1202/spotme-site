@@ -1,94 +1,170 @@
-# SPOT ME — 토스 참고 기술 스택 전환본
+<p align="center">
+  <img src="public/brand/spotme-logo-a1.png" width="300" alt="SPOT ME" />
+</p>
 
-## 현재 실행 위치 (2026-10-05)
+<h1 align="center">SPOT ME · Website</h1>
 
-Next.js 앱은 저장소 루트 `D:/Github/spotme-site`로 이동했습니다.
-이 폴더에서 `npm ci`, `npm run dev`, `npm run build`, `npm run start`를 실행합니다.
-개발 포트는 4189, 프로덕션 테스트 포트는 4192입니다.
+<p align="center">
+  혼자 막혔던 운동, 레미와 함께.<br />
+  AI 운동 파트너와 운동을 통한 성장을 소개하는 인터랙티브 웹사이트
+</p>
 
-- 현재 코드: `app/`, `src/`, `public/`, `scripts/`.
-- 이전 루트 사이트·Vite 앱·모션 실험본은 정리했습니다. 이동 직후 커밋 `c8a4637`에서 복구할 수 있습니다.
-- 원본 자료: `v3/designs/`와 `스팟미_웹사이트_260925_v1/`에 보존.
-- `v3/next-site/`에는 이전 환경·Vercel 연결 설정만 남아 있습니다. 캐시·의존성은 정리했습니다.
-- 이번 이동은 원격 설정 변경이나 배포를 포함하지 않습니다.
+<p align="center">
+  <a href="https://spotme-site.vercel.app/">사이트 보기</a> ·
+  <a href="#시작하기">시작하기</a> ·
+  <a href="docs/README.md">문서</a>
+</p>
 
-아래는 과거 기록입니다. 과거의 실행 위치 대신 현재 저장소 루트를 사용하세요.
+---
 
-2026-09-28. 기존 `../react-site/`는 보존하고 별도 Next.js App Router 프로젝트로 이관했다.
+## 프로젝트 소개
 
-## 운영 배포 — 2026-10-01
+실제 앱의 에셋과 화면을 바탕으로 SPOT ME의 기능을 스크롤과 짧은 상호작용으로 소개합니다. 모바일 앱 자체가 아니라 **홍보·체험용 웹사이트**입니다.
 
-- 후속 배포: 홈 브라우저 제목을 `SPOT ME | 혼자 막혔던 운동, 레미와 함께.`로 변경. 배포 `dpl_FMU8FHnjG3budtHaXJV1kWe1xHCj` (production, READY), 운영 브라우저에서 제목 및 HTTP 200 확인.
+| 메뉴 | 경로 | 주요 내용 |
+| --- | --- | --- |
+| 홈 | `/` | 브랜드 오프닝, 운동의 고민과 레미의 도움을 소개하는 스토리 |
+| 기능 | `/features/` | 운동 리포트·헬스장·전투 데모, 성장 카드와 레미 운동 시퀀스 |
+| 레미 AI | `/remi-ai/` | 루틴 생성·운동 추천·기록 피드백·식단 추천의 준비된 응답 체험 |
+| 시연 영상 | `/video/` | 웹용으로 압축한 MP4를 직접 재생하는 플레이어 |
 
-- 사용자 요청으로 현재 `v3/next-site` 작업본을 https://spotme-site.vercel.app/ 에 운영 배포했다.
-- 배포 ID: `dpl_3cLScmRz9e9VBS1chZvJrcCT1zPg` (production, READY).
-- 배포 주소: https://spotme-site-7h4hbnhck-gnb1202-navercoms-projects.vercel.app
-- 원격 빌드 성공(20개 페이지). 운영 4개 경로의 HTTP 200, 홈 이미지 6개의 로컬/운영 SHA-256 일치, 비로그인 브라우저 접근, 최신 문구·굵은 그래프·배경색, 구간 스크롤, 레미 전환, 휴대폰 4화면 및 모바일 전체 노출을 확인했다. 브라우저 오류 0건.
-- 검증 기록: `../reports/home-phone/production-checks-20261001.json` 및 `production-*-20261001.png`. Git 커밋/푸시, 루트 배포 설정 및 환경 파일 변경은 수행하지 않았다.
+> 레미 AI 응답과 운동 수치는 **샘플 데이터**입니다. 사이트에서 실제 AI 상담이나 사용자 운동 기록 저장을 수행하지 않습니다.
 
-## 이전 운영 배포 — 2026-09-29
+### 인터랙션
 
-- 사용자 승인 후 https://spotme-site.vercel.app/ 의 홈을 현재 시안으로 교체했다. `/concept/`도 유지하며 기존 상세 페이지 경로는 그대로다.
-- 배포 ID: `dpl_aA8Q8wcQdRUtaPQGeUDJ61M8tdev` (production, READY).
-- 로컬 및 Vercel 빌드 성공(18개 페이지), 운영 7개 경로·51개 에셋 검사 PASS. 운영 홈의 비로그인 열람과 레미 루틴 결과 표시를 브라우저에서 확인했다. 전체 모바일/모든 인터랙션 회귀 QA를 수행한 것은 아니다.
-- 기록: `reports/experience/production-home-20260929.png`. Git 커밋/푸시는 수행하지 않았다.
-- 운영 배포 명령: 이 폴더에서 `npx --yes vercel@59.15.1 deploy --prod --yes --scope gnb1202-navercoms-projects`.
+- 타이포그래피와 레미 인피니티 미러로 이어지는 홈 오프닝, 세션 단위 재생 이력 관리
+- 스크롤에 따른 기능 소개·리포트 표시, 헬스장 성장과 티어 전환
+- 루틴 확인 → 운동 중 조정 → 전투·완료로 이어지는 체험 시퀀스
+- Canvas 기반 치즈 낙하·폭발 효과와 화면 밖 파티클 그리기 생략
+- 탭 전환과 에셋 사전 로딩, 모션 감소 설정을 고려한 주요 애니메이션
 
-## 앞선 미리보기 배포 기록 — 2026-09-29
+## 기술 구성
 
-- 현재 시안: https://spotme-site-r6vmtdsnw-gnb1202-navercoms-projects.vercel.app/concept/
-- Vercel 프로젝트: `spotme-site`, 배포 ID: `dpl_GcLDXh3yzVp9AGc4VF2dVdGq6t8M`.
-- Preview 배포만 수행했다. `spotme-site.vercel.app` 운영 홈, 루트의 기존 Vite 배포 설정, Git 원격은 변경하지 않았다.
-- Vercel의 미리보기 로그인 보호를 유지했다. 열람 시 해당 프로젝트 접근 권한이 있는 Vercel 계정 로그인이 필요하다.
-- 원격 Next.js 빌드 성공(18개 페이지), 인증된 `/concept/` 응답과 주요 문구 확인. 비로그인 브라우저에서는 로그인 화면까지만 확인했으며 배포 환경 전체 브라우저 QA를 완료한 것은 아니다.
-- 이 폴더의 `vercel.json`을 사용한다. `.vercelignore`에서 로컬 환경 변수, QA 보고서, 검증 스크립트 및 에셋 원본 경로가 담긴 manifest를 제외한다.
+| 기술 | 버전 | 용도 |
+| --- | --- | --- |
+| Next.js | 15.5.24 | App Router, 페이지 생성·라우팅 |
+| React / React DOM | 19.2.8 | 화면과 상호작용 상태 관리 |
+| Motion | 13.4.4 | UI 전환·스크롤 연동 애니메이션 |
+| GSAP | 3.15.0 | 오프닝 타임라인 |
+| Lenis | 1.3.26 | 부드러운 스크롤 |
+| lottie-web | 5.13.0 | Lottie 재생용 의존성·컴포넌트 준비 |
 
-```powershell
-cd D:\Github\spotme-site\v3\next-site
-npx --yes vercel@59.15.1 deploy --target preview --yes --scope gnb1202-navercoms-projects
-```
+스타일은 CSS로 관리하며 배포 대상은 Vercel입니다. 정확한 의존성은 [package.json](package.json)과 [package-lock.json](package-lock.json)을 기준으로 합니다.
 
-위 미리보기 이후 운영 홈 교체가 승인되어 배포를 완료했다. 저장소 루트에서 배포하면 이전 Vite 사이트 설정이 사용되므로 주의한다.
+## 시작하기
 
-## 실행
+Node.js와 npm이 필요합니다. 로컬 검증은 Node.js 22 환경에서 진행했습니다.
+**모든 명령은 저장소 루트에서 실행합니다.**
 
-```powershell
-cd D:\Github\spotme-site\v3\next-site
+```bash
 npm ci
 npm run dev
 ```
 
-개발: http://127.0.0.1:4189/ . `npm run build` 후 `npm run start`는 http://127.0.0.1:4192/ 에서 빌드본을 제공한다.
+개발 서버: [http://127.0.0.1:4189](http://127.0.0.1:4189)
 
-## 구현한 구성과 확인 범위
+프로덕션 빌드 확인:
 
-| 기술 | 적용 | 토스와의 관계 |
-|---|---|---|
-| Next.js | 15.5.24, App Router, 서버 페이지와 12개 경로 정적 사전 렌더링 | 공개 번들에서 확인한 버전과 동일 |
-| React / React DOM | 19.2.8 | 토스 번들의 19.2 canary 대신 보안 패치된 같은 계열 선택 |
-| Motion | 13.4.4, 메뉴 강조·화면 전환 | 토스에서 계열 코드 확인, 정확한 버전 미확인 |
-| Lenis | 1.3.26, 일반 페이지 부드러운 스크롤 | 토스의 lenis-prevent 흔적을 근거로 채택, 원본 사용/버전 확정 아님 |
-| Lottie | lottie-web 5.13.0, 지연 로딩 컴포넌트 준비 | 토스에서 로더 확인, 정확한 버전 미확인 |
-| GSAP | 3.15.0, 기존 승인된 모션 실험에서만 유지 | SPOT ME 기존 의존성, 토스 사용 여부 미확인 |
-| PostCSS | override 8.5.28 | 설치 감사에서 발견한 하위 패키지 취약점 패치 |
+```bash
+npm run build
+npm run start
+```
 
-토스의 내부 소스/배포 인프라/전체 의존성을 복제한 것은 아니다. 토스 영상·브랜드 에셋은 가져오지 않았다. Lottie 재생 컴포넌트는 준비됐지만 승인된 SPOT ME JSON이 없어 실제 화면에 신규 그래픽을 추가하지 않았다. MP4도 신규 제작/추가하지 않았다.
+빌드본 서버: [http://127.0.0.1:4192](http://127.0.0.1:4192)
 
-## 보존과 동작
+개발 캐시는 `.next-dev/`, 프로덕션 빌드는 `.next/`에 생성됩니다. 제공된 화면·데모 실행에 Figma API 키는 필요하지 않습니다.
 
-- 기존 v3 React 버전의 정확한 데이터·폰트·에셋을 복사했다. 이전 Rail 등 다른 디자인을 가져오지 않았다.
-- 브라우저 history 직접 조작 대신 Next Link와 App Router로 페이지를 이동한다.
-- 상단 메뉴의 Motion 강조와 페이지 겹침 전환을 유지한다.
-- 페이지 코드·이미지는 진입 후 미리 불러오며, Next 라우트도 prefetch한다.
-- Lenis는 모션 감소 설정 및 `?experience=scroll` 실험에서 끈다. 경로 변경 시 인스턴스를 정리하며 터치의 기본 스크롤을 유지한다.
-- 기존 오프닝은 `/?experience=scroll&variant=a`에서만 실행한다. 기본 홈 자동 실행 없음.
-- 기존 전체 모션 실험의 재검증과 새 반응형 디자인 작업은 이번 기술 이관과 별개다.
+## 폴더 구조
 
-## 확인 기록
+```text
+spotme-site/
+├── app/                         # 페이지 경로와 공통 레이아웃
+├── src/
+│   ├── components/              # 공통 UI
+│   ├── concept/                 # 기능 체험과 레퍼런스 구현
+│   ├── generated/               # Figma 기반 화면 데이터·스타일·모션 코드
+│   └── integration/             # 홈, 메뉴, 레미 AI, 영상, 페이지 전환
+├── public/                      # 실제 사용하는 이미지·폰트·영상
+├── scripts/                     # 에셋 가공과 검증 도구
+│   └── archive/v3/              # 과거 정적 사이트 도구 — 현재 실행 대상 아님
+├── design-reference/            # 동결된 Figma 자료와 원본 근거
+│   └── assets/delivery-260925/   # 전달받은 원본 에셋
+├── docs/                        # 참고 문서
+├── reports/                     # 로컬 검증 결과 — Git·배포 제외
+└── local-archive/               # 이전 로컬 설정 — Git·배포 제외
+```
 
-- Next.js 프로덕션 빌드 성공, 12개 경로 SSR 응답 200 및 존재하지 않는 경로 404 확인.
-- 복사한 에셋 156개 SHA-256이 React 원본과 일치.
-- 패치 적용 후 npm audit: 취약점 0건.
-- 전체 Figma 픽셀 일치·전체 모바일 QA를 새로 인증한 것은 아니다.
+`src/generated/`와 `public/motion-assets/`는 **현재 사이트에서도 사용**합니다. 과거 생성물처럼 보이더라도 일괄 삭제하지 마세요. `reports/`와 `local-archive/`는 새로 clone한 저장소에는 없을 수 있습니다.
 
-참조: https://toss.im/ , https://nextjs.org/docs/app , https://github.com/darkroomengineering/lenis , https://github.com/airbnb/lottie-web
+## 에셋 관리
+
+- **원본:** `design-reference/assets/delivery-260925/`에 전달받은 폴더 구조와 파일명을 보존합니다. 기존 루트의 `스팟미_웹사이트_260925_v1/`를 이곳으로 이동했으며, 58개 파일의 SHA-256이 이동 전후 동일함을 확인했습니다.
+- **서비스용:** `public/`에 웹용 이미지·폰트·영상을 둡니다. 예를 들어 `public/home-story/`의 이미지는 `/home-story/파일명.webp`로 불러옵니다. 이번 정리는 서비스용 파일이나 URL을 변경하지 않습니다.
+- **코드:** `src/`에는 컴포넌트·스타일·로직을 관리합니다. 원본 이미지를 넣기 위해 `src/assets/`를 별도로 만들 필요는 없습니다.
+- 에셋을 교체·가공할 때는 `scripts/prepare-*.py`, `scripts/prepare-*.mjs`의 입력 경로와 출처·해시 기록을 함께 관리합니다. 원본은 Git에 보관하지만 `design-reference/` 전체는 배포에서 제외합니다.
+- `scripts/archive/v3/`와 과거 QA 보고서의 예전 경로는 당시 작업 기록입니다. 현재 실행용 스크립트와 홈 에셋 검증용 매니페스트는 새 경로를 사용합니다.
+
+## 수정할 때 찾을 곳
+
+| 작업 | 파일 |
+| --- | --- |
+| 상단 메뉴·시연 영상 경로 | [navigation.js](src/integration/navigation.js) |
+| 홈 스토리 | [HomeStory.jsx](src/integration/HomeStory.jsx) |
+| 기능 첫 소개·리포트 데모 | [ActualOverview.jsx](src/concept/experience/ActualOverview.jsx) |
+| 헬스장·티어·리포트 카드 | [Experience.jsx](src/concept/experience/Experience.jsx) |
+| 레미 운동 체험 시퀀스 | [RemiJourney.jsx](src/concept/experience/RemiJourney.jsx) |
+| 레미 AI 전용 화면 | [RemiStudio.jsx](src/integration/RemiStudio.jsx) |
+| 시연 영상 재생·배치 | [DemoVideo.jsx](src/integration/DemoVideo.jsx) |
+
+영상은 `public/videos/spotme-site-demo-web-crf20.mp4`를 사용합니다. 클릭 후 재생하며 기본 볼륨은 50%입니다. 비압축 원본 `spotme-site-demo.mp4`는 Git·배포에서 제외합니다.
+
+## 검증
+
+기본 빌드와 브라우저 없이 실행할 수 있는 주요 로직 검사:
+
+```bash
+npm run build
+node scripts/check-gym-progress.mjs
+node scripts/check-overview-timing.mjs
+node scripts/check-video-fit.mjs
+node scripts/check-mirror-depth.mjs
+node scripts/check-feature-stops.mjs
+```
+
+이 검사는 전체 화면·모바일·성능 QA를 대신하지 않습니다. 다른 검증 도구는 실행 중인 서버, Playwright, Python 이미지 처리 패키지 또는 로컬 보고서를 요구할 수 있습니다. `npm ci`만으로 모든 QA 도구가 준비되는 것은 아닙니다.
+
+## 배포
+
+루트 [vercel.json](vercel.json)은 Next.js 기준입니다.
+
+- Root Directory: 저장소 루트
+- Install Command: `npm ci`
+- Build Command: `npm run build`
+- Output Directory: `.next`
+
+Vercel 계정과 대상 프로젝트 연결을 확인한 뒤, 배포가 필요한 경우에만 실행합니다.
+
+```bash
+npx vercel login
+npx vercel link
+npx vercel           # 미리보기 배포
+npx vercel --prod    # 운영 배포
+```
+
+Git 커밋·푸시와 Vercel 배포는 별개입니다. 자동 배포 여부는 Vercel의 Git 연결 설정에 따라 달라집니다. 로컬 최신 상태가 운영 사이트와 항상 같다는 뜻은 아닙니다.
+
+## 자료와 라이선스
+
+- 원본 에셋과 Figma 자료는 구현·출처 확인을 위해 보존합니다. 기존 해시·출처 기록을 유지하고, 변경된 에셋에는 근거를 남깁니다.
+- 환경 파일, 의존성, 빌드 캐시, 보고서는 [.gitignore](.gitignore)로 제외합니다. 배포 제외 범위는 [.vercelignore](.vercelignore)에 별도로 정의합니다.
+- SmoothUI 코드의 출처와 MIT 고지는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)를 참고하세요. 이 고지가 프로젝트 전체나 모든 이미지의 재사용 허가를 의미하지는 않습니다.
+- 레퍼런스 비교본의 외부 자료 사용 주의사항은 [참고 문서](docs/REFERENCE-REPRODUCTION.ko.md)에 있습니다.
+
+<details>
+<summary>저장소 정리 이력</summary>
+
+2026-10-05에 현재 Next.js 앱을 저장소 루트로 통합했습니다.
+이전 정적 사이트·Vite 구현·모션 실험본은 정리했으며, 필요하면 커밋 `c8a4637`에서 확인할 수 있습니다.
+현재 작업은 과거 `v3/next-site`가 아닌 루트에서 진행합니다.
+
+</details>

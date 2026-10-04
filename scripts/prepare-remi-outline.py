@@ -1,7 +1,7 @@
 from pathlib import Path
 import cv2, numpy as np, json, hashlib, math
 root=Path(__file__).resolve().parents[1]
-source=root/'스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홈A_01B.png'
+source=root/'design-reference/assets/delivery-260925/03_오브젝트/@_캐릭터/01_레미/레미_홈A_01B.png'
 raw=source.read_bytes()
 im=cv2.imdecode(np.frombuffer(raw,np.uint8),cv2.IMREAD_UNCHANGED)
 # Trace the delivered silhouette, including its transparent inner openings.

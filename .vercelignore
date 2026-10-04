@@ -3,11 +3,13 @@ node_modules/
 legacy/
 temp/
 v3/
-스팟미_웹사이트_260925_v1/
+design-reference/
+local-archive/
 .next/
 .next-dev/
 .vercel/
 reports/
+docs/
 scripts/
 *.md
 !THIRD_PARTY_NOTICES.md

@@ -6,7 +6,7 @@ import json
 
 site = Path(__file__).resolve().parents[1]
 repo = site
-source = repo / '스팟미_웹사이트_260925_v1' / '@_UI패턴'
+source = repo / 'design-reference/assets/delivery-260925' / '@_UI패턴'
 output = site / 'public' / 'home-overview'
 output.mkdir(exist_ok=True)
 files = {

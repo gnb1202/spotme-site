@@ -265,7 +265,7 @@
   },
   {
     "id": "logo",
-    "source": "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\01_로고\\스팟미_로고_B.png",
+    "source": "D:\\Github\\spotme-site\\design-reference/assets/delivery-260925\\01_로고\\스팟미_로고_B.png",
     "sourceSha256": "b88d67b1b5821d6e1fa4b91175053d74afa6b25539987e83ea1207e344943c47",
     "outputSha256": "574939e2d31cb95bd47d7fad2cd3b9f4373524fc8bce17435a9a479b3512e1c3",
     "path": "/concept/experience/logo.webp",
@@ -276,7 +276,7 @@
   },
   {
     "id": "remi",
-    "source": "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_홈A_01.png",
+    "source": "D:\\Github\\spotme-site\\design-reference/assets/delivery-260925\\03_오브젝트\\@_캐릭터\\01_레미\\레미_홈A_01.png",
     "sourceSha256": "2abbb5622a94b2fa5862e2d12b1bc0e9df24e4854ed38fd03042bb91b6e2d68c",
     "outputSha256": "799153b4479b91f92928778af8d0fd84f9ee3a08e7989b8e10830ad3f8c10b2c",
     "path": "/concept/experience/remi.webp",
@@ -287,7 +287,7 @@
   },
   {
     "id": "coach",
-    "source": "D:\\Github\\spotme-site\\스팟미_웹사이트_260925_v1\\03_오브젝트\\@_캐릭터\\01_레미\\레미_레미AI_01.png",
+    "source": "D:\\Github\\spotme-site\\design-reference/assets/delivery-260925\\03_오브젝트\\@_캐릭터\\01_레미\\레미_레미AI_01.png",
     "sourceSha256": "d82033f3b2ac4f80266d3e4593e639e19c8f7ab4bb6f03de8f683e95fc8bb272",
     "outputSha256": "fffaa648b5d77b308981bea98c832a9da55ea6d859a03f7d4ea7aba889ac7cab",
     "path": "/concept/experience/coach.webp",

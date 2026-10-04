@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 import {exerciseMotives,remiSupportModes} from '../src/integration/home-story-data.js';
 
-const report=new URL('../v3/reports/home-phone/',import.meta.url);
+const report=new URL('../reports/figma-legacy/home-phone/',import.meta.url);
 const assets=JSON.parse(await readFile(new URL('story-assets.json',report),'utf8'));
 const hash=buffer=>createHash('sha256').update(buffer).digest('hex');
 for(const asset of assets){

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // User-requested addition below the frozen ABOUT description (120:1011).
-// Source: 스팟미_웹사이트_260925_v1/03_오브젝트/@_캐릭터/01_레미/레미_홈B.png
+// Source: design-reference/assets/delivery-260925/03_오브젝트/@_캐릭터/01_레미/레미_홈B.png
 // SHA256: af96b9c7bca7422413b785baf75b8e64a67e7ae4c7a61036884f91c6a0483bea
 export default function HomeAboutRemi({descriptionStyle}){
  const width=parseFloat(descriptionStyle.width);
