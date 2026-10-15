@@ -81,7 +81,7 @@ function GymScene({active}){
 }
 export function GymCard(){
  const [chosen,setChosen]=useState(false),[hover,setHover]=useState(false),reduced=useReducedMotion(),active=chosen||hover;
- return <article className="xp-benefit" id="growth"><Transition><div className="xp-benefit-art xp-gym-art" onPointerEnter={e=>{if(e.pointerType==='mouse')setHover(true);}} onPointerLeave={()=>setHover(false)} onPointerCancel={()=>setHover(false)} onKeyDown={e=>{if(e.key==='Escape'){setChosen(false);setHover(false);}}}>
+ return <article className="xp-benefit" id="growth"><Transition><div className="xp-benefit-art xp-gym-art" role="button" tabIndex={0} aria-label="헬스장 성장 비교" aria-pressed={chosen} onClick={()=>setChosen(value=>!value)} onPointerEnter={e=>{if(e.pointerType==='mouse')setHover(true);}} onPointerLeave={()=>setHover(false)} onPointerCancel={()=>{setChosen(false);setHover(false);}} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setChosen(value=>!value);}if(e.key==='Escape'){setChosen(false);setHover(false);}}}>
   <div className="xp-card-kicker">헬스장</div><h3>오늘의 운동이<br/>내 공간을 바꿔요</h3>
   <div className="xp-gym-phone"><div className="xp-gym-screen"><GymScene active={active}/>
    {!reduced&&active&&<motion.div className="xp-gym-sheen" aria-hidden="true" initial={{x:'-180%',opacity:0}} animate={{x:'320%',opacity:[0,.7,.7,0]}} transition={{duration:.725,ease:[.45,0,.15,1],opacity:{times:[0,.16,.65,1]}}}/>}
@@ -103,6 +103,7 @@ function TierCard(){
   return {index:next,turn,faces:previous.faces.map((value,face)=>face===turn%2?next:value)};
  });
  const reset=()=>{setHover(false);setPlaying(false);flipTo(0);};
+ const toggle=()=>{if(playing){reset();return;}flipTo(reduced?tierPreview.length-1:1);setPlaying(true);};
  useEffect(()=>{
   const update=()=>{setPageVisible(!document.hidden);if(document.hidden)reset();};
   update();document.addEventListener('visibilitychange',update);
@@ -115,7 +116,7 @@ function TierCard(){
   const timer=window.setTimeout(()=>flipTo(index+1),800);
   return()=>window.clearTimeout(timer);
  },[running,index]);
- return <article className="xp-benefit" id="tier-preview"><Transition delay={.08}><div ref={ref} className={`xp-benefit-art xp-tier-art ${champion?'is-challenger':''}`} onPointerEnter={e=>{if(e.pointerType==='mouse'){if(!reduced)flipTo(1);setHover(true);}}} onPointerLeave={reset} onPointerCancel={reset} onKeyDown={e=>{if(e.key==='Escape')reset();}}>
+ return <article className="xp-benefit" id="tier-preview"><Transition delay={.08}><div ref={ref} role="button" tabIndex={0} aria-label="티어 성장 미리보기" aria-pressed={playing} onClick={toggle} className={`xp-benefit-art xp-tier-art ${champion?'is-challenger':''}`} onPointerEnter={e=>{if(e.pointerType==='mouse'){if(!reduced)flipTo(1);setHover(true);}}} onPointerLeave={reset} onPointerCancel={reset} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}if(e.key==='Escape')reset();}}>
   <div className="xp-card-kicker">티어</div><h3>쌓인 운동은<br/>다음 티어로</h3>
   <div className="xp-tier-stage">
    {tierPreview.map((id,i)=><motion.div key={id} className="xp-tier-halo" data-tier={id} style={{'--tier-glow':tierHaloColors[id]}} aria-hidden="true" initial={false} animate={{opacity:index===i?(arrivingChampion?1:.85):0,scale:reduced?1:arrivingChampion?1.12:1}} transition={{duration:reduced?0:.45,ease}}/>)}

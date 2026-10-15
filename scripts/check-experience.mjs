@@ -23,13 +23,14 @@ assert(source.includes(approvedFrame),'Use the user-requested original phone fra
 assert(!/static\.toss|framerusercontent|fetch\(|localStorage|sessionStorage/.test(source.replace(approvedFrame,'')),'Only the approved reference frame; no data writes');
 const gymSource=source.slice(source.indexOf('function GymScene'),source.indexOf('function TierCard'));
 assert(!/type="range"|clipPath|xp-gym-divider/.test(gymSource),'Gym is hover/tap, not drag comparison');
-assert(gymSource.includes('onPointerLeave')&&gymSource.includes('aria-pressed={chosen}')&&gymSource.includes('!reduced&&active'),'Hover reset, keyboard alternative and reduced-motion sheen guard');
+assert(gymSource.includes('onPointerLeave')&&gymSource.includes('aria-pressed={chosen}')&&gymSource.includes('tabIndex={0}')&&gymSource.includes('!reduced&&active'),'Hover reset, keyboard alternative and reduced-motion sheen guard');
+for(const token of ['role="button"',"e.key==='Enter'||e.key===' '",'e.preventDefault()','onClick={()=>setChosen(value=>!value)}',"e.key==='Escape'"])assert(gymSource.includes(token),'Gym input contract: '+token);
 const journey=await readFile(resolve(root,'src/concept/experience/RemiJourney.jsx'),'utf8');
 const overviewSource=await readFile(resolve(root,'src/concept/experience/ActualOverview.jsx'),'utf8');
 assert(!/aria-expanded|role="tab"|<a |<Link /.test(overviewSource),'Long scroll without feature tabs or links');
-assert(overviewSource.includes('useScroll')&&overviewSource.includes('reportProgress=clamp(progress*4-3)'),'Report fills from the fourth scroll segment');
+assert(overviewSource.includes('useScroll')&&overviewSource.includes('overviewPhase(progress,timing)')&&overviewSource.includes('reportProgress=clamp(phase-3)'),'Report fills from fourth phase after shortened AI runway');
 assert.deepEqual([...overviewSource.matchAll(/id:'(overview-[^']+)',label:/g)].map(match=>match[1]),['overview-remi','overview-gym','overview-battle','overview-report'],'Battle precedes report in labels, screens and anchors');
-assert(overviewSource.includes('index===2?<BattleDemo progress={reduced?1:clamp(progress*4-2)}/>:<ReportDemo progress={reportProgress}/>'),'Battle uses the third segment; report uses the fourth');
+assert(overviewSource.includes('index===2?<BattleDemo progress={reduced?1:clamp(phase-2)}/>:<ReportDemo progress={reportProgress}/>'),'Battle uses the third phase; report uses the fourth');
 assert(!/type="range"|setAmount|ov-report-scrub|드래그해서 운동 기록|다시 채우기/.test(overviewSource),'No manual report fill controls or state');
 assert.equal((overviewSource.match(/className="ov-reference-sticky"/g)||[]).length,1,'One pinned reference composition');
 assert(!overviewSource.includes('function Story(')&&overviewSource.includes('ov-reference-list')&&overviewSource.includes('ov-reference-tilt'),'Keep the feature list and tilted phone, not four independent chapters');
@@ -58,7 +59,8 @@ assert(battleSource.includes('data-exercise={id}')&&battleSource.includes('finis
 assert(battleSource.includes('remaining=hit?0:adjusted?1:4')&&battleSource.includes("finished?'✓':`${remaining}/4`"),'Current exercise progresses from one remaining set to zero, then completed');
 assert(journey.includes('rj-magic')&&journey.includes('ready&&!reduced'),'Reduced motion skips magic');
 const tierSource=source.slice(source.indexOf('function TierCard'),source.indexOf('function ReportCard'));
-assert(tierSource.includes('1000')&&tierSource.includes('clearTimeout(timer)')&&tierSource.includes('onPointerLeave={reset}')&&tierSource.includes('visibilitychange')&&tierSource.includes('!reduced'),'Tier cadence, exit cleanup, page visibility and reduced-motion guard');
+for(const token of ['role="button"','tabIndex={0}','aria-pressed={playing}','onClick={toggle}',"e.key==='Enter'||e.key===' '",'flipTo(reduced?tierPreview.length-1:1)'])assert(tierSource.includes(token),'Tier input contract: '+token);
+assert(tierSource.includes('setTimeout(()=>flipTo(index+1),800)')&&tierSource.includes('clearTimeout(timer)')&&tierSource.includes('onPointerLeave={reset}')&&tierSource.includes('visibilitychange')&&tierSource.includes('!reduced'),'800ms tier cadence, exit cleanup, page visibility and reduced-motion guard');
 assert(tierSource.includes('if(!running||index===tierPreview.length-1)return;')&&tierSource.includes('turn*180')&&tierSource.includes('flipTo(0)'),'Hold challenger, restore 3D flip and return to iron');
 assert(tierSource.includes('settledTurn===turn')&&tierSource.includes('arrivingChampion&&!reduced')&&tierSource.includes('xp-tier-rays'),'Champion burst begins with the flip; reduced motion suppresses rings and rays');
 assert(tierSource.includes('if(!reduced)flipTo(1);setHover(true);'),'Hover starts the first flip immediately');
@@ -71,7 +73,7 @@ for(const route of ['/concept/','/concept/reference/','/concept/review/','/ai/',
  const response=await fetch(origin+route);assert.equal(response.status,200,route);
  if(route==='/concept/'){
   const html=await response.text();
-  for(const label of ['운동을 이어가는 일은','쌓이는 운동','혼자 고민하던 운동','헬스장 성장 미리보기','MY REPORT'])assert(html.includes(label),label);
+  for(const label of ['운동을 이어가는 일은','쌓이는 운동','혼자 고민하던 운동','헬스장','운동 리포트'])assert(html.includes(label),label);
  }
 }
 for(const item of manifest)assert.equal((await fetch(origin+item.path)).status,200,item.path);

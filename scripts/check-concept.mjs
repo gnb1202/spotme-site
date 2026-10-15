@@ -23,10 +23,13 @@ const origin=process.argv[2]||'http://127.0.0.1:4189';
 for(const path of ['/concept/','/concept/review/']){
   const response=await fetch(origin+path);assert.equal(response.status,200,path);
   const html=await response.text();
-  for(const title of ['AI 운동 서포트','게임처럼 즐기는 운동','파트너 레미','홍보 영상'])assert.ok(html.includes(title),title);
+  const titles=path==='/concept/'?['홈','기능','레미 AI','시연 영상']:['AI 운동 서포트','게임처럼 즐기는 운동','파트너 레미','홍보 영상'];
+  for(const title of titles)assert.ok(html.includes(title),`${path}: ${title}`);
 }
 const main=await (await fetch(origin+'/concept/')).text();
-assert.ok(main.indexOf('id="capabilities"')<main.indexOf('id="benefits"'));
-assert.ok(main.indexOf('id="benefits"')<main.indexOf('id="journey"'));
+const sectionIds=['overview','benefits','remi-sequence'];
+const positions=sectionIds.map(id=>main.indexOf(`id="${id}"`));
+positions.forEach((position,i)=>assert(position>=0,`Missing section ${sectionIds[i]}`));
+assert(positions[0]<positions[1]&&positions[1]<positions[2],'Overview, benefits, then Remi journey');
 for(const path of ['/','/ai/','/game/','/characters/','/video/'])assert.equal((await fetch(origin+path)).status,200,path);
 console.log('PASS: 11 source/copy hashes, 9 content evidence mappings, 4 generated assets, reference section order, SSR content and 7 routes. Browser interaction tests are separate.');

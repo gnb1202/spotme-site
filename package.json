@@ -9,7 +9,7 @@
   },
   "overrides": {"postcss": "8.5.28"},
   "dependencies": {
-    "next": "15.5.24",
+    "next": "15.5.28",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "motion": "13.4.4",

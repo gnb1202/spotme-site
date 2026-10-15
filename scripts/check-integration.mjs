@@ -18,7 +18,15 @@ for(const route of mainNavigation.map(x=>x.href)){
  const html=await response.text();assert(html.includes('주요 메뉴'),route+' navigation');
  if(route==='/features/')assert(html.includes('운동을 이어가는 일은'));
  if(route==='/remi-ai/'){assert(html.includes('remi-demo-phone'));for(const name of ['루틴 생성','운동 추천','기록 피드백','식단 추천'])assert(html.includes(name));}
- if(route==='/video/'){assert(html.includes('시연 영상'));assert(!html.includes('<iframe')&&!html.includes('<video'),'Video must wait for user activation');}
+ if(route==='/video/'){
+  assert(html.includes('시연 영상'));assert(!html.includes('<iframe'),'Native video, not an embed');
+  const videos=[...html.matchAll(/<video\b[^>]*>/g)].map(match=>match[0]);
+  assert.equal(videos.length,1,'One pre-mounted native player');
+  assert(videos[0].includes(`src="${demoVideo.src}"`)&&videos[0].includes('preload="auto"'),'Approved compressed video is preloaded');
+  assert(!/\s(?:autoplay|controls)(?:[\s=>])/i.test(videos[0]),'No playback or controls before activation');
+  assert(videos[0].includes('aria-hidden="true"')&&videos[0].includes('tabindex="-1"'),'Inactive player is excluded from accessibility focus');
+  assert(html.includes('aria-label="SPOT ME 시연 영상 재생"'),'Accessible activation button');
+ }
 }
 const figmaText=await read('../design-reference/figma-data.json');
 const source=JSON.parse(await read('../design-reference/source.json'));
@@ -41,6 +49,6 @@ for(const [page,frame,ids] of [['home','20:127',['205:3','254:244','20:200']],['
 const runtime=await read('../src/generated/scroll-runtime.js');
 assert(runtime.includes("document.body.classList.remove('pinned')")&&runtime.includes('history.scrollRestoration=restoration'));
 const embed=await read('../src/integration/DemoVideo.jsx');
-assert(embed.includes('controls playsInline autoPlay preload="metadata"')&&embed.includes('onError='));
+for(const required of ['controls={playing}','playsInline preload="auto"','video.volume=0.5','videoRef.current?.play().catch','onError=','videoRef.current?.pause();videoRef.current?.load();'])assert(embed.includes(required),required);
 assert(!embed.includes('youtube'));
 console.log(JSON.stringify({result:'PASS',routes:4,frozenFigmaSha256:source.sha256,sourceGeometry:results,scope:'Source contract and HTTP checks; live DOM and visual checks recorded separately.'},null,2));

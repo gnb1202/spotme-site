@@ -13,9 +13,9 @@ const blocked=await import('../src/integration/opening-session.js?test-blocked')
 assert.equal(blocked.hasSeenOpening(),false);blocked.markOpeningSeen();assert.equal(blocked.hasSeenOpening(),true);
 delete globalThis.sessionStorage;
 const transition=await read('src/integration/RouteTransition.jsx');
-for(const required of ['document.fonts.ready','img.decode()','12000',"phase(transition.id,'error')","spotme:route-revealed",'inert={covered}','useReducedMotion','event.metaKey','scheduleBackgroundWarm','warmRoute'])assert(transition.includes(required),required);
+for(const required of ['document.fonts.ready','img.decode()','12000',"phase(transition.id,'error')","spotme:route-revealed",'inert={covered}','useReducedMotion','event.metaKey','warmAllAssets','warmRoute','unsubscribe();','cancelled=true'])assert(transition.includes(required),required);
 assert(!transition.includes('320-'),'No artificial minimum loading delay');
-assert(transition.includes("transition.phase!=='preparing'"),'Keep current content during preparation');
+assert(transition.includes('if(current.current?.id!==transition.id)return;')&&transition.includes("if(transition.phase==='covering'){phase(transition.id,'loading');router.push"),'Only the current, fully covered transition may change the route');
 const scroll=await read('src/generated/scroll-runtime.js');
 const opening=await read('src/generated/opening-runtime.js');
 assert(opening.includes('mirror-camera')&&opening.includes('echo-outline')&&opening.includes('speed-streaks'),'Restore Remi infinity mirror after typography');
